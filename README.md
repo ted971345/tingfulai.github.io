@@ -4,7 +4,7 @@
 
 ---
 
-**[➡️ 點此訪問公開網站](https://tingfulai.github.io)**
+**[➡️ 點此訪問公開網站]([https://tingfulai.github.io](https://ted971345.github.io/tingfulai.github.io/)**
 
 ---
 
