@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. Ting-Fu Lai | Aging Health & Data Science</title>
+  <!-- Primary SEO -->
+  <meta name="description" content="Ting-Fu Lai, PhD. Postdoctoral researcher in aging health and data science. Wearables, 24-hour movement behaviors, isotemporal substitution, and evidence-based interventions for healthy aging." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://ted971345.github.io/tingfulai.github.io/en/" />
+  <link rel="alternate" hreflang="en" href="https://ted971345.github.io/tingfulai.github.io/en/" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://ted971345.github.io/tingfulai.github.io/" />
+  <link rel="alternate" hreflang="x-default" href="https://ted971345.github.io/tingfulai.github.io/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ting-Fu Lai | Aging Health & Data Science" />
+  <meta property="og:title" content="Dr. Ting-Fu Lai | Aging Health & Data Science" />
+  <meta property="og:description" content="Aging health × quantitative methods × technology. Objective data and statistical modeling for actionable, evidence-based strategies." />
+  <meta property="og:url" content="https://ted971345.github.io/tingfulai.github.io/en/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://ted971345.github.io/tingfulai.github.io/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dr. Ting-Fu Lai | Aging Health & Data Science" />
+  <meta name="twitter:description" content="Objective data and modeling for healthy aging interventions." />
+  <meta name="twitter:image" content="https://ted971345.github.io/tingfulai.github.io/og-cover.jpg" />
+
+  <!-- Fonts and CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Dr. Ting-Fu Lai | Aging Health & Data Science",
+        "url": "https://ted971345.github.io/tingfulai.github.io/en/",
+        "inLanguage": "en",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://ted971345.github.io/tingfulai.github.io/en/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Ting-Fu Lai",
+        "jobTitle": "Postdoctoral Researcher",
+        "url": "https://ted971345.github.io/tingfulai.github.io/en/",
+        "affiliation": [
+          {"@type": "CollegeOrUniversity", "name": "National Taiwan Normal University"},
+          {"@type": "CollegeOrUniversity", "name": "Biomedical Research Institute, Pusan National University Hospital"}
+        ],
+        "alumniOf": [
+          {"@type": "CollegeOrUniversity", "name": "National Taiwan Normal University", "department": "Department of Health Promotion and Health Education"}
+        ],
+        "email": "mailto:ted971345@gmail.com",
+        "telephone": "+886-979-675-986",
+        "sameAs": [
+          "https://scholar.google.com/citations?user=TYqilcsAAAAJ&hl=en",
+          "https://www.researchgate.net/profile/Lai-Ting-Fu",
+          "https://orcid.org/0000-0002-4794-1583"
+        ],
+        "knowsAbout": [
+          "24-hour movement behaviors","isotemporal substitution","triaxial accelerometry","long-term care","sarcopenia","frailty","health promotion","health economics"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "About", "item": "https://ted971345.github.io/tingfulai.github.io/en/#about"},
+          {"@type": "ListItem", "position": 2, "name": "Research Focus", "item": "https://ted971345.github.io/tingfulai.github.io/en/#focus"},
+          {"@type": "ListItem", "position": 3, "name": "Methods", "item": "https://ted971345.github.io/tingfulai.github.io/en/#methodology"},
+          {"@type": "ListItem", "position": 4, "name": "Publications", "item": "https://ted971345.github.io/tingfulai.github.io/en/#publications"},
+          {"@type": "ListItem", "position": 5, "name": "Education & Experience", "item": "https://ted971345.github.io/tingfulai.github.io/en/#cv"}
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    body {font-family: 'Noto Sans', system-ui, -apple-system, sans-serif; background-color:#F8F9FA; color:#212529; scroll-behavior:smooth}
+    .palette-bg-main{background-color:#F8F9FA}
+    .palette-bg-card{background-color:#FFFFFF}
+    .palette-text-dark{color:#0B3954}
+    .palette-text-medium{color:#087E8B}
+    .palette-text-accent{color:#FF5A5F}
+    .nav-link{cursor:pointer;padding:.5rem 1rem;border-radius:.375rem;transition:all .3s ease;font-weight:600}
+    .nav-link:hover,.nav-link.active{background-color:#BFD7EA;color:#0B3954}
+    .chart-container{position:relative;width:100%;max-width:600px;margin-left:auto;margin-right:auto;height:350px;max-height:400px}
+    @media (max-width:768px){.chart-container{height:300px;max-height:350px}}
+    .clickable-card{transition:transform .3s ease, box-shadow .3s ease}
+    .clickable-card:hover{transform:translateY(-5px);box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)}
+    .pill-button{transition:all .2s ease-in-out}
+    .pill-button.active{background-color:#0B3954;color:#fff}
+    .competency-step.active{border-color:#087E8B!important;background-color:#eaf6f6}
+    .competency-step.active h3{color:#0B3954}
+  </style>
+</head>
+<body class="palette-bg-main">
+  <noscript>
+    <div class="bg-yellow-50 text-yellow-900 p-4 text-sm text-center">
+      This site uses JavaScript for interactivity. You can still browse via the links:
+      <a href="#about" class="underline">About</a> · 
+      <a href="#focus" class="underline">Research Focus</a> · 
+      <a href="#methodology" class="underline">Methods</a> · 
+      <a href="#publications" class="underline">Publications</a> · 
+      <a href="#cv" class="underline">Education & Experience</a>
+    </div>
+  </noscript>
+
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-md" role="banner">
+    <nav class="container mx-auto px-6 py-3 flex justify-between items-center" aria-label="Primary Navigation">
+      <div class="text-2xl font-bold palette-text-dark">Ting-Fu Lai <span class="text-lg font-normal text-gray-500">PhD</span></div>
+      <div class="hidden md:flex space-x-2">
+        <a href="#about" class="nav-link active">About</a>
+        <a href="#focus" class="nav-link">Research Focus</a>
+        <a href="#methodology" class="nav-link">Methods</a>
+        <a href="#publications" class="nav-link">Publications</a>
+        <a href="#cv" class="nav-link">Education & Experience</a>
+      </div>
+      <div class="md:hidden">
+        <label for="mobile-nav" class="sr-only">Mobile Navigation</label>
+        <select id="mobile-nav" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+          <option value="#about">About</option>
+          <option value="#focus">Research Focus</option>
+          <option value="#methodology">Methods</option>
+          <option value="#publications">Publications</option>
+          <option value="#cv">Education & Experience</option>
+        </select>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mx-auto p-4 md:p-8">
+    <!-- About -->
+    <section id="about" class="text-center py-16 md:py-24" aria-labelledby="about-heading">
+      <h1 id="about-heading" class="text-4xl md:text-6xl font-bold palette-text-dark mb-4">Aging Health<br class="hidden md:block" />& Data Science</h1>
+      <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-600 mb-12">I combine wearable-derived data with quantitative methods to design pragmatic strategies for healthy aging.</p>
+      <div class="flex justify-center items-center space-x-4 md:space-x-8" aria-label="Key stats">
+        <div class="text-center">
+          <p class="text-4xl md:text-6xl font-bold palette-text-accent">2026</p>
+          <p class="text-sm md:text-base text-gray-500">Taiwan becomes a super-aged society</p>
+        </div>
+        <div class="text-gray-300 text-4xl" aria-hidden="true">|</div>
+        <div class="text-center">
+          <p class="text-4xl md:text-6xl font-bold palette-text-accent">&gt;40%</p>
+          <p class="text-sm md:text-base text-gray-500">National health expenditure for adults 65+</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Focus -->
+    <section id="focus" class="py-16 bg-white rounded-lg shadow-inner" aria-labelledby="focus-heading">
+      <div class="text-center mb-12">
+        <h2 id="focus-heading" class="text-3xl md:text-4xl font-bold palette-text-dark">Research Focus</h2>
+        <p class="mt-4 text-lg text-gray-600">Three pillars translate data into actionable strategies.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="palette-bg-main rounded-lg border border-gray-200 p-6 clickable-card">
+          <h3 class="font-bold text-xl palette-text-dark mb-2">Physical activity and health promotion in older adults</h3>
+          <p class="text-gray-600">Objective assessment of 24-hour movement behaviors and links to frailty, sarcopenia, cognition, and mental health.</p>
+        </div>
+        <div class="palette-bg-main rounded-lg border border-gray-200 p-6 clickable-card">
+          <h3 class="font-bold text-xl palette-text-dark mb-2">Data science & technology</h3>
+          <p class="text-gray-600">Isotemporal substitution, compositional data analysis, and ML models for risk prediction, cost-effectiveness, and intervention design.</p>
+        </div>
+        <div class="palette-bg-main rounded-lg border border-gray-200 p-6 clickable-card">
+          <h3 class="font-bold text-xl palette-text-dark mb-2">Cross-disciplinary & international collaboration</h3>
+          <p class="text-gray-600">Clinical medicine × public health × environmental health, with comparative projects in Korea and Japan.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methods -->
+    <section id="methodology" class="py-16" aria-labelledby="methodology-heading">
+      <div class="text-center mb-12">
+        <h2 id="methodology-heading" class="text-3xl md:text-4xl font-bold palette-text-dark">Methods: from questions to solutions</h2>
+        <p class="mt-4 text-lg text-gray-600">Clarify → measure → model → act.</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+        <div class="lg:col-span-1 flex flex-col space-y-4" role="tablist" aria-orientation="vertical">
+          <button id="step1" role="tab" aria-selected="true" class="p-4 border-l-4 border-gray-300 competency-step text-left"><h3 class="font-bold text-xl palette-text-medium">1. Define the question</h3><p class="text-gray-600 text-sm">Start from real-world care needs.</p></button>
+          <button id="step2" role="tab" aria-selected="false" class="p-4 border-l-4 border-gray-300 competency-step text-left"><h3 class="font-bold text-xl palette-text-medium">2. Collect objective data</h3><p class="text-gray-600 text-sm">Wearables + clinical and secondary datasets.</p></button>
+          <button id="step3" role="tab" aria-selected="false" class="p-4 border-l-4 border-gray-300 competency-step text-left"><h3 class="font-bold text-xl palette-text-medium">3. Quantitative analysis</h3><p class="text-gray-600 text-sm">Isotemporal substitution, CoDA, ML.</p></button>
+          <button id="step4" role="tab" aria-selected="false" class="p-4 border-l-4 border-gray-300 competency-step text-left"><h3 class="font-bold text-xl palette-text-medium">4. Translate to action</h3><p class="text-gray-600 text-sm">Design feasible, context-aware programs.</p></button>
+        </div>
+        <div id="competency-details" role="tabpanel" class="lg:col-span-2 palette-bg-card rounded-lg shadow-lg p-6 min-h-[300px]"></div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="py-16" aria-labelledby="publications-heading">
+      <div class="text-center mb-12">
+        <h2 id="publications-heading" class="text-3xl md:text-4xl font-bold palette-text-dark">Publications</h2>
+        <p class="mt-4 text-lg text-gray-600">Evidence focused on real-world health management.</p>
+      </div>
+      <div class="palette-bg-card rounded-lg shadow-lg p-6 mb-8">
+        <h3 class="font-bold text-xl palette-text-dark mb-4 text-center">SCI/SSCI output over time</h3>
+        <div class="chart-container"><canvas id="publicationsChart" aria-label="Publications per year" role="img"></canvas></div>
+      </div>
+      <div>
+        <div class="flex flex-wrap justify-center gap-2 mb-8" role="group" aria-label="Publication filters">
+          <button class="pill-button px-4 py-2 rounded-full bg-gray-200 text-gray-700" data-filter="all">All</button>
+          <button class="pill-button px-4 py-2 rounded-full bg-gray-200 text-gray-700" data-filter="health-promo">Health promotion</button>
+          <button class="pill-button px-4 py-2 rounded-full bg-gray-200 text-gray-700" data-filter="data-science">Data science</button>
+          <button class="pill-button px-4 py-2 rounded-full bg-gray-200 text-gray-700" data-filter="interdisciplinary">Cross-disciplinary</button>
+        </div>
+        <div id="publications-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      </div>
+    </section>
+
+    <!-- CV Section: Education & Experience -->
+    <section id="cv" class="py-16 bg-white rounded-lg shadow-inner" aria-labelledby="cv-heading">
+      <div class="text-center mb-12">
+        <h2 id="cv-heading" class="text-3xl md:text-4xl font-bold palette-text-dark">Education & Experience</h2>
+        <p class="mt-4 text-lg text-gray-600">Concise summary for readers and search engines.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Education -->
+        <div>
+          <h3 class="text-2xl font-bold palette-text-dark mb-4 border-b-2 border-gray-200 pb-2">Education</h3>
+          <ul class="space-y-4">
+            <li class="palette-bg-main rounded-lg border p-4">
+              <p class="font-semibold text-lg">National Taiwan Normal University — PhD</p>
+              <p class="text-gray-700">Health Promotion & Health Education (Direct-entry PhD)</p>
+              <p class="text-sm text-gray-500 mt-1">2019/06 – 2023/10</p>
+            </li>
+            <li class="palette-bg-main rounded-lg border p-4">
+              <p class="font-semibold text-lg">National Taiwan Normal University — BSc</p>
+              <p class="text-gray-700">Health Promotion & Health Education</p>
+              <p class="text-sm text-gray-500 mt-1">2014/09 – 2018/06</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Experience -->
+        <div>
+          <h3 class="text-2xl font-bold palette-text-dark mb-4 border-b-2 border-gray-200 pb-2">Experience</h3>
+          <ul class="space-y-4">
+            <li class="palette-bg-main rounded-lg border p-4">
+              <p class="font-semibold text-lg">National Taiwan Normal University, Graduate Institute of Sport, Leisure and Hospitality Management — Postdoctoral Researcher</p>
+              <p class="text-sm text-gray-500 mt-1">2025/02 – present</p>
+            </li>
+            <li class="palette-bg-main rounded-lg border p-4">
+              <p class="font-semibold text-lg">University of Taipei, Graduate Institute of Physical Education — Part-time Lecturer</p>
+              <p class="text-sm text-gray-500 mt-1">current</p>
+            </li>
+            <li class="palette-bg-main rounded-lg border p-4">
+              <p class="font-semibold text-lg">Biomedical Research Institute, Pusan National University Hospital — Visiting Researcher</p>
+              <p class="text-sm text-gray-500 mt-1">current</p>
+            </li>
+            <li class="palette-bg-main rounded-lg border p-4">
+              <p class="font-semibold text-lg">Silver Ark Care Group — Long-term Care Consultant</p>
+              <p class="text-sm text-gray-500 mt-1">current</p>
+            </li>
+            <li class="palette-bg-main rounded-lg border p-4">
+              <p class="font-semibold text-lg">Biomedical Research Institute, Pusan National University Hospital — Research Professor</p>
+              <p class="text-sm text-gray-500 mt-1">2024/02 – 2025/01</p>
+            </li>
+            <li class="palette-bg-main rounded-lg border p-4">
+              <p class="font-semibold text-lg">National Taiwan Normal University — Research Assistant (full-time/part-time)</p>
+              <p class="text-sm text-gray-500 mt-1">2020/08 – 2024/01</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white mt-16">
+    <div class="container mx-auto px-6 py-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">Get in touch</h2>
+      <p class="mb-4">Interested in collaboration or seminars? Email is best.</p>
+      <p>Ting-Fu Lai</p>
+      <p><a href="mailto:ted971345@gmail.com" class="underline hover:no-underline">ted971345@gmail.com</a> | <a href="tel:+886979675986" class="underline hover:no-underline">+886 979 675 986</a></p>
+      <div class="mt-6 flex justify-center space-x-6">
+        <a href="https://scholar.google.com/citations?user=TYqilcsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">Google Scholar</a>
+        <a href="https://www.researchgate.net/profile/Lai-Ting-Fu" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">ResearchGate</a>
+        <a href="https://orcid.org/0000-0002-9599-8012" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">ORCID</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const competencyData = {
+      step1: { title: 'Define the question', content: 'Start from the problem on the ground: in resource-limited settings, what changes deliver the largest health gains and how do we value them?', icon: '🎯' },
+      step2: { title: 'Collect objective data', content: 'Use triaxial accelerometers to quantify 24-hour movement behaviors; integrate clinical records and secondary datasets to model health, behavior, and cost.', icon: '🔬' },
+      step3: { title: 'Quantitative analysis', content: 'Apply isotemporal substitution, compositional data analysis, and machine learning to estimate effects of replacing sedentary time with lower-cost activity.', icon: '📈' },
+      step4: { title: 'Translate to action', content: 'Turn evidence into feasible programs. Example: replace 30 minutes of sedentary time with neighborhood walking to reduce frailty risk with favorable cost-effectiveness.', icon: '💡' }
+    };
+
+    document.addEventListener('DOMContentLoaded', function(){
+      const competencyDetailsContainer = document.getElementById('competency-details');
+      const competencySteps = document.querySelectorAll('.competency-step');
+      function updateCompetencyDetails(stepId){
+        const data = competencyData[stepId];
+        competencyDetailsContainer.innerHTML = `<div class="flex items-start space-x-4"><div class="text-4xl" aria-hidden="true">${data.icon}</div><div><h4 class="font-bold text-2xl palette-text-dark mb-2">${data.title}</h4><p class="text-gray-700 leading-relaxed">${data.content}</p></div></div>`;
+        competencySteps.forEach(step=>{
+          step.classList.remove('active');
+          step.setAttribute('aria-selected', 'false');
+          if(step.id===stepId){
+            step.classList.add('active');
+            step.setAttribute('aria-selected', 'true');
+          }
+        });
+      }
+      competencySteps.forEach(step=> step.addEventListener('click', ()=> updateCompetencyDetails(step.id)) );
+      updateCompetencyDetails('step1');
+
+      // Publications data (English summaries). Add `url` or `doi` where available.
+      const publicationsData = [
+        { id:3, title:'Light physical activity throughout the day and physical function in older adults: A cross-sectional study', journal:'Chronobiology International, 2025', category:'health-promo', abstract:'Light activity across the day relates to physical function in older adults.' },
+        { id:4, title:'Cross-sectional and longitudinal association between accelerometer-measured light-intensity physical activity and cognitive function in older adults', journal:'Frontiers in Aging Neuroscience, 2025', category:'health-promo', abstract:'Links between light activity and cognition, cross-sectional and longitudinal.' },
+        { id:5, title:'Dynapenia is associated with a higher risk of depressive symptoms among older adults', journal:'Frontiers in Public Health, 2025', category:'health-promo', abstract:'Muscle weakness and depression risk.' },
+        { id:6, title:'Age Difference in the Association Between Nutritional Status and Dynapenia in Older Adults', journal:'Nutrients, 2025', category:'health-promo', abstract:'Nutrition–dynapenia association by age.' },
+        { id:11, title:'Acute caffeine supplementation offsets the impairment in 10-km running performance following one night of partial sleep deprivation', journal:'European Journal of Applied Physiology, 2024', category:'health-promo', abstract:'Caffeine mitigates performance loss after partial sleep deprivation.' },
+        { id:13, title:'Association of 24-Hour movement behavior and cognitive function in older Taiwanese adults', journal:'Geriatric Nursing, 2024', category:'health-promo', abstract:'24-hour movement behaviors and cognition.' },
+        { id:16, title:'Is overall and timing-specific physical activity associated with depression in older adults?', journal:'Frontiers in Public Health, 2023', category:'health-promo', abstract:'Total volume and timing of activity vs. depressive symptoms.' },
+        { id:17, title:'Minimum physical activity and subsequent muscle strength and balance in older adults: A prospective study', journal:'Behavioral Sciences, 2023', category:'health-promo', abstract:'Minimum activity needed to maintain strength and balance.' },
+        { id:18, title:'Diurnal pattern of breaks in sedentary time and physical function of older adults', journal:'Archives of Public Health, 2023', category:'health-promo', abstract:'Frequent breaks in sitting relate to function.' },
+        { id:23, title:'Non-linear associations between sleep patterns and sarcopenia risks in older adults', journal:'Journal of Clinical Sleep Medicine, 2021', category:'health-promo', abstract:'Nonlinear links of sleep and sarcopenia risk.' },
+        { id:25, title:'Is sleep timing related to objectively measured physical activity and sedentary behavior in older women?', journal:'Nature and Science of Sleep, 2021', category:'health-promo', abstract:'Sleep timing vs. activity and sedentary time.' },
+        { id:26, title:'Is achieving 7,000 steps/day associated with lower-extremity performance?', journal:'BMC Geriatrics, 2021', category:'health-promo', abstract:'7,000 steps/day and lower-limb performance.' },
+        { id:28, title:'Sleep duration and timing are nonlinearly associated with depressive symptoms among older adults', journal:'Sleep Medicine, 2021', category:'health-promo', abstract:'Nonlinear associations of sleep with depression.' },
+        { id:29, title:'Daily lifestyle behaviors and risks of sarcopenia among older adults', journal:'Archives of Public Health, 2020', category:'health-promo', abstract:'Lifestyle and sarcopenia risk.' },
+        { id:30, title:'Duration of MVPA is more important than timing for physical function in older adults', journal:'Scientific Reports, 2020', category:'health-promo', abstract:'MVPA duration outweighs timing.' },
+        { id:31, title:'Objectively measured sleep duration and physical function in community-dwelling older adults', journal:'Journal of Clinical Sleep Medicine, 2020', category:'health-promo', abstract:'Sleep duration and function.' },
+        { id:33, title:'Independent and joint associations of physical activity and diet with lower-limb strength in older adults', journal:'Nutrients, 2020', category:'health-promo', abstract:'Activity and diet jointly relate to strength.' },
+        { id:37, title:'When to exercise? A systematic review in older adults', journal:'Journal of Physical Education in Colleges, 2024', category:'health-promo', abstract:'Timing of exercise and outcomes.' },
+        { id:38, title:'VILPA in daily life among middle-aged and older adults: a narrative review', journal:'Journal of Sport Sciences, 2024', category:'health-promo', abstract:'Health effects of daily-life vigorous intermittent activity.' },
+        { id:40, title:'Muscle-strengthening activity and sociodemographic correlates in older adults', journal:'Journal of Physical Education in Colleges, 2021', category:'health-promo', abstract:'Who participates in muscle-strengthening activity.' },
+        // data-science
+        { id:7, title:"Older adults' Internet use and accelerometer-derived physical activity", journal:'Frontiers in Public Health, 2025', category:'data-science', abstract:'Digital behavior and activity patterns.' },
+        { id:8, title:'Replacing sedentary time with activity and physical function in older adults', journal:'Journal of Physical Education in Colleges, 2024', category:'data-science', abstract:'Isotemporal substitution models.' },
+        { id:10, title:'ICT-based smart care services and functions among older adults living alone', journal:'The Journal of Nutrition, Health & Aging, 2024', category:'data-science', abstract:'Quasi-experimental evaluation of smart care.', url:'' },
+        { id:12, title:'Isotemporal substitution of sedentary behavior and depressive symptoms in Taiwanese older adults', journal:'Mental Health and Physical Activity, 2024', category:'data-science', abstract:'Prospective analysis.' },
+        { id:19, title:'Isotemporal substitution of sedentary behavior with activity and muscle function', journal:'BMC Geriatrics, 2023', category:'data-science', abstract:'Effect estimates across intensities.' },
+        { id:20, title:'Substituting sedentary time with activity and body composition from youngest-old to oldest-old', journal:'Frontiers in Public Health, 2022', category:'data-science', abstract:'Age-stratified compositional changes.' },
+        { id:39, title:'Triaxial accelerometry for PA and SB measurement: a narrative review', journal:'Journal of Sport Performance, 2022', category:'data-science', abstract:'Methods overview.' },
+        // interdisciplinary
+        { id:1, title:'Elevated ECW/TBW and low phase angle in relation to muscle function', journal:'J Int Soc Sports Nutr, 2025', category:'interdisciplinary', abstract:'BIA markers and muscle function.' },
+        { id:2, title:'Respiratory function and information processing speed in coal power plant workers', journal:'Risk Management and Healthcare Policy, 2025', category:'interdisciplinary', abstract:'Occupational exposure, PA moderation, cognition.' },
+        { id:9, title:'Whole-body and segmental phase angles and cognitive function in older Koreans', journal:'JMIR Public Health and Surveillance, 2024', category:'interdisciplinary', abstract:'Phase angle and cognition.' },
+        { id:14, title:'Objectively measured PA and phase angle in older adults', journal:'Scientific Reports, 2024', category:'interdisciplinary', abstract:'PA × phase angle.' },
+        { id:15, title:'Sedentary behavior and phase angle in active vs. inactive older adults', journal:'Nutrients, 2024', category:'interdisciplinary', abstract:'SB and cellular health proxy.' },
+        { id:21, title:'Accelerometer-measured PA in adults with Prader–Willi syndrome', journal:'IJERPH, 2022', category:'interdisciplinary', abstract:'Objective measurement in a rare disease.' },
+        { id:22, title:'Built-environment attributes and sedentary time: systematic review', journal:'Int J Environ Health Res, 2022', category:'interdisciplinary', abstract:'Audited environment and SB.' },
+        { id:24, title:'Do neighborhood environments support steps differently by time of day?', journal:'J Transport & Health, 2021', category:'interdisciplinary', abstract:'GIS × walking × time-of-day.' },
+        { id:27, title:'Nonlinear association between walkability and sarcopenia risk', journal:'J Nutr Health Aging, 2021', category:'interdisciplinary', abstract:'Neighborhood walkability and sarcopenia.' },
+        { id:32, title:'Which neighborhood destinations matter in Asia?', journal:'Biomed Res Int, 2020', category:'interdisciplinary', abstract:'Destinations and movement behaviors.' },
+        { id:34, title:"Area-level crimes and older adults' active and sedentary behavior?", journal:'Sustainability, 2019', category:'interdisciplinary', abstract:'Crime rate and PA/SB.' },
+        { id:35, title:'Walk Score® and older adults’ healthy behaviors and outcomes', journal:'IJERPH, 2019', category:'interdisciplinary', abstract:'Validity of Walk Score®.' },
+        { id:36, title:'Scoping review: PA, SB, and phase angle', journal:'Journal of Sport Performance, 2025', category:'interdisciplinary', abstract:'PA/SB × phase angle.' },
+        { id:41, title:'Validity of Walk Score® in Taiwan', journal:'Taiwan J Public Health, 2019', category:'interdisciplinary', abstract:'Local validation.' },
+        { id:42, title:'Adolescent e-cigarette use and smoking intention/behavior: systematic review', journal:'Taiwan J Public Health, 2019', category:'interdisciplinary', abstract:'Public health implications.' }
+      ];
+
+      const pickLink = (p) => p.url ? p.url : (p.doi ? ('https://doi.org/' + p.doi) : ('https://scholar.google.com/scholar?q=' + encodeURIComponent(p.title)));
+
+      const publicationsGrid = document.getElementById('publications-grid');
+      const filterButtons = document.querySelectorAll('.pill-button');
+      function renderPublications(filter='all'){
+        publicationsGrid.innerHTML='';
+        const filtered = filter==='all'? publicationsData : publicationsData.filter(p=> p.category===filter);
+        if(filtered.length===0){
+          publicationsGrid.innerHTML = '<p class="text-gray-500 md:col-span-2 lg:col-span-3 text-center">No publications in this category yet.</p>';
+          return;
+        }
+        filtered.forEach(pub=>{
+          const card=document.createElement('div');
+          card.className='palette-bg-card rounded-lg shadow p-6 flex flex-col justify-between clickable-card';
+          card.innerHTML = `<a href="${pickLink(pub)}" target="_blank" rel="noopener noreferrer" class="group block"><h4 class="font-bold text-lg palette-text-dark group-hover:underline">${pub.title} <span aria-hidden="true">↗</span></h4><p class="text-sm text-gray-500 my-2">${pub.journal}</p><p class="text-gray-700 text-sm">${pub.abstract}</p></a>`;
+          publicationsGrid.appendChild(card);
+        });
+      }
+      filterButtons.forEach(btn=> btn.addEventListener('click', ()=>{ filterButtons.forEach(b=>b.classList.remove('active')); btn.classList.add('active'); renderPublications(btn.dataset.filter); }));
+      document.querySelector('.pill-button[data-filter="all"]').classList.add('active');
+      renderPublications('all');
+
+      // Chart
+      const ctx = document.getElementById('publicationsChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['2019','2020','2021','2022','2023','2024','2025 (to date)'],
+          datasets: [{
+            label: 'SCI/SSCI papers',
+            data: [3,5,5,3,5,7,7],
+            backgroundColor: '#087E8B',
+            borderColor: '#0B3954',
+            borderWidth: 1,
+            borderRadius: 5
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: { beginAtZero: true, ticks: { color:'#334155', stepSize: 2 }, grid: { color:'#e2e8f0' } },
+            x: { ticks: { color:'#334155' }, grid: { display:false } }
+          },
+          plugins: { legend: { display:false }, tooltip: { backgroundColor:'#0B3954', titleFont:{ size:14 }, bodyFont:{ size:12 }, padding:10, cornerRadius:4, displayColors:false } }
+        }
+      });
+
+      // Nav highlighting
+      const navLinks = document.querySelectorAll('.nav-link');
+      const sections = document.querySelectorAll('main section');
+      const mobileNav = document.getElementById('mobile-nav');
+      const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            const id = entry.target.id;
+            navLinks.forEach(link=> link.classList.toggle('active', link.getAttribute('href') === `#${id}`));
+            if(mobileNav && mobileNav.value !== `#${id}`){ mobileNav.value = `#${id}`; }
+          }
+        });
+      }, { rootMargin: "-40% 0px -60% 0px" });
+      sections.forEach(sec=> observer.observe(sec));
+      if(mobileNav){ mobileNav.addEventListener('change', e=> document.querySelector(e.target.value).scrollIntoView()); }
+    });
+  </script>
+</body>
+</html>
