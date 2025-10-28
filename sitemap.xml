@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://ted971345.github.io/tingfulai.github.io/</loc>
+    <lastmod>2025-10-28</lastmod> <!-- 修改為你最後更新中文頁面的日期 -->
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://ted971345.github.io/tingfulai.github.io/en/"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="zh-Hant"
+               href="https://ted971345.github.io/tingfulai.github.io/"/>
+  </url>
+  <url>
+    <loc>https://ted971345.github.io/tingfulai.github.io/en/</loc>
+    <lastmod>2025-10-28</lastmod> <!-- 修改為你最後更新英文頁面的日期 -->
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="zh-Hant"
+               href="https://ted971345.github.io/tingfulai.github.io/"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://ted971345.github.io/tingfulai.github.io/en/"/>
+  </url>
+</urlset>
