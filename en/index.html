@@ -19,19 +19,18 @@
   <meta property="og:description" content="Aging health × quantitative methods × technology. Objective data and statistical modeling for actionable, evidence-based strategies." />
   <meta property="og:url" content="https://ted971345.github.io/tingfulai.github.io/en/" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:image" content="https://ted971345.github.io/tingfulai.github.io/og-cover.jpg" />
+  <meta property="og:image" content="https://ted971345.github.io/tingfulai.github.io/assets/profile-photo.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Dr. Ting-Fu Lai | Aging Health & Data Science" />
   <meta name="twitter:description" content="Objective data and modeling for healthy aging interventions." />
-  <meta name="twitter:image" content="https://ted971345.github.io/tingfulai.github.io/og-cover.jpg" />
+  <meta name="twitter:image" content="https://ted971345.github.io/tingfulai.github.io/assets/profile-photo.jpg" />
 
   <!-- Fonts and CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
-  <!-- Defer non-critical scripts for performance -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -42,12 +41,7 @@
         "@type": "WebSite",
         "name": "Dr. Ting-Fu Lai | Aging Health & Data Science",
         "url": "https://ted971345.github.io/tingfulai.github.io/en/",
-        "inLanguage": "en",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://ted971345.github.io/tingfulai.github.io/en/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "inLanguage": "en"
       },
       {
         "@type": "Person",
@@ -63,24 +57,10 @@
           {"@type": "CollegeOrUniversity", "name": "National Taiwan Normal University", "department": "Department of Health Promotion and Health Education"}
         ],
         "email": "mailto:ted971345@gmail.com",
-        "telephone": "+886-979-675-986",
         "sameAs": [
           "https://scholar.google.com/citations?user=TYqilcsAAAAJ&hl=en",
           "https://www.researchgate.net/profile/Lai-Ting-Fu",
           "https://orcid.org/0000-0002-4794-1583"
-        ],
-        "knowsAbout": [
-          "24-hour movement behaviors","isotemporal substitution","triaxial accelerometry","long-term care","sarcopenia","frailty","health promotion","health economics"
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "About", "item": "https://ted971345.github.io/tingfulai.github.io/en/#about"},
-          {"@type": "ListItem", "position": 2, "name": "Research Focus", "item": "https://ted971345.github.io/tingfulai.github.io/en/#focus"},
-          {"@type": "ListItem", "position": 3, "name": "Methods", "item": "https://ted971345.github.io/tingfulai.github.io/en/#methodology"},
-          {"@type": "ListItem", "position": 4, "name": "Publications", "item": "https://ted971345.github.io/tingfulai.github.io/en/#publications"},
-          {"@type": "ListItem", "position": 5, "name": "Education & Experience", "item": "https://ted971345.github.io/tingfulai.github.io/en/#cv"}
         ]
       }
     ]
@@ -340,58 +320,69 @@
           }
         });
       }
-      
       competencySteps.forEach(step=> step.addEventListener('click', ()=> updateCompetencyDetails(step.id)) );
       updateCompetencyDetails('step1');
 
       // --- 3. Publications Data (With explicit YEAR for charting) ---
       // Added 'year' property to ensure the chart is always accurate based on data, not hardcoded.
       const publicationsData = [
+        // New Publications (2025)
+        { id:44, year: 2025, title:'Longitudinal association of intensity-specific physical activity and sedentary behavior with dynapenia among older Taiwanese adults', journal:'European Review of Aging and Physical Activity, 2025', category:'health-promo', abstract:'Investigates longitudinal associations between MVPA, LPA, and SB and the risk of dynapenia in older adults.', doi:''},
+        { id:45, year: 2025, title:'Validity of commercial mobile devices for measuring steps in older adults', journal:'Journal of Physical Education in Colleges, 2025', category:'data-science', abstract:'Validates step counts from commercial mobile devices against accelerometers in older adults.', doi:''},
+
+        // Existing Publications
         { id:3, year: 2025, title:'Light physical activity throughout the day and physical function in older adults: A cross-sectional study', journal:'Chronobiology International, 2025', category:'health-promo', abstract:'Light activity across the day relates to physical function in older adults.', doi:'10.1080/07420528.2025.2479097'},
         { id:4, year: 2025, title:'Cross-sectional and longitudinal association between accelerometer-measured light-intensity physical activity and cognitive function in older adults', journal:'Frontiers in Aging Neuroscience, 2025', category:'health-promo', abstract:'Links between light activity and cognition, cross-sectional and longitudinal.', doi:'10.3389/fnagi.2025.1505172'},
         { id:5, year: 2025, title:'Dynapenia is associated with a higher risk of depressive symptoms among older adults', journal:'Frontiers in Public Health, 2025', category:'health-promo', abstract:'Muscle weakness and depression risk.', doi:'10.3389/fpubh.2025.1533973'},
         { id:6, year: 2025, title:'Age Difference in the Association Between Nutritional Status and Dynapenia in Older Adults', journal:'Nutrients, 2025', category:'health-promo', abstract:'Nutrition–dynapenia association by age.', doi:'10.3390/nu17040734'},
+        { id:43, year: 2025, title:'Validation of Phase Angle Cutoff Values Derived From Bioelectrical Impedance Analysis for Sarcopenia Screening in Community-Dwelling Older Korean Adults', journal:'Journal of the American Medical Directors Association, 2025', category:'interdisciplinary', abstract:'Identifying phase angle cutoffs for sarcopenia screening in older adults.', doi:'10.1016/j.jamda.2025.105798'},
+        { id:1, year: 2025, title:'Elevated extracellular water to total body water ratio and low phase angle in relation to muscle function in middle-aged and older adults', journal:'J Int Soc Sports Nutr, 2025', category:'interdisciplinary', abstract:'BIA markers and muscle function.', doi:'10.1080/15502783.2025.2536693'},
+        { id:2, year: 2025, title:'Respiratory Function and Information Processing Speed in Coal Power Plant Workers...', journal:'Risk Management and Healthcare Policy, 2025', category:'interdisciplinary', abstract:'Occupational exposure, PA moderation, cognition.', doi:'10.2147/RMHP.S500971'},
+        { id:7, year: 2025, title:"Older adults' Internet use behavior and its association with accelerometer-derived physical activity", journal:'Frontiers in Public Health, 2025', category:'data-science', abstract:'Digital behavior and activity patterns.', doi:'10.3389/fpubh.2025.1537309'},
+        { id:36, year: 2025, title:'Scoping review: PA, SB, and phase angle', journal:'Journal of Sport Performance, 2025', category:'interdisciplinary', abstract:'PA/SB × phase angle.', doi:''},
+
         { id:11, year: 2024, title:'Acute caffeine supplementation offsets the impairment in 10-km running performance following one night of partial sleep deprivation', journal:'European Journal of Applied Physiology, 2024', category:'health-promo', abstract:'Caffeine mitigates performance loss after partial sleep deprivation.', doi:'10.1007/s00421-024-05638-5'},
         { id:13, year: 2024, title:'Association of 24-Hour movement behavior and cognitive function in older Taiwanese adults', journal:'Geriatric Nursing, 2024', category:'health-promo', abstract:'24-hour movement behaviors and cognition.', doi:'10.1016/j.gerinurse.2024.06.028'},
+        { id:8, year: 2024, title:'Replacing sedentary time with activity and physical function in older adults', journal:'Journal of Physical Education in Colleges, 2024', category:'data-science', abstract:'Isotemporal substitution models.', doi:'10.5297/ser.202412_26(4).0004'},
+        { id:10, year: 2024, title:'Effect of information and communication technology-based smart care services for physical and cognitive functions in older adults living alone', journal:'The Journal of Nutrition, Health & Aging, 2024', category:'data-science', abstract:'Quasi-experimental evaluation of smart care.', doi:'10.1016/j.jnha.2024.100318'},
+        { id:12, year: 2024, title:'Isotemporal substitution of sedentary behavior and depressive symptoms in Taiwanese older adults', journal:'Mental Health and Physical Activity, 2024', category:'data-science', abstract:'Prospective analysis.', doi:'10.1016/j.mhpa.2024.100620'},
+        { id:37, year: 2024, title:'When to exercise? A systematic review in older adults', journal:'Journal of Physical Education in Colleges, 2024', category:'health-promo', abstract:'Timing of exercise and outcomes.', doi:''},
+        { id:38, year: 2024, title:'VILPA in daily life among middle-aged and older adults: a narrative review', journal:'Journal of Sport Sciences, 2024', category:'health-promo', abstract:'Health effects of daily-life vigorous intermittent activity.', doi:''},
+        { id:9, year: 2024, title:'Whole-Body and Segmental Phase Angles and Cognitive Function in the Older Korean Population: Cross-Sectional Analysis', journal:'JMIR Public Health and Surveillance, 2024', category:'interdisciplinary', abstract:'Phase angle and cognition.', doi:'10.2196/63457'},
+        { id:14, year: 2024, title:'Objectively measured PA and phase angle in older adults', journal:'Scientific Reports, 2024', category:'interdisciplinary', abstract:'PA × phase angle.', doi:'10.1038/s41598-024-57544-7'},
+        { id:15, year: 2024, title:'Sedentary behavior and phase angle in active vs. inactive older adults', journal:'Nutrients, 2024', category:'interdisciplinary', abstract:'SB and cellular health proxy.', doi:'10.3390/nu16010101'},
+
         { id:16, year: 2023, title:'Is overall and timing-specific physical activity associated with depression in older adults?', journal:'Frontiers in Public Health, 2023', category:'health-promo', abstract:'Total volume and timing of activity vs. depressive symptoms.', doi:'10.3389/fpubh.2023.1241170'},
-        { id:17, year: 2023, title:'The Association between a Minimum Amount of Physical Activity and Subsequent Muscle Strength and Balance in Older Adults: A Prospective Study', journal:'Behavioral Sciences, 2023', category:'health-promo', abstract:'Minimum activity needed to maintain strength and balance.', doi:'10.3390/bs13040316'},
-        { id:18, year: 2023, title:'Diurnal pattern of breaks in sedentary time and the physical function of older adults', journal:'Archives of Public Health, 2023', category:'health-promo', abstract:'Frequent breaks in sitting relate to function.', doi:'10.1186/s13690-023-01050-1'},
+        { id:17, year: 2023, title:'Minimum physical activity and subsequent muscle strength and balance in older adults: A prospective study', journal:'Behavioral Sciences, 2023', category:'health-promo', abstract:'Minimum activity needed to maintain strength and balance.', doi:'10.3390/bs13040316'},
+        { id:18, year: 2023, title:'Diurnal pattern of breaks in sedentary time and physical function of older adults', journal:'Archives of Public Health, 2023', category:'health-promo', abstract:'Frequent breaks in sitting relate to function.', doi:'10.1186/s13690-023-01050-1'},
+        { id:19, year: 2023, title:'Isotemporal substitution of sedentary behavior with activity and muscle function', journal:'BMC Geriatrics, 2023', category:'data-science', abstract:'Effect estimates across intensities.', doi:'10.1186/s12877-023-03819-z'},
+
+        { id:20, year: 2022, title:'Substituting sedentary time with activity and body composition from youngest-old to oldest-old', journal:'Frontiers in Public Health, 2022', category:'data-science', abstract:'Age-stratified compositional changes.', doi:'10.3389/fpubh.2022.837213'},
+        { id:39, year: 2022, title:'Triaxial accelerometry for PA and SB measurement: a narrative review', journal:'Journal of Sport Performance, 2022', category:'data-science', abstract:'Methods overview.', doi:''},
+        { id:21, year: 2022, title:'Accelerometer-measured PA in adults with Prader–Willi syndrome', journal:'IJERPH, 2022', category:'interdisciplinary', abstract:'Objective measurement in a rare disease.', doi:'10.3390/ijerph19159013'},
+        { id:22, year: 2022, title:'Built-environment attributes and sedentary time: systematic review', journal:'Int J Environ Health Res, 2022', category:'interdisciplinary', abstract:'Audited environment and SB.', doi:'10.1080/09603123.2021.1894582'},
+
         { id:23, year: 2021, title:'Non-linear associations between sleep patterns and sarcopenia risks in older adults', journal:'Journal of Clinical Sleep Medicine, 2021', category:'health-promo', abstract:'Nonlinear links of sleep and sarcopenia risk.', doi:'10.5664/jcsm.9698'},
         { id:25, year: 2021, title:'Is sleep timing related to objectively measured physical activity and sedentary behavior in older women?', journal:'Nature and Science of Sleep, 2021', category:'health-promo', abstract:'Sleep timing vs. activity and sedentary time.', doi:'10.2147/NSS.S323423'},
         { id:26, year: 2021, title:"Is achieving 7,000 steps/day cross sectionally and prospectively associated with older adults' lower-extremity performance?", journal:'BMC Geriatrics, 2021', category:'health-promo', abstract:'7,000 steps/day and lower-limb performance.', doi:'10.1186/s12877-021-02264-8'},
         { id:28, year: 2021, title:'Sleep duration and timing are nonlinearly associated with depressive symptoms among older adults', journal:'Sleep Medicine, 2021', category:'health-promo', abstract:'Nonlinear associations of sleep with depression.', doi:'10.1016/j.sleep.2021.03.025'},
-        { id:29, year: 2020, title:'Daily lifestyle behaviors and risks of sarcopenia among older adults', journal:'Archives of Public Health, 2020', category:'health-promo', abstract:'Lifestyle and sarcopenia risk.', doi:'10.1186/s13690-020-00497-x'},
-        { id:30, year: 2020, title:'Moderate-to-vigorous physical activity duration is more important than timing for physical function in older adults', journal:'Scientific Reports, 2020', category:'health-promo', abstract:'MVPA duration outweighs timing.', doi:'10.1038/s41598-020-78536-3'},
-        { id:31, year: 2020, title:'Association Between Objectively Measured Sleep Duration and Physical Function in Community-Dwelling Older Adults', journal:'Journal of Clinical Sleep Medicine, 2020', category:'health-promo', abstract:'Sleep duration and function.', doi:'10.5664/jcsm.8690'},
-        { id:33, year: 2020, title:'Independent and joint associations of physical activity and dietary behavior with older adults’ lower limb strength', journal:'Nutrients, 2020', category:'health-promo', abstract:'Activity and diet jointly relate to strength.', doi:'10.3390/nu12020443'},
-        // data-science
-        { id:7, year: 2025, title:"Older adults' Internet use behavior and its association with accelerometer-derived physical activity", journal:'Frontiers in Public Health, 2025', category:'data-science', abstract:'Digital behavior and activity patterns.', doi:'10.3389/fpubh.2025.1537309'},
-        { id:8, year: 2024, title:'Replacing sedentary time with activity and physical function in older adults', journal:'Journal of Physical Education in Colleges, 2024', category:'data-science', abstract:'Isotemporal substitution models.', doi:'10.5297/ser.202412_26(4).0004'},
-        { id:10, year: 2024, title:'Effect of information and communication technology-based smart care services for physical and cognitive functions in older adults living alone', journal:'The Journal of Nutrition, Health & Aging, 2024', category:'data-science', abstract:'Quasi-experimental evaluation of smart care.', doi:'10.1016/j.jnha.2024.100318'},
-        { id:12, year: 2024, title:'Isotemporal substitution of sedentary behavior and depressive symptoms in Taiwanese older adults', journal:'Mental Health and Physical Activity, 2024', category:'data-science', abstract:'Prospective analysis.', doi:'10.1016/j.mhpa.2024.100620'},
-        { id:19, year: 2023, title:'Isotemporal substitution of sedentary behavior with activity and muscle function', journal:'BMC Geriatrics, 2023', category:'data-science', abstract:'Effect estimates across intensities.', doi:'10.1186/s12877-023-03819-z'},
-        { id:20, year: 2022, title:'Substituting sedentary time with activity and body composition from youngest-old to oldest-old', journal:'Frontiers in Public Health, 2022', category:'data-science', abstract:'Age-stratified compositional changes.', doi:'10.3389/fpubh.2022.837213'},
-        { id:39, year: 2022, title:'Triaxial accelerometry for PA and SB measurement: a narrative review', journal:'Journal of Sport Performance, 2022', category:'data-science', abstract:'Methods overview.'},
-        // interdisciplinary
-        { id:43, year: 2025, title:'Validation of Phase Angle Cutoff Values Derived From Bioelectrical Impedance Analysis for Sarcopenia Screening in Community-Dwelling Older Korean Adults', journal:'Journal of the American Medical Directors Association, 2025', category:'interdisciplinary', abstract:'Identifying phase angle cutoffs for sarcopenia screening in older adults.', doi:'10.1016/j.jamda.2025.105798'},
-        { id:1, year: 2025, title:'Elevated extracellular water to total body water ratio and low phase angle in relation to muscle function in middle-aged and older adults', journal:'J Int Soc Sports Nutr, 2025', category:'interdisciplinary', abstract:'BIA markers and muscle function.', doi:'10.1080/15502783.2025.2536693'},
-        { id:2, year: 2025, title:'Respiratory Function and Information Processing Speed in Coal Power Plant Workers...', journal:'Risk Management and Healthcare Policy, 2025', category:'interdisciplinary', abstract:'Occupational exposure, PA moderation, cognition.', doi:'10.2147/RMHP.S500971'},
-        { id:9, year: 2024, title:'Whole-Body and Segmental Phase Angles and Cognitive Function in the Older Korean Population: Cross-Sectional Analysis', journal:'JMIR Public Health and Surveillance, 2024', category:'interdisciplinary', abstract:'Phase angle and cognition.', doi:'10.2196/63457'},
-        { id:14, year: 2024, title:'Objectively measured PA and phase angle in older adults', journal:'Scientific Reports, 2024', category:'interdisciplinary', abstract:'PA × phase angle.', doi:'10.1038/s41598-024-57544-7'},
-        { id:15, year: 2024, title:'Sedentary behavior and phase angle in active vs. inactive older adults', journal:'Nutrients, 2024', category:'interdisciplinary', abstract:'SB and cellular health proxy.', doi:'10.3390/nu16010101'},
-        { id:21, year: 2022, title:'Accelerometer-measured PA in adults with Prader–Willi syndrome', journal:'IJERPH, 2022', category:'interdisciplinary', abstract:'Objective measurement in a rare disease.', doi:'10.3390/ijerph19159013'},
-        { id:22, year: 2022, title:'Built-environment attributes and sedentary time: systematic review', journal:'Int J Environ Health Res, 2022', category:'interdisciplinary', abstract:'Audited environment and SB.', doi:'10.1080/09603123.2021.1894582'},
+        { id:40, year: 2021, title:'Muscle-strengthening activity and sociodemographic correlates in older adults', journal:'Journal of Physical Education in Colleges, 2021', category:'health-promo', abstract:'Who participates in muscle-strengthening activity.', doi:''},
         { id:24, year: 2021, title:'Do neighborhood environments support steps differently by time of day?', journal:'J Transport & Health, 2021', category:'interdisciplinary', abstract:'GIS × walking × time-of-day.', doi:'10.1016/j.jth.2021.101188'},
         { id:27, year: 2021, title:'Nonlinear association between walkability and sarcopenia risk', journal:'J Nutr Health Aging, 2021', category:'interdisciplinary', abstract:'Neighborhood walkability and sarcopenia.', doi:'10.1007/s12603-020-1437-9'},
+
+        { id:29, year: 2020, title:'Daily lifestyle behaviors and risks of sarcopenia among older adults', journal:'Archives of Public Health, 2020', category:'health-promo', abstract:'Lifestyle and sarcopenia risk.', doi:'10.1186/s13690-020-00497-x'},
+        { id:30, year: 2020, title:'Duration of MVPA is more important than timing for physical function in older adults', journal:'Scientific Reports, 2020', category:'health-promo', abstract:'MVPA duration outweighs timing.', doi:'10.1038/s41598-020-78536-3'},
+        { id:31, year: 2020, title:'Objectively measured sleep duration and physical function in community-dwelling older adults', journal:'Journal of Clinical Sleep Medicine, 2020', category:'health-promo', abstract:'Sleep duration and function.', doi:'10.5664/jcsm.8690'},
+        { id:33, year: 2020, title:'Independent and joint associations of physical activity and diet with lower-limb strength in older adults', journal:'Nutrients, 2020', category:'health-promo', abstract:'Activity and diet jointly relate to strength.', doi:'10.3390/nu12020443'},
         { id:32, year: 2020, title:'Which neighborhood destinations matter in Asia?', journal:'Biomed Res Int, 2020', category:'interdisciplinary', abstract:'Destinations and movement behaviors.', doi:'10.1155/2020/8432934'},
+
         { id:34, year: 2019, title:"Area-level crimes and older adults' active and sedentary behavior?", journal:'Sustainability, 2019', category:'interdisciplinary', abstract:'Crime rate and PA/SB.', doi:'10.3390/su11092454'},
         { id:35, year: 2019, title:'Walk Score® and older adults’ healthy behaviors and outcomes', journal:'IJERPH, 2019', category:'interdisciplinary', abstract:'Validity of Walk Score®.', doi:'10.3390/ijerph16040622'},
-        { id:36, year: 2025, title:'Scoping review: PA, SB, and phase angle', journal:'Journal of Sport Performance, 2025', category:'interdisciplinary', abstract:'PA/SB × phase angle.'},
         { id:41, year: 2019, title:'Validity of Walk Score® in Taiwan', journal:'Taiwan J Public Health, 2019', category:'interdisciplinary', abstract:'Local validation.', doi:'10.6288/TJPH.201908_38(4).107131'},
         { id:42, year: 2019, title:'Adolescent e-cigarette use and smoking intention/behavior: systematic review', journal:'Taiwan J Public Health, 2019', category:'interdisciplinary', abstract:'Public health implications.', doi:'10.6288/TJPH.201904_38(2).107051'}
       ];
 
-      const pickLink = (p) => p.url ? p.url : (p.doi ? ('https://doi.org/' + p.doi) : ('https://scholar.google.com/scholar?q=' + encodeURIComponent(p.title)));
+      const pickLink = (p) => p.doi ? ('https://doi.org/' + p.doi) : ('https://scholar.google.com/scholar?q=' + encodeURIComponent(p.title));
 
       const publicationsGrid = document.getElementById('publications-grid');
       const filterButtons = document.querySelectorAll('.pill-button');
@@ -406,7 +397,13 @@
         filtered.forEach(pub=>{
           const card=document.createElement('div');
           card.className='palette-bg-card rounded-lg shadow p-6 flex flex-col justify-between clickable-card';
-          card.innerHTML = `<a href="${pickLink(pub)}" target="_blank" rel="noopener noreferrer" class="group block"><h4 class="font-bold text-lg palette-text-dark group-hover:underline">${pub.title} <span aria-hidden="true">↗</span></h4><p class="text-sm text-gray-500 my-2">${pub.journal}</p><p class="text-gray-700 text-sm">${pub.abstract}</p></a>`;
+          card.innerHTML = `
+            <a href="${pickLink(pub)}" target="_blank" rel="noopener noreferrer" class="group block">
+                <h4 class="font-bold text-lg palette-text-dark group-hover:underline">${pub.title} <span aria-hidden="true">↗</span></h4>
+                <p class="text-sm text-gray-500 my-2">${pub.journal}</p>
+                <p class="text-gray-700 text-sm">${pub.abstract}</p>
+            </a>
+          `;
           publicationsGrid.appendChild(card);
         });
       }
