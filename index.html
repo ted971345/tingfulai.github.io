@@ -359,64 +359,83 @@
       competencySteps.forEach(step=> step.addEventListener('click', ()=> updateCompetencyDetails(step.id)) );
       updateCompetencyDetails('step1');
 
-      // --- Publications Data ---
+// --- Publications Data (Updated Authors & Links) ---
       const publicationsData = [
         // New Publications (2025)
-        { id:44, year: 2025, title:'Longitudinal association of intensity-specific physical activity and sedentary behavior with dynapenia among older Taiwanese adults', journal:'European Review of Aging and Physical Activity, 2025', category:'health-promo', abstract:'探討中高強度、輕度身體活動及靜態行為與高齡者肌力弱症的縱貫性關聯。', doi:''},
-        { id:45, year: 2025, title:'高齡者使用商用行動裝置測量步數之效度', journal:'大專體育學刊, 2025', category:'data-science', abstract:'以三軸加速規為黃金標準，驗證智慧型手機與穿戴裝置測量高齡者步數的準確性。', doi:''},
+        { 
+            id:44, year: 2025, isMetric: true, 
+            title:'Longitudinal association of intensity-specific physical activity and sedentary behavior with dynapenia among older Taiwanese adults', 
+            journal:'European Review of Aging and Physical Activity, 2025', 
+            authors: 'Chih-Ching Chang, Jiaren Chen, Ting-Fu Lai, Jong-Hwan Park, Yung Liao',
+            category:'health-promo', 
+            abstract:'探討中高強度、輕度身體活動及靜態行為與高齡者肌力減退風險的縱貫性關聯。', 
+            doi:''
+        },
+        { 
+            id:45, year: 2025, isMetric: false, 
+            title:'高齡者使用商用行動裝置測量步數之效度', 
+            journal:'大專體育學刊, 2025', 
+            authors: '林翰柏, 陳佳人, 賴鼎富, 李姿愉, 廖邕',
+            category:'data-science', 
+            abstract:'以三軸加速規為黃金標準，驗證智慧型手機與穿戴裝置測量高齡者步數的準確性。', 
+            doi:''
+        },
         
-        // Existing Publications
-        { id:3, year: 2025, title:'Light physical activity throughout the day and physical function in older adults: A cross-sectional study', journal:'Chronobiology International, 2025', category:'health-promo', abstract:'本研究指出，整日中的輕度身體活動與高齡者的身體功能息息相關，強調了即使是低強度活動對於維持高齡者獨立生活能力的重要性。', doi:'10.1080/07420528.2025.2479097'},
-        { id:4, year: 2025, title:'Cross-sectional and longitudinal association between accelerometer-measured light-intensity physical activity and cognitive function in older adults', journal:'Frontiers in Aging Neuroscience, 2025', category:'health-promo', abstract:'本研究探討了客觀測量的輕度身體活動與高齡者認知功能之間的橫斷面與縱貫性關聯，為預防認知衰退提供了活動策略的依據。', doi:'10.3389/fnagi.2025.1505172'},
-        { id:5, year: 2025, title:'Dynapenia is associated with a higher risk of depressive symptoms among older adults', journal:'Frontiers in Public Health, 2025', category:'health-promo', abstract:'研究建立力弱症（Dynapenia）與憂鬱症狀之間的風險關聯，突顯了肌力訓練在促進高齡者心理健康中的潛在角色。', doi:'10.3389/fpubh.2025.1533973'},
-        { id:6, year: 2025, title:'Age Difference in the Association Between Nutritional Status and Dynapenia in Older Adults', journal:'Nutrients, 2025', category:'health-promo', abstract:'本研究探討了不同年齡層高齡者在營養狀況與力弱症關聯上的差異，為精準營養與運動介入提供了新見解。', doi:'10.3390/nu17040734'},
-        { id:43, year: 2025, title:'Validation of Phase Angle Cutoff Values Derived From Bioelectrical Impedance Analysis for Sarcopenia Screening in Community-Dwelling Older Korean Adults', journal:'Journal of the American Medical Directors Association, 2025', category:'interdisciplinary', abstract:'透過生物電阻抗分析找出適合的相位角臨界值，來幫助社區高齡者早期篩檢肌少症', doi:'10.1016/j.jamda.2025.105798'},
-        { id:1, year: 2025, title:'Elevated extracellular water to total body water ratio and low phase angle in relation to muscle function in middle-aged and older adults', journal:'J Int Soc Sports Nutr, 2025', category:'interdisciplinary', abstract:'本研究為臨床醫學與運動科學的結合，探討生物電阻抗分析(BIA)指標作為肌肉功能評估工具的潛力，展現了與韓國釜山國立大學醫院的國際合作成果。', doi:'10.1080/15502783.2025.2536693'},
-        { id:2, year: 2025, title:'Respiratory Function and Information Processing Speed in Coal Power Plant Workers...', journal:'Risk Management and Healthcare Policy, 2025', category:'interdisciplinary', abstract:'此研究跨領域探討職業環境因素對健康的影響，並分析了體力活動的調節作用。其研究方法與成果可應用於不同場域的健康管理計畫。', doi:'10.2147/RMHP.S500971'},
-        { id:7, year: 2025, title:"Older adults' Internet use behavior and its association with accelerometer-derived physical activity", journal:'Frontiers in Public Health, 2025', category:'data-science', abstract:'本研究運用客觀數據，分析高齡者的網路使用行為與其身體活動模式的關聯，是數位行為與健康數據結合的探索。', doi:'10.3389/fpubh.2025.1537309'},
-        { id:36, year: 2025, title:'高齡者身體活動、靜態行為與相位角之範域文獻回顧', journal:'運動表現期刊, 2025', category:'interdisciplinary', abstract:'此範域回顧旨在系統性地整理並呈現身體活動、靜態行為與臨床生物標記「相位角」之間的跨領域研究現況。', doi:''},
+        // 2025 Existing
+        { id:3, year: 2025, isMetric: true, title:'Light physical activity throughout the day and physical function in older adults: A cross-sectional study', journal:'Chronobiology International, 2025', authors: 'Ting-Fu Lai, Ming-Chun Hsueh, Yung Liao, Jong-Hwan Park', category:'health-promo', abstract:'本研究指出，整日中的輕度身體活動與高齡者的身體功能息息相關，強調了即使是低強度活動對於維持高齡者獨立生活能力的重要性。', doi:'10.1080/07420528.2025.2479097'},
+        { id:4, year: 2025, isMetric: true, title:'Cross-sectional and longitudinal association between accelerometer-measured light-intensity physical activity and cognitive function in older adults', journal:'Frontiers in Aging Neuroscience, 2025', authors: 'Jing-Han Jhan, Jiaren Chen, Ting-Fu Lai, Jong-Hwan Park, Yung Liao', category:'health-promo', abstract:'本研究探討了客觀測量的輕度身體活動與高齡者認知功能之間的橫斷面與縱貫性關聯。', doi:'10.3389/fnagi.2025.1505172'},
+        { id:5, year: 2025, isMetric: true, title:'Dynapenia is associated with a higher risk of depressive symptoms among older adults', journal:'Frontiers in Public Health, 2025', authors: 'Chih-Ching Chang, Yung Liao, Jiaren Chen, Ting-Fu Lai, Ming-Chun Hsueh, Jong-Hwan Park, Yen-Jung Chang', category:'health-promo', abstract:'研究建立了肌力減退（Dynapenia）與憂鬱症狀之間的風險關聯。', doi:'10.3389/fpubh.2025.1533973'},
+        { id:6, year: 2025, isMetric: true, title:'Age Difference in the Association Between Nutritional Status and Dynapenia in Older Adults', journal:'Nutrients, 2025', authors: 'Chih-Ching Chang, Ting-Fu Lai, Jiaren Chen, Yung Liao, Jong-Hwan Park, Yen Jung Chang', category:'health-promo', abstract:'本研究探討了不同年齡層高齡者在營養狀況與肌力減退關聯上的差異。', doi:'10.3390/nu17040734'},
+        { id:43, year: 2025, isMetric: true, title:'Validation of Phase Angle Cutoff Values Derived From Bioelectrical Impedance Analysis for Sarcopenia Screening in Community-Dwelling Older Korean Adults', journal:'JAMDA, 2025', authors: 'Jiaren Chen, Jong-Hwan Park, Ting-Fu Lai, et al.', category:'interdisciplinary', abstract:'透過生物電阻抗分析找出適合的相位角臨界值，來幫助社區高齡者早期篩檢肌少症', doi:'10.1016/j.jamda.2025.105798'}, // 作者較多，可保留 et al. 或依需要補全
+        { id:1, year: 2025, isMetric: true, title:'Elevated extracellular water to total body water ratio and low phase angle in relation to muscle function in middle-aged and older adults', journal:'J Int Soc Sports Nutr, 2025', authors: 'Ting-Fu Lai, Jong-Hwan Park, Minwoo Jang, Jiaren Chen, Myung-Jun Shin, Eunsoo Moon, Jung Mo Kang, Jong Won Lee, Yoon Jae Cho, Yung Liao, Tae Sik Goh, Jung Sub Lee', category:'interdisciplinary', abstract:'本研究為臨床醫學與運動科學的結合，探討 BIA 指標與肌肉功能的關聯。', doi:'10.1080/15502783.2025.2536693'},
+        { id:2, year: 2025, isMetric: true, title:'Respiratory Function and Information Processing Speed in Coal Power Plant Workers: Moderating Effects of Physical Activity and Sedentary Behavior', journal:'Risk Management and Healthcare Policy, 2025', authors: 'Pill Soo Kim, Ting-Fu Lai, Jong-Hwan Park, Minwoo Jang, Yeo-Kyung Shin, Du-Ri Kim, Il Jae Wang, Hyuk Jin Choi, Jae-Il Lee', category:'interdisciplinary', abstract:'此研究跨領域探討職業環境因素對健康的影響，並分析了體力活動的調節作用。', doi:'10.2147/RMHP.S500971'},
+        { id:7, year: 2025, isMetric: true, title:"Older adults' Internet use behavior and its association with accelerometer-derived physical activity", journal:'Frontiers in Public Health, 2025', authors: 'Yen-Yu Chung, Jiaren Chen, Mei-Chun Lin, Ruo-Lan Liu, Jenn-Bang Wu, Hsin Chang Tsai, Ting-Fu Lai, Yung Liao, Jong-Hwan Park', category:'data-science', abstract:'本研究運用客觀數據，分析高齡者的網路使用行為與其身體活動模式的關聯。', doi:'10.3389/fpubh.2025.1537309'},
+        { id:36, year: 2025, isMetric: false, title:'高齡者身體活動、靜態行為與相位角之範域文獻回顧', journal:'運動表現期刊, 2025', authors: '陳佳人, 賴鼎富, 林翰柏, 朴勝泰, 廖邕', category:'interdisciplinary', abstract:'此範域回顧旨在系統性地整理並呈現身體活動、靜態行為與相位角之間的跨領域研究現況。', doi:''},
 
-        { id:11, year: 2024, title:'Acute caffeine supplementation offsets the impairment in 10-km running performance following one night of partial sleep deprivation', journal:'European Journal of Applied Physiology, 2024', category:'health-promo', abstract:'此研究驗證了咖啡因補充劑在部分睡眠剝奪後，對運動表現的恢復作用，屬於運動科學與健康促進的應用。', doi:'10.1007/s00421-024-05638-5'},
-        { id:13, year: 2024, title:'Association of 24-Hour movement behavior and cognitive function in older Taiwanese adults', journal:'Geriatric Nursing, 2024', category:'health-promo', abstract:'本研究全面分析了24小時的活動、睡眠、久坐行為與認知功能的關聯，找出了能預測認知衰退風險的關鍵行為模式。', doi:'10.1016/j.gerinurse.2024.06.028'},
-        { id:8, year: 2024, title:'Associations Between Replacing Sedentary Time With Intensity-Specific Physical Activity and Physical Function in Older Adults', journal:'大專體育學刊, 2024', category:'data-science', abstract:'本文應用「替代模型」分析以不同強度活動取代靜態時間對高齡者身體功能的影響，為活動建議提供了量化證據。', doi:'10.5297/ser.202412_26(4).0004'},
-        { id:10, year: 2024, title:'Effect of information and communication technology-based smart care services for physical and cognitive functions in older adults living alone', journal:'The Journal of Nutrition, Health & Aging, 2024', category:'data-science', abstract:'此準實驗研究評估了基於ICT的智慧照護服務對獨居老人的身心功能影響，驗證了科技介入在高齡健康促進中的應用潛力。', doi:'10.1016/j.jnha.2024.100318'},
-        { id:12, year: 2024, title:'Isotemporal substitution analysis of the impact of sedentary behavior and physical activity on depression in Taiwanese older adults', journal:'Mental Health and Physical Activity, 2024', category:'data-science', abstract:'這項前瞻性研究使用等時替代分析，探討了以身體活動取代靜態行為對台灣高齡者憂鬱症狀的影響，為心理健康促進提供了新的量化追蹤證據。', doi:'10.1016/j.mhpa.2024.100620'},
-        { id:37, year: 2024, title:'什麼時候運動最好？高齡者身體活動時間點與健康結果之系統性文獻回顧', journal:'大專體育, 2024', category:'health-promo', abstract:'此系統性回顧整理了現有文獻，探討高齡者在一天中不同時間點運動對其健康結果的影響。', doi:''},
-        { id:38, year: 2024, title:'中高齡者日常高強度間歇性身體活動對於健康影響之敘述性綜論', journal:'體育學報, 2024', category:'health-promo', abstract:'本文獻回顧探討了將高強度間歇訓練的概念應用於日常生活中的可行性與健康效益。', doi:''},
-        { id:9, year: 2024, title:'Whole-Body and Segmental Phase Angles and Cognitive Function in the Older Korean Population: Cross-Sectional Analysis', journal:'JMIR Public Health and Surveillance, 2024', category:'interdisciplinary', abstract:'此研究為國際合作成果，探討了韓國高齡族群中，作為細胞健康指標的相位角與認知功能的關聯。', doi:'10.2196/63457'},
-        { id:14, year: 2024, title:'Associations between objectively measured overall and intensity-specific physical activity and phase angle in older adults', journal:'Scientific Reports, 2024', category:'interdisciplinary', abstract:'本研究整合了客觀身體活動數據與臨床生物標記（相位角），探討兩者之間的關係，是運動科學與臨床醫學的橋樑。', doi:'10.1038/s41598-024-57544-7'},
-        { id:15, year: 2024, title:'Sedentary Behavior and Phase Angle: An Objective Assessment in Physically Active and Inactive Older Adults', journal:'Nutrients, 2024', category:'interdisciplinary', abstract:'研究比較了活躍與不活躍高齡者的靜態行為與相位角的關係，進一步連結了日常行為與細胞層級的健康指標。', doi:'10.3390/nu16010101'},
+        // 2024
+        { id:11, year: 2024, isMetric: true, title:'Acute caffeine supplementation offsets the impairment in 10-km running performance following one night of partial sleep deprivation', journal:'European Journal of Applied Physiology, 2024', authors: 'Yi-Shan Tsai, Ting-Tzu Chen, Yau-Ching Chan, Chun-Chin Huang, Ting-Fu Lai, Yung Liao, Richard S Metcalfe, Yung-Chih Chen, Ho-Seng Wang', category:'health-promo', abstract:'此研究驗證了咖啡因補充劑在部分睡眠剝奪後，對運動表現的恢復作用。', doi:'10.1007/s00421-024-05638-5'},
+        { id:13, year: 2024, isMetric: true, title:'Association of 24-Hour movement behavior and cognitive function in older Taiwanese adults', journal:'Geriatric Nursing, 2024', authors: 'Ting-Fu Lai, Chih-Ching Chang, Ming-Chun Hsueh, Mohammad Javad Koohsari, Ai Shibata, Yung Liao, Koichiro Oka', category:'health-promo', abstract:'本研究全面分析了24小時的活動、睡眠、久坐行為與認知功能的關聯。', doi:'10.1016/j.gerinurse.2024.06.028'},
+        { id:8, year: 2024, isMetric: false, title:'Associations Between Replacing Sedentary Time With Intensity-Specific Physical Activity and Physical Function in Older Adults', journal:'大專體育學刊, 2024', authors: 'Yu-Huei Wang, Ming-Chun Hsueh, Ting-Fu Lai, Yung Liao, Jong-Hwan Park', category:'data-science', abstract:'本文應用「替代模型」分析以不同強度活動取代靜態時間對高齡者身體功能的影響。', doi:'10.5297/ser.202412_26(4).0004'},
+        { id:10, year: 2024, isMetric: true, title:'Effect of information and communication technology-based smart care services for physical and cognitive functions in older adults living alone', journal:'The Journal of Nutrition, Health & Aging, 2024', authors: 'Du-Ri Kim, Ting-Fu Lai, Minji Sung, Minwoo Jang, Yeo-Kyung Shin, Young jin Ra, Yung Liao, Jong-Hwan Park, Myung-Jun Shin', category:'data-science', abstract:'此準實驗研究評估了基於ICT的智慧照護服務對獨居老人的身心功能影響。', doi:'10.1016/j.jnha.2024.100318'},
+        { id:12, year: 2024, isMetric: true, title:'Isotemporal substitution analysis of the impact of sedentary behavior and physical activity on depression in Taiwanese older adults', journal:'Mental Health and Physical Activity, 2024', authors: 'Jia-Ren Chen, Ting‐Fu Lai, Chien-Yu Lin, Li-Jung Lin, Jong-Hwan Park, Yung Liao', category:'data-science', abstract:'這項前瞻性研究使用等時替代分析，探討了以身體活動取代靜態行為對憂鬱症狀的影響。', doi:'10.1016/j.mhpa.2024.100620'},
+        { id:37, year: 2024, isMetric: false, title:'什麼時候運動最好？高齡者身體活動時間點與健康結果之系統性文獻回顧', journal:'大專體育, 2024', authors: '賴鼎富, 陳佳人, 李姿愉, 廖邕', category:'health-promo', abstract:'此系統性回顧整理了現有文獻，探討高齡者在一天中不同時間點運動對其健康結果的影響。', doi:''},
+        { id:38, year: 2024, isMetric: false, title:'中高齡者日常高強度間歇性身體活動對於健康影響之敘述性綜論', journal:'體育學報, 2024', authors: '賴鼎富, 陳佳人, 朴鍾煥, 廖邕', category:'health-promo', abstract:'本文獻回顧探討了將高強度間歇訓練的概念應用於日常生活中的可行性與健康效益。', doi:''},
+        { id:9, year: 2024, isMetric: true, title:'Whole-Body and Segmental Phase Angles and Cognitive Function in the Older Korean Population: Cross-Sectional Analysis', journal:'JMIR Public Health and Surveillance, 2024', authors: 'Jiaren Chen, Jong-Hwan Park, Chien-Yu Lin, Ting-Fu Lai, Du-Ri Kim, Myung Jun Shin, Eunsoo Moon, Jung Mo Kang, Jong Won Lee, Yoon Jae Cho, Yung Liao, Tae Sik Goh, Jung Sub Lee', category:'interdisciplinary', abstract:'此研究為國際合作成果，探討了韓國高齡族群中，相位角與認知功能的關聯。', doi:'10.2196/63457'},
+        { id:14, year: 2024, isMetric: true, title:'Associations between objectively measured overall and intensity-specific physical activity and phase angle in older adults', journal:'Scientific Reports, 2024', authors: 'Jiaren Chen, Ting-Fu Lai, Chien-Yu Lin, Ming-Chun Hsueh, Jong-Hwan Park, Yung Liao', category:'interdisciplinary', abstract:'本研究整合了客觀身體活動數據與臨床生物標記（相位角），探討兩者之間的關係。', doi:'10.1038/s41598-024-57544-7'},
+        { id:15, year: 2024, isMetric: true, title:'Sedentary Behavior and Phase Angle: An Objective Assessment in Physically Active and Inactive Older Adults', journal:'Nutrients, 2024', authors: 'Liu-Yin Lin, Jiaren Chen, Ting-Fu Lai, Yen-Yu Chung, Jong-Hwan Park, Yih-Jin Hu, Yung Liao', category:'interdisciplinary', abstract:'研究比較了活躍與不活躍高齡者的靜態行為與相位角的關係。', doi:'10.3390/nu16010101'},
 
-        { id:16, year: 2023, title:'Is overall and timing-specific physical activity associated with depression in older adults?', journal:'Frontiers in Public Health, 2023', category:'health-promo', abstract:'探討了身體活動的總量與時間分佈對高齡者憂鬱症狀的影響，為心理健康促進提供了更細緻的活動建議。', doi:'10.3389/fpubh.2023.1241170'},
-        { id:17, year: 2023, title:'The Association between a Minimum Amount of Physical Activity and Subsequent Muscle Strength and Balance in Older Adults: A Prospective Study', journal:'Behavioral Sciences, 2023', category:'health-promo', abstract:'此縱貫性研究旨在確定能維持高齡者肌肉力量與平衡的最低身體活動量，對制定公共衛生指南具有重要意義。', doi:'10.3390/bs13040316'},
-        { id:18, year: 2023, title:'Diurnal pattern of breaks in sedentary time and the physical function of older adults', journal:'Archives of Public Health, 2023', category:'health-promo', abstract:'研究發現，在一天中「頻繁地」打斷久坐行為，比「集中一段時間」運動，對高齡者身體功能的關聯性更強。', doi:'10.1186/s13690-023-01050-1'},
-        { id:19, year: 2023, title:'Effect of isotemporal substitution of sedentary behavior with different intensities of physical activity on the muscle function of older adults...', journal:'BMC Geriatrics, 2023', category:'data-science', abstract:'本研究運用等時替代模型，量化分析以不同強度身體活動取代靜態行為對高齡者肌肉功能的影響，為設計低成本、高效益的健康促進方案提供了嚴謹的實證依據。', doi:'10.1186/s12877-023-03819-z'},
+        // 2023 & Older
+        { id:16, year: 2023, isMetric: true, title:'Is overall and timing-specific physical activity associated with depression in older adults?', journal:'Frontiers in Public Health, 2023', authors: 'Jiaren Chen, Ting-Fu Lai, Li-Jung Lin, Jong-Hwan Park, Yung Liao', category:'health-promo', abstract:'探討了身體活動的總量與時間分佈對高齡者憂鬱症狀的影響。', doi:'10.3389/fpubh.2023.1241170'},
+        { id:17, year: 2023, isMetric: true, title:'The Association between a Minimum Amount of Physical Activity and Subsequent Muscle Strength and Balance in Older Adults', journal:'Behavioral Sciences, 2023', authors: 'Yuan-Yu Li, Ming-Chun Hsueh, Jong-Hwan Park, Ting-Fu Lai, Yi-Chuan Hung, Yung Liao', category:'health-promo', abstract:'此縱貫性研究旨在確定能維持高齡者肌肉力量與平衡的最低身體活動量。', doi:'10.3390/bs13040316'},
+        { id:18, year: 2023, isMetric: true, title:'Diurnal pattern of breaks in sedentary time and the physical function of older adults', journal:'Archives of Public Health, 2023', authors: 'Ting-Fu Lai, Yung Liao, Chien-Yu Lin, Ming-Chun Hsueh, Mohammad Javad Koohsari, Ai Shibata, Koichiro Oka, Ding-Cheng Chan', category:'health-promo', abstract:'研究發現，在一天中「頻繁地」打斷久坐行為，比「集中一段時間」運動，對高齡者身體功能的關聯性更強。', doi:'10.1186/s13690-023-01050-1'},
+        { id:19, year: 2023, isMetric: true, title:'Effect of isotemporal substitution of sedentary behavior with different intensities of physical activity on the muscle function of older adults', journal:'BMC Geriatrics, 2023', authors: 'Ting-Fu Lai, Yung Liao, Ming-Chun Hsueh, Kun-Pei Lin, Ding-Cheng Chan, Yung-Ming Chen, Chiung-Jung Wen', category:'data-science', abstract:'本研究運用等時替代模型，量化分析以不同強度身體活動取代靜態行為對高齡者肌肉功能的影響。', doi:'10.1186/s12877-023-03819-z'},
 
-        { id:20, year: 2022, title:'Substituting sedentary time with physical activity in youngest-old to oldest-old community-dwelling older adults: Associations with body composition', journal:'Frontiers in Public Health, 2022', category:'data-science', abstract:'研究應用替代模型分析了不同年齡層（從初老到最老）的高齡者以活動取代靜態行為對其身體組成的影響。', doi:'10.3389/fpubh.2022.837213'},
-        { id:39, year: 2022, title:'三軸加速規應用於身體活動及靜態行為測量使用之敘述性綜論', journal:'運動表現期刊, 2022', category:'data-science', abstract:'此綜論性文章詳細介紹了三軸加速規此一客觀測量工具在身體活動研究中的應用、方法學與挑戰。', doi:''},
-        { id:21, year: 2022, title:'Accelerometer-Measured Physical Activity and Sedentary Behavior of Adults with Prader-Willi Syndrome...', journal:'Int J Environ Res Public Health, 2022', category:'interdisciplinary', abstract:'本研究將身體活動測量技術應用於罕見疾病（小胖威利症）患者，是一項結合特殊族群照護與客觀數據分析的跨領域研究。', doi:'10.3390/ijerph19159013'},
-        { id:22, year: 2022, title:'Associations of the audited residential neighborhood built-environment attributes with objectively-measured sedentary time among adults: a systematic review', journal:'International Journal of Environmental Health Research, 2022', category:'interdisciplinary', abstract:'此系統性回顧整合了建成環境與公共衛生領域的研究，探討社區環境特徵與居民靜態行為的關係。', doi:'10.1080/09603123.2021.1894582'},
+        { id:20, year: 2022, isMetric: true, title:'Substituting sedentary time with physical activity in youngest-old to oldest-old community-dwelling older adults', journal:'Frontiers in Public Health, 2022', authors: 'Ting-Fu Lai, Yung Liao, Ming-Chun Hsueh, Hsin-Yen Yen, Jong-Hwan Park, Jae Hyeok Chang', category:'data-science', abstract:'研究應用替代模型分析了不同年齡層的高齡者以活動取代靜態行為對其身體組成的影響。', doi:'10.3389/fpubh.2022.837213'},
+        { id:39, year: 2022, isMetric: false, title:'三軸加速規應用於身體活動及靜態行為測量使用之敘述性綜論', journal:'運動表現期刊, 2022', authors: '賴鼎富, 蕭綺, 黃婉綺, 薛名淳, 廖邕', category:'data-science', abstract:'此綜論性文章詳細介紹了三軸加速規此一客觀測量工具在身體活動研究中的應用、方法學與挑戰。', doi:''},
+        { id:21, year: 2022, isMetric: true, title:'Accelerometer-Measured Physical Activity and Sedentary Behavior of Adults with Prader-Willi Syndrome', journal:'Int J Environ Res Public Health, 2022', authors: 'Meng-Jia Wu, Li-Ping Tsai, Ting-Fu Lai, Jeong Su Cho, Yung Liao', category:'interdisciplinary', abstract:'本研究將身體活動測量技術應用於罕見疾病（小胖威利症）患者。', doi:'10.3390/ijerph19159013'},
+        { id:22, year: 2022, isMetric: true, title:'Associations of the audited residential neighborhood built-environment attributes with objectively-measured sedentary time among adults: a systematic review', journal:'International Journal of Environmental Health Research, 2022', authors: 'Yi-Chien Yu, Ting-Fu Lai, Chien-Yu Lin, Ming-Chun Hsueh, Yung Liao, Li-Ting Yang, Shao-Hsi Chang', category:'interdisciplinary', abstract:'此系統性回顧整合了建成環境與公共衛生領域的研究。', doi:'10.1080/09603123.2021.1894582'},
 
-        { id:23, year: 2021, title:'Non-linear associations between sleep patterns and sarcopenia risks in older adults', journal:'Journal of Clinical Sleep Medicine, 2021', category:'health-promo', abstract:'本研究揭示了睡眠模式與肌少症風險之間的非線性關係，強調了充足且規律的睡眠對於預防肌肉流失的重要性。', doi:'10.5664/jcsm.9698'},
-        { id:25, year: 2021, title:"Is sleep timing related to objectively-measured physical activity and sedentary behavior in older women?", journal:'Nature and Science of Sleep, 2021', category:'health-promo', abstract:'探討了高齡女性的睡眠時間點與其日常身體活動和靜態行為的關聯，為整合性的生活方式介入提供了依據。', doi:'10.2147/NSS.S323423'},
-        { id:26, year: 2021, title:"Is achieving 7,000 steps/day cross sectionally and prospectively associated with older adults' lower-extremity performance?", journal:'BMC Geriatrics, 2021', category:'health-promo', abstract:'研究驗證了每日7000步是否為一個有效指標，能對應到高齡者當下及未來的下肢功能表現。', doi:'10.1186/s12877-021-02264-8'},
-        { id:28, year: 2021, title:'Sleep duration and timing are nonlinearly associated with depressive symptoms among older adults', journal:'Sleep Medicine, 2021', category:'health-promo', abstract:'此研究發現睡眠時長與時間點和高齡者憂鬱症狀之間存在非線性關係，指出過長或過短的睡眠都可能有害心理健康。', doi:'10.1016/j.sleep.2021.03.025'},
-        { id:40, year: 2021, title:'高齡者肌力活動及其社會人口學關聯因素', journal:'大專體育學刊, 2021', category:'health-promo', abstract:'此研究分析了影響高齡者參與肌力活動的社會人口學因素，為制定推廣策略提供參考。', doi:''},
-        { id:24, year: 2021, title:'Does neighborhood built environment support older adults\' daily steps differ by time of day?', journal:'J Transport & Health, 2021', category:'interdisciplinary', abstract:'本研究結合了地理資訊(GIS)，探討社區建成環境對高齡者在一天中不同時段步行活動的支持程度。', doi:'10.1016/j.jth.2021.101188'},
-        { id:27, year: 2021, title:'A Nonlinear Association between Neighborhood Walkability and Risks of Sarcopenia in Older Adults', journal:'J Nutr Health Aging, 2021', category:'interdisciplinary', abstract:'探討了社區「宜走性」與高齡者肌少症風險的非線性關係，是環境科學與老年醫學的整合。', doi:'10.1007/s12603-020-1437-9'},
+        { id:23, year: 2021, isMetric: true, title:'Non-linear associations between sleep patterns and sarcopenia risks in older adults', journal:'Journal of Clinical Sleep Medicine, 2021', authors: 'Wan-Chi Huang, Chien-Yu Lin, Fumiharu Togo, Ting-Fu Lai, Ming-Chun Hsueh, Yung Liao, Hyuntae Park, Shuzo Kumagai', category:'health-promo', abstract:'本研究揭示了睡眠模式與肌少症風險之間的非線性關係。', doi:'10.5664/jcsm.9698'},
+        { id:25, year: 2021, isMetric: true, title:'Is sleep timing related to objectively-measured physical activity and sedentary behavior in older women?', journal:'Nature and Science of Sleep, 2021', authors: 'Wan-Chi Huang, Chia-Shuan Chang, Chien-Yu Lin, Ting-Fu Lai, Ming-Chun Hsueh, Yung Liao, Jong-Hwan Park', category:'health-promo', abstract:'探討了高齡女性的睡眠時間點與其日常身體活動和靜態行為的關聯。', doi:'10.2147/NSS.S323423'},
+        { id:26, year: 2021, isMetric: true, title:"Is achieving 7,000 steps/day cross sectionally and prospectively associated with older adults' lower-extremity performance?", journal:'BMC Geriatrics, 2021', authors: 'Ming-Chun Hsueh, Chien-Yu Lin, Ting-Fu Lai, Yi-Chien Yu, Shao-Hsi Chang, Ju Yong Bae, Yung Liao', category:'health-promo', abstract:'研究驗證了每日7000步是否為一個有效指標，能對應到高齡者當下及未來的下肢功能表現。', doi:'10.1186/s12877-021-02264-8'},
+        { id:28, year: 2021, isMetric: true, title:'Sleep duration and timing are nonlinearly associated with depressive symptoms among older adults', journal:'Sleep Medicine, 2021', authors: 'Chien-Yu Lin, Ting-Fu Lai, Wan-Chi Huang, Yi-Chuan Hung, Ming-Chun Hsueh, Jong-Hwan Park, Yung Liao', category:'health-promo', abstract:'此研究發現睡眠時長與時間點和高齡者憂鬱症狀之間存在非線性關係。', doi:'10.1016/j.sleep.2021.03.025'},
+        { id:40, year: 2021, isMetric: false, title:'高齡者肌力活動及其社會人口學關聯因素', journal:'大專體育學刊, 2021', authors: '賴鼎富, 黃品瑄, 薛名淳, 廖邕, 陳伯儀', category:'health-promo', abstract:'此研究分析了影響高齡者參與肌力活動的社會人口學因素。', doi:''},
+        { id:24, year: 2021, isMetric: true, title:'Does neighborhood built environment support older adults\' daily steps differ by time of day?', journal:'J Transport & Health, 2021', authors: 'Ting-Fu Lai, Chia-Shuan Chang, Yung Liao, Ming-Chun Hsueh, Mohammad Javad Koohsari, Ai Shibata, Koichiro Oka', category:'interdisciplinary', abstract:'本研究結合了地理資訊(GIS)，探討社區建成環境對高齡者在一天中不同時段步行活動的支持程度。', doi:'10.1016/j.jth.2021.101188'},
+        { id:27, year: 2021, isMetric: true, title:'A Nonlinear Association between Neighborhood Walkability and Risks of Sarcopenia in Older Adults', journal:'J Nutr Health Aging, 2021', authors: 'Jong-Hwan Park, Ting-Fu Lai, Shao-Hsi Chang, Wan-Chi Huang, Jeong Su Cho, Yung Liao', category:'interdisciplinary', abstract:'探討了社區「宜走性」與高齡者肌少症風險的非線性關係。', doi:'10.1007/s12603-020-1437-9'},
 
-        { id:29, year: 2020, title:"Daily lifestyle behaviors and risks of sarcopenia among older adults", journal:'Archives of Public Health, 2020', category:'health-promo', abstract:'全面檢視了日常活動、飲食等生活方式行為與高齡者肌少症風險的綜合關聯。', doi:'10.1186/s13690-020-00497-x'},
-        { id:30, year: 2020, title:'Moderate-to-vigorous physical activity duration is more important than timing for physical function in older adults', journal:'Scientific Reports, 2020', category:'health-promo', abstract:'研究指出，對於高齡者的身體功能，中高強度活動的「總時長」比在一天中的哪個「時間點」進行更為重要。', doi:'10.1038/s41598-020-78536-3'},
-        { id:31, year: 2020, title:'Association Between Objectively Measured Sleep Duration and Physical Function in Community-Dwelling Older Adults', journal:'Journal of Clinical Sleep Medicine, 2020', category:'health-promo', abstract:'客觀測量數據顯示，社區高齡者的睡眠時長與其身體功能表現有直接關聯。', doi:'10.5664/jcsm.8690'},
-        { id:33, year: 2020, title:"Independent and joint associations of physical activity and dietary behavior with older adults’ lower limb strength", journal:'Nutrients, 2020', category:'health-promo', abstract:'本研究分別及聯合探討了身體活動和飲食行為對高齡者下肢肌力的影響，強調了整合性介入的重要性。', doi:'10.3390/nu12020443'},
-        { id:32, year: 2020, title:'Which Neighborhood Destinations Matter in the Asian Context? The Role of Destinations in Older Adults’ Physical Activity and Sedentary Behaviors', journal:'BioMed Research International, 2020', category:'interdisciplinary', abstract:'此研究探討了亞洲城市環境中，不同類型的社區目的地（如公園、市場）對高齡者活動行為的影響。', doi:'10.1155/2020/8432934'},
+        { id:29, year: 2020, isMetric: true, title:"Daily lifestyle behaviors and risks of sarcopenia among older adults", journal:'Archives of Public Health, 2020', authors: 'Pei-Lin Tzeng, Chien-Yu Lin, Ting-Fu Lai, Wan-Chi Huang, Evonne Pien, Ming-Chun Hsueh, Kun-Pei Lin, Jong-Hwan Park, Yung Liao', category:'health-promo', abstract:'全面檢視了日常活動、飲食等生活方式行為與高齡者肌少症風險的綜合關聯。', doi:'10.1186/s13690-020-00497-x'},
+        { id:30, year: 2020, isMetric: true, title:'Moderate-to-vigorous physical activity duration is more important than timing for physical function in older adults', journal:'Scientific Reports, 2020', authors: 'Ting-Fu Lai, Yung Liao, Chien-Yu Lin, Wan-Chi Huang, Ming-Chun Hsueh, Ding-Cheng Chan', category:'health-promo', abstract:'研究指出，對於高齡者的身體功能，中高強度活動的「總時長」比在一天中的哪個「時間點」進行更為重要。', doi:'10.1038/s41598-020-78536-3'},
+        { id:31, year: 2020, isMetric: true, title:'Association Between Objectively Measured Sleep Duration and Physical Function in Community-Dwelling Older Adults', journal:'Journal of Clinical Sleep Medicine, 2020', authors: 'Wan-Chi Huang, Chien-Yu Lin, Fumiharu Togo, Ting-Fu Lai, Yung Liao, Jong-Hwan Park, Ming-Chun Hsueh, Hyuntae Park', category:'health-promo', abstract:'客觀測量數據顯示，社區高齡者的睡眠時長與其身體功能表現有直接關聯。', doi:'10.5664/jcsm.8690'},
+        { id:33, year: 2020, isMetric: true, title:"Independent and joint associations of physical activity and dietary behavior with older adults’ lower limb strength", journal:'Nutrients, 2020', authors: 'Ting-Fu Lai, Chien-Yu Lin, Chien-Chih Chou, Wan-Chi Huang, Ming-Chun Hsueh, Jong-Hwan Park, Yung Liao', category:'health-promo', abstract:'本研究分別及聯合探討了身體活動和飲食行為對高齡者下肢肌力的影響。', doi:'10.3390/nu12020443'},
+        { id:32, year: 2020, isMetric: true, title:'Which Neighborhood Destinations Matter in the Asian Context? The Role of Destinations in Older Adults’ Physical Activity and Sedentary Behaviors', journal:'BioMed Research International, 2020', authors: 'Jong-Hwan Park, Jin-Hwa Park, Sangwoo Song, Ting-Fu Lai, Yung Liao', category:'interdisciplinary', abstract:'此研究探討了亞洲城市環境中，不同類型的社區目的地對高齡者活動行為的影響。', doi:'10.1155/2020/8432934'},
 
-        { id:34, year: 2019, title:'Are area-level crimes associated with older adults’ active and sedentary behavior?', journal:'Sustainability, 2019', category:'interdisciplinary', abstract:'本研究跨足社會學與公共衛生，探討社區犯罪率是否影響高齡者的身體活動與靜態行為。', doi:'10.3390/su11092454'},
-        { id:35, year: 2019, title:'Walk Score® and its associations with older adults’ healthy behaviors and outcomes', journal:'International Journal of Environmental Research and Public Health, 2019', category:'interdisciplinary', abstract:'本研究驗證了國際通用的「步行指數」(Walk Score®) 在評估高齡者健康行為與結果上的有效性。', doi:'10.3390/ijerph16040622'},
-        { id:41, year: 2019, title:'Walk Score®作為台灣地區宜走性環境測量工具之效度檢驗', journal:'台灣衛誌, 2019', category:'interdisciplinary', abstract:'本研究旨在檢驗國際廣泛使用的建成環境評估工具Walk Score®在台灣地區的適用性與效度。', doi:'10.6288/TJPH.201908_38(4).107131'},
-        { id:42, year: 2019, title:'青少年電子煙使用與吸菸意圖或吸菸行為之關聯性：系統性文獻回顧', journal:'台灣衛誌, 2019', category:'interdisciplinary', abstract:'此系統性回顧聚焦於青少年電子煙使用的公共衛生議題，探討其與傳統菸草使用的關聯。', doi:'10.6288/TJPH.201904_38(2).107051'}
+        { id:34, year: 2019, isMetric: true, title:'Are area-level crimes associated with older adults’ active and sedentary behavior?', journal:'Sustainability, 2019', authors: 'Chien-Yu Lin, Jong-Hwan Park, Ming-Chun Hsueh, Ting-Fu Lai, Yung Liao', category:'interdisciplinary', abstract:'本研究探討社區犯罪率是否影響高齡者的身體活動與靜態行為。', doi:'10.3390/su11092454'},
+        { id:35, year: 2019, isMetric: true, title:'Walk Score® and its associations with older adults’ healthy behaviors and outcomes', journal:'International Journal of Environmental Research and Public Health, 2019', authors: 'Yung Liao, Chien-Yu Lin, Ting-Fu Lai, Yi-Ju Chen, Byoung-Gwon Kim, Jong-Hwan Park', category:'interdisciplinary', abstract:'本研究驗證了國際通用的「步行指數」(Walk Score®) 在評估高齡者健康行為與結果上的有效性。', doi:'10.3390/ijerph16040622'},
+        { id:41, year: 2019, isMetric: false, title:'Walk Score®作為台灣地區宜走性環境測量工具之效度檢驗', journal:'台灣衛誌, 2019', authors: '賴鼎富, 林倩宇, 黃翊軒, 廖邕', category:'interdisciplinary', abstract:'本研究旨在檢驗 Walk Score® 在台灣地區的適用性與效度。', doi:'10.6288/TJPH.201908_38(4).107131'},
+        { id:42, year: 2019, isMetric: false, title:'青少年電子煙使用與吸菸意圖或吸菸行為之關聯性：系統性文獻回顧', journal:'台灣衛誌, 2019', authors: '賴鼎富, 林倩宇, 廖邕', category:'interdisciplinary', abstract:'此系統性回顧聚焦於青少年電子煙使用的公共衛生議題。', doi:'10.6288/TJPH.201904_38(2).107051'}
       ]; 
 
+      // Updated pickLink logic: Defaults to Google Scholar if DOI is missing
       const pickLink = (p) => p.doi ? ('https://doi.org/' + p.doi) : ('https://scholar.google.com.tw/scholar?q=' + encodeURIComponent(p.title));
 
       const publicationsGrid = document.getElementById('publications-grid');
@@ -435,7 +454,11 @@
           card.className='palette-bg-card rounded-lg shadow p-6 flex flex-col justify-between clickable-card';
           card.innerHTML = `
             <a href="${pickLink(pub)}" target="_blank" rel="noopener noreferrer" class="group block">
-                <h4 class="font-bold text-lg palette-text-dark group-hover:underline">${pub.title} <span aria-hidden="true">↗</span></h4>
+                <div class="flex justify-between items-start">
+                    <h4 class="font-bold text-lg palette-text-dark group-hover:underline pr-4">${pub.title} <span aria-hidden="true">↗</span></h4>
+                    ${pub.isMetric ? '<span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">SCI/SSCI</span>' : ''}
+                </div>
+                <p class="text-sm text-gray-600 mt-1 mb-2 italic">${pub.authors}</p>
                 <p class="text-sm text-gray-500 my-2">${pub.journal}</p>
                 <p class="text-gray-700 text-sm">${pub.abstract}</p>
             </a>
@@ -443,6 +466,9 @@
           publicationsGrid.appendChild(card);
         });
       }
+      
+      // ... (Rest of the chart logic and observers remain the same) ...
+      // (為了節省篇幅，這裡省略了後面的 Chart.js 和 Observer 程式碼，請務必保留原有的部分)
       
       filterButtons.forEach(btn=> btn.addEventListener('click', ()=>{ 
           filterButtons.forEach(b=>b.classList.remove('active')); 
@@ -453,23 +479,19 @@
       document.querySelector('.pill-button[data-filter="all"]').classList.add('active');
       renderPublications('all');
 
-      // --- 4. Chart Logic ---
       function getChartData(data) {
         const counts = {};
         data.forEach(p => {
-            if (p.year) {
+            if (p.year && p.isMetric === true) {
                 counts[p.year] = (counts[p.year] || 0) + 1;
             }
         });
-        
         const years = Object.keys(counts).sort();
         const values = years.map(y => counts[y]);
-        
         return { years, values };
       }
 
       const chartData = getChartData(publicationsData);
-      
       const ctx = document.getElementById('publicationsChart').getContext('2d');
       new Chart(ctx, {
         type: 'bar',
@@ -491,12 +513,38 @@
             y: { beginAtZero: true, ticks: { color:'#334155', stepSize: 1 }, grid: { color:'#e2e8f0' } },
             x: { ticks: { color:'#334155' }, grid: { display:false } }
           },
-          plugins: { 
-              legend: { display:false }, 
-              tooltip: { backgroundColor:'#0B3954', titleFont:{ size:14 }, bodyFont:{ size:12 }, padding:10, cornerRadius:4, displayColors:false } 
-          }
+          plugins: { legend: { display:false }, tooltip: { backgroundColor:'#0B3954', titleFont:{ size:14 }, bodyFont:{ size:12 }, padding:10, cornerRadius:4, displayColors:false } }
         }
       });
+
+      const profileImg = document.getElementById('profile-img');
+      if(profileImg) {
+          profileImg.onerror = function() {
+              this.onerror = null;
+              this.src = FALLBACK_SVG;
+          };
+      }
+
+      const navLinks = document.querySelectorAll('.nav-link');
+      const sections = document.querySelectorAll('main section');
+      const mobileNav = document.getElementById('mobile-nav');
+      const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            const id = entry.target.id;
+            navLinks.forEach(link=> link.classList.toggle('active', link.getAttribute('href') === `#${id}`));
+            if(mobileNav && mobileNav.value !== `#${id}`){ mobileNav.value = `#${id}`; }
+          }
+        });
+      }, { rootMargin: "-40% 0px -60% 0px" });
+      sections.forEach(sec=> observer.observe(sec));
+      if(mobileNav){ 
+          mobileNav.addEventListener('change', e=> {
+              const target = document.querySelector(e.target.value);
+              if(target) target.scrollIntoView(); 
+          }); 
+      }
+    });
 
       // --- 5. Image Error Handling Logic ---
       const profileImg = document.getElementById('profile-img');
@@ -534,4 +582,5 @@
   </script>
 </body>
 </html>
+
 
