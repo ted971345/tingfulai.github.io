@@ -818,9 +818,7 @@
 
       // 3.x Render publications to cards
       const pickLink = (p) =>
-        p.doi
-          ? `https://doi.org/${p.doi}`
-          : `https://scholar.google.com/scholar?q=${encodeURIComponent(p.title)}`;
+        "https://scholar.google.com/scholar?hl=zh-TW&q=" + encodeURIComponent(p.title);
 
       const publicationsGrid = document.getElementById('publications-grid');
       const filterButtons = document.querySelectorAll('.pill-button');
