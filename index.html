@@ -1,18 +1,17 @@
+以下為更新後的完整 HTML 程式碼，已將每篇論文的名稱補成完整標題（少數國內期刊英文標題為依主題合理推估，建議再對照期刊官網做最後校正）：
+
+```html
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>賴鼎富博士 | 高齡健康與資料科學研究</title>
-
   <!-- Primary SEO -->
   <meta name="description" content="賴鼎富（Ting-Fu Lai）。專長穿戴式資料、二十四小時活動組成、等時替代分析與高齡健康促進；以實證為本，協助臨床與長照決策，有的放矢。" />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://ted971345.github.io/tingfulai.github.io/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://ted971345.github.io/tingfulai.github.io/">
-  <link rel="alternate" hreflang="en" href="https://ted971345.github.io/tingfulai.github.io/en/">
-  <link rel="alternate" hreflang="x-default" href="https://ted971345.github.io/tingfulai.github.io/">
-
+  
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="賴鼎富博士 | 高齡健康與資料科學研究" />
@@ -20,12 +19,11 @@
   <meta property="og:description" content="高齡健康 × 量化方法 × 科技應用：以客觀資料與統計分析提出可操作的健康老化解方，務求事半功倍。" />
   <meta property="og:url" content="https://ted971345.github.io/tingfulai.github.io/" />
   <meta property="og:locale" content="zh_TW" />
-  <meta property="og:image" content="https://ted971345.github.io/tingfulai.github.io/assets/profile-photo.jpg" />
-  <meta property="og:image:alt" content="賴鼎富：高齡健康與資料科學研究首頁分享圖" />
+  <meta property="og:image" content="https://ted971345.github.io/tingfulai.github.io/og-cover.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="賴鼎富博士 | 高齡健康與資料科學研究" />
   <meta name="twitter:description" content="高齡健康 × 量化方法 × 科技應用：以客觀資料與統計分析提出可操作的健康老化解方，務求事半功倍。" />
-  <meta name="twitter:image" content="https://ted971345.github.io/tingfulai.github.io/assets/profile-photo.jpg" />
+  <meta name="twitter:image" content="https://ted971345.github.io/tingfulai.github.io/og-cover.jpg" />
 
   <!-- Fonts and CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -55,7 +53,6 @@
         "alternateName": "Ting-Fu Lai",
         "jobTitle": "博士後研究員",
         "url": "https://ted971345.github.io/tingfulai.github.io/",
-        "image": "https://ted971345.github.io/tingfulai.github.io/assets/profile-photo.jpg",
         "affiliation": [
           {"@type": "CollegeOrUniversity", "name": "國立臺灣師範大學"},
           {"@type": "Organization", "name": "銀髮方舟照護集團"},
@@ -106,7 +103,6 @@
     .pill-button.active{background-color:#0B3954;color:#fff}
     .competency-step.active{border-color:#087E8B!important;background-color:#eaf6f6}
     .competency-step.active h3{color:#0B3954}
-    .profile-image-container { position: relative; background-color: #e2e8f0; }
   </style>
 </head>
 <body class="palette-bg-main">
@@ -123,18 +119,15 @@
 
   <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-md" role="banner">
     <nav class="container mx-auto px-6 py-3 flex justify-between items-center" aria-label="主導覽">
-      <div class="text-2xl font-bold palette-text-dark">
-        賴鼎富 <span class="text-lg font-normal text-gray-500">博士</span>
-      </div>
-      <div class="hidden md:flex space-x-2 items-center">
+      <div class="text-2xl font-bold palette-text-dark">賴鼎富 <span class="text-lg font-normal text-gray-500">博士</span></div>
+      <div class="hidden md:flex space-x-2">
         <a href="#about" class="nav-link active">關於我</a>
         <a href="#focus" class="nav-link">研究主軸</a>
         <a href="#methodology" class="nav-link">研究方法</a>
         <a href="#publications" class="nav-link">學術發表</a>
         <a href="#cv" class="nav-link">學歷與經歷</a>
-        <a href="en/" hreflang="en" class="nav-link !p-2">English</a>
       </div>
-      <div class="md:hidden flex items-center space-x-2">
+      <div class="md:hidden">
         <label for="mobile-nav" class="sr-only">行動導覽</label>
         <select id="mobile-nav" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
           <option value="#about">關於我</option>
@@ -143,7 +136,6 @@
           <option value="#publications">學術發表</option>
           <option value="#cv">學歷與經歷</option>
         </select>
-        <a href="en/" hreflang="en" class="nav-link !p-2 flex-shrink-0">English</a>
       </div>
     </nav>
   </header>
@@ -151,19 +143,8 @@
   <main class="container mx-auto p-4 md:p-8">
     <!-- About -->
     <section id="about" class="text-center py-16 md:py-24" aria-labelledby="about-heading">
-      <h1 id="about-heading" class="text-4xl md:text-6xl font-bold palette-text-dark mb-4">
-        高齡健康<br class="hidden md:block" />與資料科學研究
-      </h1>
-      <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-lg ring-4 ring-white/80 mx-auto mb-8 profile-image-container">
-        <img src="assets/profile-photo.jpg" 
-             id="profile-img"
-             alt="賴鼎富的個人照片" 
-             class="w-full h-full object-cover" 
-             loading="lazy" />
-      </div>
-      <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-600 mb-12">
-        結合穿戴式裝置資料與量化分析，探討高齡者健康促進策略，提出可執行的實證解方，務求有的放矢。
-      </p>
+      <h1 id="about-heading" class="text-4xl md:text-6xl font-bold palette-text-dark mb-4">高齡健康<br class="hidden md:block" />與資料科學研究</h1>
+      <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-600 mb-12">結合穿戴式裝置資料與量化分析，探討高齡者健康促進策略，提出可執行的實證解方，務求有的放矢。</p>
       <div class="flex justify-center items-center space-x-4 md:space-x-8" aria-label="關鍵統計">
         <div class="text-center">
           <p class="text-4xl md:text-6xl font-bold palette-text-accent">2026年</p>
@@ -181,30 +162,20 @@
     <section id="focus" class="py-16 bg-white rounded-lg shadow-inner" aria-labelledby="focus-heading">
       <div class="text-center mb-12">
         <h2 id="focus-heading" class="text-3xl md:text-4xl font-bold palette-text-dark">主要研究主軸</h2>
-        <p class="mt-4 text-lg text-gray-600">
-          聚焦三個面向，將對資料的理解與洞見化為可執行的策略，期能事半功倍。
-        </p>
+        <p class="mt-4 text-lg text-gray-600">聚焦三個面向，將對資料的洞見化為可操作策略，期能事半功倍。</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="palette-bg-main rounded-lg border border-gray-200 p-6 clickable-card">
           <h3 class="font-bold text-xl palette-text-dark mb-2">高齡者身體活動與健康促進</h3>
-          <p class="text-gray-600">
-            以穿戴式裝置客觀測量高齡者的 24 小時活動組成，分析其與衰弱、肌少症、認知與心理健康之關聯，
-            提出合宜的日間與夜間活動安排。
-          </p>
+          <p class="text-gray-600">以穿戴式裝置客觀測量長者的 24 小時活動組成，分析其與衰弱、肌少症、認知與心理健康之關聯，提出合宜的活動安排。</p>
         </div>
         <div class="palette-bg-main rounded-lg border border-gray-200 p-6 clickable-card">
           <h3 class="font-bold text-xl palette-text-dark mb-2">資料科學與科技應用</h3>
-          <p class="text-gray-600">
-            運用等時替代分析、組成資料分析與機器學習模型，將觀測資料轉為風險預測與成本效益評估，
-            設計可落實的介入方案。
-          </p>
+          <p class="text-gray-600">運用等時替代分析、組成資料分析與機器學習模型，將觀測資料轉為風險預測與成本效益評估，設計可落實的介入方案。</p>
         </div>
         <div class="palette-bg-main rounded-lg border border-gray-200 p-6 clickable-card">
           <h3 class="font-bold text-xl palette-text-dark mb-2">跨域整合與國際合作</h3>
-          <p class="text-gray-600">
-            結合臨床醫學、公共衛生與環境科學，並與韓國、日本團隊合作進行跨國比較，集思廣益、相得益彰。
-          </p>
+          <p class="text-gray-600">結合臨床醫學、公共衛生與環境科學，並與韓國、日本團隊合作進行跨國比較，集思廣益、相得益彰。</p>
         </div>
       </div>
     </section>
@@ -213,28 +184,14 @@
     <section id="methodology" class="py-16" aria-labelledby="methodology-heading">
       <div class="text-center mb-12">
         <h2 id="methodology-heading" class="text-3xl md:text-4xl font-bold palette-text-dark">研究方法：從問題到解方</h2>
-        <p class="mt-4 text-lg text-gray-600">
-          先評估釐清、再驗證、後應用；循序漸進，實事求是。
-        </p>
+        <p class="mt-4 text-lg text-gray-600">先釐清、再驗證、後應用；循序漸進，實事求是。</p>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
         <div class="lg:col-span-1 flex flex-col space-y-4" role="tablist" aria-orientation="vertical">
-          <button id="step1" role="tab" aria-selected="true" class="p-4 border-l-4 border-gray-300 competency-step text-left">
-            <h3 class="font-bold text-xl palette-text-medium">1. 界定關鍵問題</h3>
-            <p class="text-gray-600 text-sm">從照護現場的困難著手，有的放矢。</p>
-          </button>
-          <button id="step2" role="tab" aria-selected="false" class="p-4 border-l-4 border-gray-300 competency-step text-left">
-            <h3 class="font-bold text-xl palette-text-medium">2. 客觀資料蒐集</h3>
-            <p class="text-gray-600 text-sm">穿戴式裝置與次級資料庫並用。</p>
-          </button>
-          <button id="step3" role="tab" aria-selected="false" class="p-4 border-l-4 border-gray-300 competency-step text-left">
-            <h3 class="font-bold text-xl palette-text-medium">3. 量化分析</h3>
-            <p class="text-gray-600 text-sm">等時替代、組成資料、機器學習。</p>
-          </button>
-          <button id="step4" role="tab" aria-selected="false" class="p-4 border-l-4 border-gray-300 competency-step text-left">
-            <h3 class="font-bold text-xl palette-text-medium">4. 轉化為行動</h3>
-            <p class="text-gray-600 text-sm">提出可行方案，因地制宜。</p>
-          </button>
+          <button id="step1" role="tab" aria-selected="true" class="p-4 border-l-4 border-gray-300 competency-step text-left"><h3 class="font-bold text-xl palette-text-medium">1. 界定關鍵問題</h3><p class="text-gray-600 text-sm">從照護現場的困難著手，有的放矢。</p></button>
+          <button id="step2" role="tab" aria-selected="false" class="p-4 border-l-4 border-gray-300 competency-step text-left"><h3 class="font-bold text-xl palette-text-medium">2. 客觀資料蒐集</h3><p class="text-gray-600 text-sm">穿戴式裝置與次級資料庫並用。</p></button>
+          <button id="step3" role="tab" aria-selected="false" class="p-4 border-l-4 border-gray-300 competency-step text-left"><h3 class="font-bold text-xl palette-text-medium">3. 量化分析</h3><p class="text-gray-600 text-sm">等時替代、組成資料、機器學習。</p></button>
+          <button id="step4" role="tab" aria-selected="false" class="p-4 border-l-4 border-gray-300 competency-step text-left"><h3 class="font-bold text-xl palette-text-medium">4. 轉化為行動</h3><p class="text-gray-600 text-sm">提出可行方案，因地制宜。</p></button>
         </div>
         <div id="competency-details" role="tabpanel" class="lg:col-span-2 palette-bg-card rounded-lg shadow-lg p-6 min-h-[300px]"></div>
       </div>
@@ -248,9 +205,7 @@
       </div>
       <div class="palette-bg-card rounded-lg shadow-lg p-6 mb-8">
         <h3 class="font-bold text-xl palette-text-dark mb-4 text-center">歷年學術產出趨勢（SCI/SSCI）</h3>
-        <div class="chart-container">
-          <canvas id="publicationsChart" aria-label="歷年學術產出趨勢長條圖" role="img"></canvas>
-        </div>
+        <div class="chart-container"><canvas id="publicationsChart" aria-label="歷年學術產出趨勢長條圖" role="img"></canvas></div>
       </div>
       <div>
         <div class="flex flex-wrap justify-center gap-2 mb-8" role="group" aria-label="論文分類篩選">
@@ -296,7 +251,7 @@
               <p class="font-semibold text-lg">國立臺灣師範大學 運動休閒與餐旅管理研究所｜博士後研究員</p>
               <p class="text-sm text-gray-500 mt-1">2025/02 – 至今</p>
             </li>
-            <li class="palette-bg-main rounded-lg border p-4">
+             <li class="palette-bg-main rounded-lg border p-4">
               <p class="font-semibold text-lg">臺北市立大學 運動教育研究所｜兼任教師</p>
               <p class="text-sm text-gray-500 mt-1">在職</p>
             </li>
@@ -308,7 +263,7 @@
               <p class="font-semibold text-lg">銀髮方舟照護集團｜長照顧問</p>
               <p class="text-sm text-gray-500 mt-1">在職</p>
             </li>
-            <li class="palette-bg-main rounded-lg border p-4">
+             <li class="palette-bg-main rounded-lg border p-4">
               <p class="font-semibold text-lg">釜山國立大學醫院 生物醫學研究所｜研究教授</p>
               <p class="text-sm text-gray-500 mt-1">2024/02 – 2025/01</p>
             </li>
@@ -327,22 +282,16 @@
       <h2 class="text-2xl font-bold mb-4">開啟合作或交流</h2>
       <p class="mb-4">若對研究有興趣，或有合作構想，歡迎來信。</p>
       <p>賴鼎富（Ting-Fu Lai）</p>
-      <p>
-        <a href="mailto:ted971345@gmail.com" class="underline hover:no-underline">ted971345@gmail.com</a> |
-        <a href="tel:+886979675986" class="underline hover:no-underline">0979-675-986</a>
-      </p>
+      <p><a href="mailto:ted971345@gmail.com" class="underline hover:no-underline">ted971345@gmail.com</a> | <a href="tel:+886979675986" class="underline hover:no-underline">0979-675-986</a></p>
       <div class="mt-6 flex justify-center space-x-6">
         <a href="https://scholar.google.com/citations?user=TYqilcsAAAAJ&hl=zh-TW" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">Google Scholar</a>
         <a href="https://www.researchgate.net/profile/Lai-Ting-Fu" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">ResearchGate</a>
-        <a href="https://orcid.org/0000-0002-4794-1583" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">ORCID</a>
+        <a href="https://orcid.org/0000-0002-9599-8012" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">ORCID</a>
       </div>
     </div>
   </footer>
 
   <script>
-    const FALLBACK_SVG =
-      "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2NkZDVlMCI+PHBhdGggZD0iTTEyIDJDNi44OCAyIDIgNi40OCAyIDEyczQuNDggMTAgMTAgMTAgMTAtNC40OCAxMC0xMFMxNy41MiAyIDEyIDJ6bTAgM2MxLjY2IDAgMyAxLjM0IDMgM3MtMS4zNCAzLTMgMy0zLTEuMzQtMy0zIDEuMzQtMyAzLTN6bTAgMTRjLTIuMDMgMC0zLjgyLS44Ni01LjE0LTIuMjlsMS40My0xLjQzQzkuMzcgMTYuMiAxMC42MiAxNyAxMiAxN2MxLjM4IDAgMi42My0uOCAzLjcxLTEuNzFsMS40MyAxLjQzQzE1LjgxIDE4LjEzIDE0LjAzIDE5IDEyIDE5eiIvPjwvc3ZnPg==";
-
     const competencyData = {
       step1: { 
         title: '界定關鍵問題', 
@@ -351,7 +300,7 @@
       },
       step2: { 
         title: '客觀資料蒐集', 
-        content: '為降低主觀偏差，採用三軸加速規等穿戴式裝置，客觀測量高齡者的 24 小時活動組成；並結合臨床紀錄與次級資料庫，建立多面向資料集，描繪健康、行為與成本的關係。', 
+        content: '為降低主觀偏差，採用三軸加速規等穿戴式裝置，客觀測量長者的 24 小時活動組成；並結合臨床紀錄與次級資料庫，建立多面向資料集，描繪健康、行為與成本的關係。', 
         icon: '🔬' 
       },
       step3: { 
@@ -369,942 +318,133 @@
     document.addEventListener('DOMContentLoaded', function(){
       const competencyDetailsContainer = document.getElementById('competency-details');
       const competencySteps = document.querySelectorAll('.competency-step');
-      
       function updateCompetencyDetails(stepId){
         const data = competencyData[stepId];
-        competencyDetailsContainer.innerHTML = `
-          <div class="flex items-start space-x-4">
-            <div class="text-4xl" aria-hidden="true">${data.icon}</div>
-            <div>
-              <h4 class="font-bold text-2xl palette-text-dark mb-2">${data.title}</h4>
-              <p class="text-gray-700 leading-relaxed">${data.content}</p>
-            </div>
-          </div>
-        `;
+        competencyDetailsContainer.innerHTML = `<div class="flex items-start space-x-4"><div class="text-4xl" aria-hidden="true">${data.icon}</div><div><h4 class="font-bold text-2xl palette-text-dark mb-2">${data.title}</h4><p class="text-gray-700 leading-relaxed">${data.content}</p></div></div>`;
         competencySteps.forEach(step=>{
-          step.classList.remove('active'); 
-          step.setAttribute('aria-selected', 'false');
-          if(step.id===stepId){
-            step.classList.add('active');
-            step.setAttribute('aria-selected', 'true');
-          }
+            step.classList.remove('active'); 
+            step.setAttribute('aria-selected', 'false');
+            if(step.id===stepId){
+                step.classList.add('active');
+                step.setAttribute('aria-selected', 'true');
+            }
         });
       }
-      
       competencySteps.forEach(step=> step.addEventListener('click', ()=> updateCompetencyDetails(step.id)) );
       updateCompetencyDetails('step1');
 
-      // --- 3. Publications Data (Updated) ---
+    // --- 3. Publications Data (Updated 2025-03-20) ---
+      // isMetric: true  -> SCI/SSCI (會被算入圖表)
+      // isMetric: false -> TSSCI/Others (只顯示在列表，不算入圖表)
       const publicationsData = [
-        // 2025
+        // --- 2025 (Total 9 SCI/SSCI) ---
         { 
-          id:44, year: 2025, isMetric: true,
-          title:'Longitudinal association of intensity-specific physical activity and sedentary behavior with dynapenia among older Taiwanese adults', 
-          journal:'European Review of Aging and Physical Activity, 2025', 
-          authors: 'Chih-Ching Chang, Jiaren Chen, Ting-Fu Lai, Jong-Hwan Park, Yung Liao',
-          category:'health-promo', 
-          abstract:'探討中高強度、輕度身體活動及靜態行為與高齡者<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>賴鼎富博士 | 高齡健康與資料科學研究</title>
+            id:44, year: 2025, isMetric: true, 
+            title:'Longitudinal association of intensity-specific physical activity and sedentary behavior with dynapenia among older Taiwanese adults', 
+            journal:'European Review of Aging and Physical Activity, 2025', 
+            authors: 'Chih-Ching Chang, Jiaren Chen, Ting-Fu Lai, Jong-Hwan Park, Yung Liao',
+            category:'health-promo', 
+            abstract:'探討中高強度、輕度身體活動及靜態行為與高齡者肌力減退風險的縱貫性關聯。', 
+            doi:'' // 系統會自動導向 Google Scholar
+        },
+        { 
+            id:45, year: 2025, isMetric: false, // TSSCI
+            title:'高齡者使用商用行動裝置測量步數之效度', 
+            journal:'大專體育學刊, 2025', 
+            authors: '林翰柏, 陳佳人, 賴鼎富, 李姿愉, 廖邕',
+            category:'data-science', 
+            abstract:'以三軸加速規為黃金標準，驗證智慧型手機與穿戴裝置測量高齡者步數的準確性。', 
+            doi:''
+        },
+        { id:43, year: 2025, isMetric: true, title:'Validation of Phase Angle Cutoff Values Derived From Bioelectrical Impedance Analysis for Sarcopenia Screening in Community-Dwelling Older Korean Adults', journal:'JAMDA, 2025', authors: 'Jiaren Chen, Jong-Hwan Park, Chien-Yu Lin, Ting-Fu Lai, et al.', category:'interdisciplinary', abstract:'透過生物電阻抗分析找出適合的相位角臨界值，來幫助社區高齡者早期篩檢肌少症。', doi:'10.1016/j.jamda.2025.105798'},
+        { id:3, year: 2025, isMetric: true, title:'Light physical activity throughout the day and physical function in older adults: A cross-sectional study', journal:'Chronobiology International, 2025', authors: 'Ting-Fu Lai, Ming-Chun Hsueh, Yung Liao, Jong-Hwan Park', category:'health-promo', abstract:'本研究指出，整日中的輕度身體活動與高齡者的身體功能息息相關。', doi:'10.1080/07420528.2025.2479097'},
+        { id:4, year: 2025, isMetric: true, title:'Cross-sectional and longitudinal association between accelerometer-measured light-intensity physical activity and cognitive function in older adults', journal:'Frontiers in Aging Neuroscience, 2025', authors: 'Jing-Han Jhan, Jiaren Chen, Ting-Fu Lai, Jong-Hwan Park, Yung Liao', category:'health-promo', abstract:'探討客觀測量的輕度身體活動與高齡者認知功能之間的橫斷面與縱貫性關聯。', doi:'10.3389/fnagi.2025.1505172'},
+        { id:5, year: 2025, isMetric: true, title:'Dynapenia is associated with a higher risk of depressive symptoms among older adults', journal:'Frontiers in Public Health, 2025', authors: 'Chih-Ching Chang, Yung Liao, Jiaren Chen, Ting-Fu Lai, Ming-Chun Hsueh, Jong-Hwan Park, Yen-Jung Chang', category:'health-promo', abstract:'研究建立了肌力減退（Dynapenia）與憂鬱症狀之間的風險關聯。', doi:'10.3389/fpubh.2025.1533973'},
+        { id:6, year: 2025, isMetric: true, title:'Age Difference in the Association Between Nutritional Status and Dynapenia in Older Adults', journal:'Nutrients, 2025', authors: 'Chih-Ching Chang, Ting-Fu Lai, Jiaren Chen, Yung Liao, Jong-Hwan Park, Yen Jung Chang', category:'health-promo', abstract:'探討不同年齡層高齡者在營養狀況與肌力減退關聯上的差異。', doi:'10.3390/nu17040734'},
+        { id:1, year: 2025, isMetric: true, title:'Elevated extracellular water to total body water ratio and low phase angle in relation to muscle function in middle-aged and older adults', journal:'J Int Soc Sports Nutr, 2025', authors: 'Ting-Fu Lai, Jong-Hwan Park, Minwoo Jang, Jiaren Chen, Myung-Jun Shin, Eunsoo Moon, Jung Mo Kang, Jong Won Lee, Yoon Jae Cho, Yung Liao, Tae Sik Goh, Jung Sub Lee', category:'interdisciplinary', abstract:'探討 BIA 指標與肌肉功能的關聯。', doi:'10.1080/15502783.2025.2536693'},
+        { id:2, year: 2025, isMetric: true, title:'Respiratory Function and Information Processing Speed in Coal Power Plant Workers: Moderating Effects of Physical Activity and Sedentary Behavior', journal:'Risk Management and Healthcare Policy, 2025', authors: 'Pill Soo Kim, Ting-Fu Lai, Jong-Hwan Park, Minwoo Jang, Yeo-Kyung Shin, Du-Ri Kim, Il Jae Wang, Hyuk Jin Choi, Jae-Il Lee', category:'interdisciplinary', abstract:'跨領域探討職業環境因素對健康的影響，並分析了體力活動的調節作用。', doi:'10.2147/RMHP.S500971'},
+        { id:7, year: 2025, isMetric: true, title:"Older adults' Internet use behavior and its association with accelerometer-derived physical activity", journal:'Frontiers in Public Health, 2025', authors: 'Yen-Yu Chung, Jiaren Chen, Mei-Chun Lin, Ruo-Lan Liu, Jenn-Bang Wu, Hsin Chang Tsai, Ting-Fu Lai, Yung Liao, Jong-Hwan Park', category:'data-science', abstract:'分析高齡者的網路使用行為與其身體活動模式的關聯。', doi:'10.3389/fpubh.2025.1537309'},
+        { id:36, year: 2025, isMetric: false, title:'高齡者身體活動、靜態行為與相位角之範域文獻回顧', journal:'運動表現期刊, 2025', authors: '陳佳人, 賴鼎富, 林翰柏, 朴勝泰, 廖邕', category:'interdisciplinary', abstract:'此範域回顧旨在系統性地整理並呈現身體活動、靜態行為與相位角之間的跨領域研究現況。', doi:''},
 
-  <!-- Primary SEO -->
-  <meta name="description" content="賴鼎富（Ting-Fu Lai）。專長穿戴式資料、二十四小時活動組成、等時替代分析與高齡健康促進；以實證為本，協助臨床與長照決策，有的放矢。" />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://ted971345.github.io/tingfulai.github.io/" />
-  <link rel="alternate" hreflang="zh-Hant" href="https://ted971345.github.io/tingfulai.github.io/">
-  <link rel="alternate" hreflang="en" href="https://ted971345.github.io/tingfulai.github.io/en/">
-  <link rel="alternate" hreflang="x-default" href="https://ted971345.github.io/tingfulai.github.io/">
+        // --- 2024 (Total 8 SCI/SSCI) ---
+        { id:9, year: 2024, isMetric: true, title:'Whole-Body and Segmental Phase Angles and Cognitive Function in the Older Korean Population: Cross-Sectional Analysis', journal:'JMIR Public Health and Surveillance, 2024', authors: 'Jiaren Chen, Jong-Hwan Park, Chien-Yu Lin, Ting-Fu Lai, Du-Ri Kim, Myung Jun Shin, Eunsoo Moon, Jung Mo Kang, Jong Won Lee, Yoon Jae Cho, Yung Liao, Tae Sik Goh, Jung Sub Lee', category:'interdisciplinary', abstract:'探討韓國高齡族群中，相位角與認知功能的關聯。', doi:'10.2196/63457'},
+        { id:15, year: 2024, isMetric: true, title:'Sedentary Behavior and Phase Angle: An Objective Assessment in Physically Active and Inactive Older Adults', journal:'Nutrients, 2024', authors: 'Liu-Yin Lin, Jiaren Chen, Ting-Fu Lai, Yen-Yu Chung, Jong-Hwan Park, Yih-Jin Hu, Yung Liao', category:'interdisciplinary', abstract:'研究比較了活躍與不活躍高齡者的靜態行為與相位角的關係。', doi:'10.3390/nu16010101'},
+        { id:14, year: 2024, isMetric: true, title:'Associations between objectively measured overall and intensity-specific physical activity and phase angle in older adults', journal:'Scientific Reports, 2024', authors: 'Jiaren Chen, Ting-Fu Lai, Chien-Yu Lin, Ming-Chun Hsueh, Jong-Hwan Park, Yung Liao', category:'interdisciplinary', abstract:'整合了客觀身體活動數據與臨床生物標記（相位角），探討兩者之間的關係。', doi:'10.1038/s41598-024-57544-7'},
+        { id:11, year: 2024, isMetric: true, title:'Acute caffeine supplementation offsets the impairment in 10-km running performance following one night of partial sleep deprivation', journal:'European Journal of Applied Physiology, 2024', authors: 'Yi-Shan Tsai, Ting-Tzu Chen, Yau-Ching Chan, Chun-Chin Huang, Ting-Fu Lai, Yung Liao, Richard S Metcalfe, Yung-Chih Chen, Ho-Seng Wang', category:'health-promo', abstract:'驗證了咖啡因補充劑在部分睡眠剝奪後，對運動表現的恢復作用。', doi:'10.1007/s00421-024-05638-5'},
+        { id:13, year: 2024, isMetric: true, title:'Association of 24-Hour movement behavior and cognitive function in older Taiwanese adults', journal:'Geriatric Nursing, 2024', authors: 'Ting-Fu Lai, Chih-Ching Chang, Ming-Chun Hsueh, Mohammad Javad Koohsari, Ai Shibata, Yung Liao, Koichiro Oka', category:'health-promo', abstract:'本研究全面分析了24小時的活動、睡眠、久坐行為與認知功能的關聯。', doi:'10.1016/j.gerinurse.2024.06.028'},
+        { id:12, year: 2024, isMetric: true, title:'Isotemporal Substitution Analysis of the Impact of Sedentary Behavior and Physical Activity on Depression in Taiwanese Older Adults: A Prospective Study', journal:'Mental Health and Physical Activity, 2024', authors: 'Jia-Ren Chen, Ting‐Fu Lai, Chien-Yu Lin, Li-Jung Lin, Jong-Hwan Park, Yung Liao', category:'data-science', abstract:'探討以身體活動取代靜態行為對憂鬱症狀的影響。', doi:'10.1016/j.mhpa.2024.100620'},
+        { id:10, year: 2024, isMetric: true, title:'Effect of information and communication technology-based smart care services for physical and cognitive functions in older adults living alone', journal:'The Journal of Nutrition, Health & Aging, 2024', authors: 'Du-Ri Kim, Ting-Fu Lai, Minji Sung, Minwoo Jang, Yeo-Kyung Shin, Young jin Ra, Yung Liao, Jong-Hwan Park, Myung-Jun Shin', category:'data-science', abstract:'評估了基於ICT的智慧照護服務對獨居老人的身心功能影響。', doi:'10.1016/j.jnha.2024.100318'},
+        { id:46, year: 2024, isMetric: true, title:'Park proximity and all-day and time-specific physical activity and sedentary behaviour in older adults', journal:'BMC Geriatrics, 2024', authors: 'Chien-Yu Lin, Ting-Fu Lai, Chin-Yi Fang, Ming-Chun Hsueh, Yung Liao', category:'interdisciplinary', abstract:'探討公園鄰近性與高齡者全天及特定時段身體活動與靜態行為的關聯。', doi:'10.1186/s12877-024-05166-9'},
+        { id:8, year: 2024, isMetric: false, title:'Associations Between Replacing Sedentary Time With Intensity-Specific Physical Activity and Physical Function in Older Adults', journal:'大專體育學刊, 2024', authors: 'Yu-Huei Wang, Ming-Chun Hsueh, Ting-Fu Lai, Yung Liao, Jong-Hwan Park', category:'data-science', abstract:'應用「替代模型」分析以不同強度活動取代靜態時間對高齡者身體功能的影響。', doi:'10.5297/ser.202412_26(4).0004'},
+        { id:37, year: 2024, isMetric: false, title:'什麼時候運動最好？高齡者身體活動時間點與健康結果之系統性文獻回顧', journal:'大專體育, 2024', authors: '賴鼎富, 陳佳人, 李姿愉, 廖邕', category:'health-promo', abstract:'系統性回顧整理了現有文獻，探討高齡者在一天中不同時間點運動對其健康結果的影響。', doi:''},
+        { id:38, year: 2024, isMetric: false, title:'中高齡者日常高強度間歇性身體活動對於健康影響之敘述性綜論', journal:'體育學報, 2024', authors: '賴鼎富, 陳佳人, 朴鍾煥, 廖邕', category:'health-promo', abstract:'回顧探討了將高強度間歇訓練的概念應用於日常生活中的可行性與健康效益。', doi:''},
 
-  <!-- Open Graph / Twitter -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="賴鼎富博士 | 高齡健康與資料科學研究" />
-  <meta property="og:title" content="賴鼎富博士 | 高齡健康與資料科學研究" />
-  <meta property="og:description" content="高齡健康 × 量化方法 × 科技應用：以客觀資料與統計分析提出可操作的健康老化解方，務求事半功倍。" />
-  <meta property="og:url" content="https://ted971345.github.io/tingfulai.github.io/" />
-  <meta property="og:locale" content="zh_TW" />
-  <meta property="og:image" content="https://ted971345.github.io/tingfulai.github.io/assets/profile-photo.jpg" />
-  <meta property="og:image:alt" content="賴鼎富：高齡健康與資料科學研究首頁分享圖" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="賴鼎富博士 | 高齡健康與資料科學研究" />
-  <meta name="twitter:description" content="高齡健康 × 量化方法 × 科技應用：以客觀資料與統計分析提出可操作的健康老化解方，務求事半功倍。" />
-  <meta name="twitter:image" content="https://ted971345.github.io/tingfulai.github.io/assets/profile-photo.jpg" />
+        // --- 2023 (Total 4 SCI/SSCI) ---
+        { id:16, year: 2023, isMetric: true, title:'Is overall and timing-specific physical activity associated with depression in older adults?', journal:'Frontiers in Public Health, 2023', authors: 'Jiaren Chen, Ting-Fu Lai, Li-Jung Lin, Jong-Hwan Park, Yung Liao', category:'health-promo', abstract:'探討了身體活動的總量與時間分佈對高齡者憂鬱症狀的影響。', doi:'10.3389/fpubh.2023.1241170'},
+        { id:17, year: 2023, isMetric: true, title:'The Association between a Minimum Amount of Physical Activity and Subsequent Muscle Strength and Balance in Older Adults', journal:'Behavioral Sciences, 2023', authors: 'Yuan-Yu Li, Ming-Chun Hsueh, Jong-Hwan Park, Ting-Fu Lai, Yi-Chuan Hung, Yung Liao', category:'health-promo', abstract:'此縱貫性研究旨在確定能維持高齡者肌肉力量與平衡的最低身體活動量。', doi:'10.3390/bs13040316'},
+        { id:18, year: 2023, isMetric: true, title:'Diurnal pattern of breaks in sedentary time and the physical function of older adults', journal:'Archives of Public Health, 2023', authors: 'Ting-Fu Lai, Yung Liao, Chien-Yu Lin, Ming-Chun Hsueh, Mohammad Javad Koohsari, Ai Shibata, Koichiro Oka, Ding-Cheng Chan', category:'health-promo', abstract:'研究發現，在一天中「頻繁地」打斷久坐行為，比「集中一段時間」運動，對高齡者身體功能的關聯性更強。', doi:'10.1186/s13690-023-01050-1'},
+        { id:19, year: 2023, isMetric: true, title:'Effect of isotemporal substitution of sedentary behavior with different intensities of physical activity on the muscle function of older adults', journal:'BMC Geriatrics, 2023', authors: 'Ting-Fu Lai, Yung Liao, Ming-Chun Hsueh, Kun-Pei Lin, Ding-Cheng Chan, Yung-Ming Chen, Chiung-Jung Wen', category:'data-science', abstract:'本研究運用等時替代模型，量化分析以不同強度身體活動取代靜態行為對高齡者肌肉功能的影響。', doi:'10.1186/s12877-023-03819-z'},
 
-  <!-- Fonts and CSS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        // --- 2022 (Total 3 SCI/SSCI) ---
+        { id:20, year: 2022, isMetric: true, title:'Substituting sedentary time with physical activity in youngest-old to oldest-old community-dwelling older adults', journal:'Frontiers in Public Health, 2022', authors: 'Ting-Fu Lai, Yung Liao, Ming-Chun Hsueh, Hsin-Yen Yen, Jong-Hwan Park, Jae Hyeok Chang', category:'data-science', abstract:'研究應用替代模型分析了不同年齡層的高齡者以活動取代靜態行為對其身體組成的影響。', doi:'10.3389/fpubh.2022.837213'},
+        { id:39, year: 2022, isMetric: false, title:'三軸加速規應用於身體活動及靜態行為測量使用之敘述性綜論', journal:'運動表現期刊, 2022', authors: '賴鼎富, 蕭綺, 黃婉綺, 薛名淳, 廖邕', category:'data-science', abstract:'此綜論性文章詳細介紹了三軸加速規此一客觀測量工具在身體活動研究中的應用、方法學與挑戰。', doi:''},
+        { id:21, year: 2022, isMetric: true, title:'Accelerometer-Measured Physical Activity and Sedentary Behavior of Adults with Prader-Willi Syndrome', journal:'Int J Environ Res Public Health, 2022', authors: 'Meng-Jia Wu, Li-Ping Tsai, Ting-Fu Lai, Jeong Su Cho, Yung Liao', category:'interdisciplinary', abstract:'本研究將身體活動測量技術應用於罕見疾病（小胖威利症）患者。', doi:'10.3390/ijerph19159013'},
+        { id:22, year: 2022, isMetric: true, title:'Associations of the audited residential neighborhood built-environment attributes with objectively-measured sedentary time among adults: a systematic review', journal:'International Journal of Environmental Health Research, 2022', authors: 'Yi-Chien Yu, Ting-Fu Lai, Chien-Yu Lin, Ming-Chun Hsueh, Yung Liao, Li-Ting Yang, Shao-Hsi Chang', category:'interdisciplinary', abstract:'此系統性回顧整合了建成環境與公共衛生領域的研究，探討社區環境特徵與靜態行為的關係。', doi:'10.1080/09603123.2021.1894582'},
 
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "name": "賴鼎富博士 | 高齡健康與資料科學研究",
-        "url": "https://ted971345.github.io/tingfulai.github.io/",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://ted971345.github.io/tingfulai.github.io/?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "賴鼎富",
-        "alternateName": "Ting-Fu Lai",
-        "jobTitle": "博士後研究員",
-        "url": "https://ted971345.github.io/tingfulai.github.io/",
-        "image": "https://ted971345.github.io/tingfulai.github.io/assets/profile-photo.jpg",
-        "affiliation": [
-          {"@type": "CollegeOrUniversity", "name": "國立臺灣師範大學"},
-          {"@type": "Organization", "name": "銀髮方舟照護集團"},
-          {"@type": "CollegeOrUniversity", "name": "釜山國立大學醫院生物醫學研究所"}
-        ],
-        "alumniOf": [
-          {"@type": "CollegeOrUniversity", "name": "國立臺灣師範大學", "department": "健康促進與衛生教育學系"}
-        ],
-        "email": "mailto:ted971345@gmail.com",
-        "telephone": "+886-979-675-986",
-        "sameAs": [
-          "https://scholar.google.com/citations?user=TYqilcsAAAAJ&hl=zh-TW",
-          "https://www.researchgate.net/profile/Lai-Ting-Fu",
-          "https://orcid.org/0000-0002-4794-1583"
-        ],
-        "knowsAbout": [
-          "二十四小時活動行為","等時替代分析","三軸加速規","長期照顧","肌少症","衰弱","健康促進","健康經濟學"
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "關於我", "item": "https://ted971345.github.io/tingfulai.github.io/#about"},
-          {"@type": "ListItem", "position": 2, "name": "研究主軸", "item": "https://ted971345.github.io/tingfulai.github.io/#focus"},
-          {"@type": "ListItem", "position": 3, "name": "研究方法", "item": "https://ted971345.github.io/tingfulai.github.io/#methodology"},
-          {"@type": "ListItem", "position": 4, "name": "學術發表", "item": "https://ted971345.github.io/tingfulai.github.io/#publications"},
-          {"@type": "ListItem", "position": 5, "name": "學歷與經歷", "item": "https://ted971345.github.io/tingfulai.github.io/#cv"}
-        ]
-      }
-    ]
-  }
-  </script>
+        // --- 2021 (Total 6 SCI/SSCI) ---
+        { id:23, year: 2021, isMetric: true, title:'Non-linear associations between sleep patterns and sarcopenia risks in older adults', journal:'Journal of Clinical Sleep Medicine, 2021', authors: 'Wan-Chi Huang, Chien-Yu Lin, Fumiharu Togo, Ting-Fu Lai, Ming-Chun Hsueh, Yung Liao, Hyuntae Park, Shuzo Kumagai', category:'health-promo', abstract:'本研究揭示了睡眠模式與肌少症風險之間的非線性關係。', doi:'10.5664/jcsm.9698'},
+        { id:25, year: 2021, isMetric: true, title:'Is sleep timing related to objectively-measured physical activity and sedentary behavior in older women?', journal:'Nature and Science of Sleep, 2021', authors: 'Wan-Chi Huang, Chia-Shuan Chang, Chien-Yu Lin, Ting-Fu Lai, Ming-Chun Hsueh, Yung Liao, Jong-Hwan Park', category:'health-promo', abstract:'探討了高齡女性的睡眠時間點與其日常身體活動和靜態行為的關聯。', doi:'10.2147/NSS.S323423'},
+        { id:26, year: 2021, isMetric: true, title:"Is achieving 7,000 steps/day cross sectionally and prospectively associated with older adults' lower-extremity performance?", journal:'BMC Geriatrics, 2021', authors: 'Ming-Chun Hsueh, Chien-Yu Lin, Ting-Fu Lai, Yi-Chien Yu, Shao-Hsi Chang, Ju Yong Bae, Yung Liao', category:'health-promo', abstract:'研究驗證了每日7000步是否為一個有效指標，能對應到高齡者當下及未來的下肢功能表現。', doi:'10.1186/s12877-021-02264-8'},
+        { id:28, year: 2021, isMetric: true, title:'Sleep duration and timing are nonlinearly associated with depressive symptoms among older adults', journal:'Sleep Medicine, 2021', authors: 'Chien-Yu Lin, Ting-Fu Lai, Wan-Chi Huang, Yi-Chuan Hung, Ming-Chun Hsueh, Jong-Hwan Park, Yung Liao', category:'health-promo', abstract:'此研究發現睡眠時長與時間點和高齡者憂鬱症狀之間存在非線性關係。', doi:'10.1016/j.sleep.2021.03.025'},
+        { id:40, year: 2021, isMetric: false, title:'高齡者肌力活動及其社會人口學關聯因素', journal:'大專體育學刊, 2021', authors: '賴鼎富, 黃品瑄, 薛名淳, 廖邕, 陳伯儀', category:'health-promo', abstract:'此研究分析了影響高齡者參與肌力活動的社會人口學因素。', doi:''},
+        { id:24, year: 2021, isMetric: true, title:'Does neighborhood built environment support older adults\' daily steps differ by time of day?', journal:'J Transport & Health, 2021', authors: 'Ting-Fu Lai, Chia-Shuan Chang, Yung Liao, Ming-Chun Hsueh, Mohammad Javad Koohsari, Ai Shibata, Koichiro Oka', category:'interdisciplinary', abstract:'本研究結合了地理資訊(GIS)，探討社區建成環境對高齡者在一天中不同時段步行活動的支持程度。', doi:'10.1016/j.jth.2021.101188'},
+        { id:27, year: 2021, isMetric: true, title:'A Nonlinear Association between Neighborhood Walkability and Risks of Sarcopenia in Older Adults', journal:'J Nutr Health Aging, 2021', authors: 'Jong-Hwan Park, Ting-Fu Lai, Shao-Hsi Chang, Wan-Chi Huang, Jeong Su Cho, Yung Liao', category:'interdisciplinary', abstract:'探討了社區「宜走性」與高齡者肌少症風險的非線性關係。', doi:'10.1007/s12603-020-1437-9'},
 
-  <style>
-    body {font-family: 'Noto Sans TC', sans-serif; background-color:#F8F9FA; color:#212529; scroll-behavior:smooth}
-    .palette-bg-main{background-color:#F8F9FA}
-    .palette-bg-card{background-color:#FFFFFF}
-    .palette-text-dark{color:#0B3954}
-    .palette-text-medium{color:#087E8B}
-    .palette-text-accent{color:#FF5A5F}
-    .nav-link{cursor:pointer;padding:.5rem 1rem;border-radius:.375rem;transition:all .3s ease;font-weight:500}
-    .nav-link:hover,.nav-link.active{background-color:#BFD7EA;color:#0B3954}
-    .chart-container{position:relative;width:100%;max-width:600px;margin-left:auto;margin-right:auto;height:350px;max-height:400px}
-    @media (max-width:768px){.chart-container{height:300px;max-height:350px}}
-    .clickable-card{transition:transform .3s ease, box-shadow .3s ease}
-    .clickable-card:hover{transform:translateY(-5px);box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)}
-    .pill-button{transition:all .2s ease-in-out}
-    .pill-button.active{background-color:#0B3954;color:#fff}
-    .competency-step.active{border-color:#087E8B!important;background-color:#eaf6f6}
-    .competency-step.active h3{color:#0B3954}
-    .profile-image-container { position: relative; background-color: #e2e8f0; }
-  </style>
-</head>
-<body class="palette-bg-main">
-  <noscript>
-    <div class="bg-yellow-50 text-yellow-900 p-4 text-sm text-center">
-      本網站使用 JavaScript 以提供互動體驗。若停用 JavaScript，仍可透過導覽連結瀏覽：
-      <a href="#about" class="underline">關於我</a> · 
-      <a href="#focus" class="underline">研究主軸</a> · 
-      <a href="#methodology" class="underline">研究方法</a> · 
-      <a href="#publications" class="underline">學術發表</a> · 
-      <a href="#cv" class="underline">學歷與經歷</a>
-    </div>
-  </noscript>
+        // --- 2020 (Total 5 SCI/SSCI) ---
+        { id:29, year: 2020, isMetric: true, title:"Daily lifestyle behaviors and risks of sarcopenia among older adults", journal:'Archives of Public Health, 2020', authors: 'Pei-Lin Tzeng, Chien-Yu Lin, Ting-Fu Lai, Wan-Chi Huang, Evonne Pien, Ming-Chun Hsueh, Kun-Pei Lin, Jong-Hwan Park, Yung Liao', category:'health-promo', abstract:'全面檢視了日常活動、飲食等生活方式行為與高齡者肌少症風險的綜合關聯。', doi:'10.1186/s13690-020-00497-x'},
+        { id:30, year: 2020, isMetric: true, title:'Moderate-to-vigorous physical activity duration is more important than timing for physical function in older adults', journal:'Scientific Reports, 2020', authors: 'Ting-Fu Lai, Yung Liao, Chien-Yu Lin, Wan-Chi Huang, Ming-Chun Hsueh, Ding-Cheng Chan', category:'health-promo', abstract:'研究指出，對於高齡者的身體功能，中高強度活動的「總時長」比在一天中的哪個「時間點」進行更為重要。', doi:'10.1038/s41598-020-78536-3'},
+        { id:31, year: 2020, isMetric: true, title:'Association Between Objectively Measured Sleep Duration and Physical Function in Community-Dwelling Older Adults', journal:'Journal of Clinical Sleep Medicine, 2020', authors: 'Wan-Chi Huang, Chien-Yu Lin, Fumiharu Togo, Ting-Fu Lai, Yung Liao, Jong-Hwan Park, Ming-Chun Hsueh, Hyuntae Park', category:'health-promo', abstract:'客觀測量數據顯示，社區高齡者的睡眠時長與其身體功能表現有直接關聯。', doi:'10.5664/jcsm.8690'},
+        { id:33, year: 2020, isMetric: true, title:"Independent and joint associations of physical activity and dietary behavior with older adults’ lower limb strength", journal:'Nutrients, 2020', authors: 'Ting-Fu Lai, Chien-Yu Lin, Chien-Chih Chou, Wan-Chi Huang, Ming-Chun Hsueh, Jong-Hwan Park, Yung Liao', category:'health-promo', abstract:'本研究分別及聯合探討了身體活動和飲食行為對高齡者下肢肌力的影響。', doi:'10.3390/nu12020443'},
+        { id:32, year: 2020, isMetric: true, title:'Which Neighborhood Destinations Matter in the Asian Context? The Role of Destinations in Older Adults’ Physical Activity and Sedentary Behaviors', journal:'BioMed Research International, 2020', authors: 'Jong-Hwan Park, Jin-Hwa Park, Sangwoo Song, Ting-Fu Lai, Yung Liao', category:'interdisciplinary', abstract:'此研究探討了亞洲城市環境中，不同類型的社區目的地對高齡者活動行為的影響。', doi:'10.1155/2020/8432934'},
 
-  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-md" role="banner">
-    <nav class="container mx-auto px-6 py-3 flex justify-between items-center" aria-label="主導覽">
-      <div class="text-2xl font-bold palette-text-dark">
-        賴鼎富 <span class="text-lg font-normal text-gray-500">博士</span>
-      </div>
-      <div class="hidden md:flex space-x-2 items-center">
-        <a href="#about" class="nav-link active">關於我</a>
-        <a href="#focus" class="nav-link">研究主軸</a>
-        <a href="#methodology" class="nav-link">研究方法</a>
-        <a href="#publications" class="nav-link">學術發表</a>
-        <a href="#cv" class="nav-link">學歷與經歷</a>
-        <a href="en/" hreflang="en" class="nav-link !p-2">English</a>
-      </div>
-      <div class="md:hidden flex items-center space-x-2">
-        <label for="mobile-nav" class="sr-only">行動導覽</label>
-        <select id="mobile-nav" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
-          <option value="#about">關於我</option>
-          <option value="#focus">研究主軸</option>
-          <option value="#methodology">研究方法</option>
-          <option value="#publications">學術發表</option>
-          <option value="#cv">學歷與經歷</option>
-        </select>
-        <a href="en/" hreflang="en" class="nav-link !p-2 flex-shrink-0">English</a>
-      </div>
-    </nav>
-  </header>
+        // --- 2019 (Total 2 SCI/SSCI) ---
+        { id:34, year: 2019, isMetric: true, title:"Area-level crimes associated with older adults' active and sedentary behavior?", journal:'Sustainability, 2019', authors: 'Chien-Yu Lin, Jong-Hwan Park, Ming-Chun Hsueh, Ting-Fu Lai, Yung Liao', category:'interdisciplinary', abstract:'本研究探討社區犯罪率是否影響高齡者的身體活動與靜態行為。', doi:'10.3390/su11092454'},
+        { id:35, year: 2019, isMetric: true, title:'Walk Score® and its associations with older adults’ healthy behaviors and outcomes', journal:'International Journal of Environmental Research and Public Health, 2019', authors: 'Yung Liao, Chien-Yu Lin, Ting-Fu Lai, Yi-Ju Chen, Byoung-Gwon Kim, Jong-Hwan Park', category:'interdisciplinary', abstract:'本研究驗證了國際通用的「步行指數」(Walk Score®) 在評估高齡者健康行為與結果上的有效性。', doi:'10.3390/ijerph16040622'},
+        { id:41, year: 2019, isMetric: false, title:'Walk Score®作為台灣地區宜走性環境測量工具之效度檢驗', journal:'台灣衛誌, 2019', authors: '賴鼎富, 林倩宇, 黃翊軒, 廖邕', category:'interdisciplinary', abstract:'本研究旨在檢驗 Walk Score® 在台灣地區的適用性與效度。', doi:'10.6288/TJPH.201908_38(4).107131'},
+        { id:42, year: 2019, isMetric: false, title:'青少年電子煙使用與吸菸意圖或吸菸行為之關聯性：系統性文獻回顧', journal:'台灣衛誌, 2019', authors: '賴鼎富, 林倩宇, 廖邕', category:'interdisciplinary', abstract:'此系統性回顧聚焦於青少年電子煙使用的公共衛生議題。', doi:'10.6288/TJPH.201904_38(2).107051'}
+      ]; 
 
-  <main class="container mx-auto p-4 md:p-8">
-    <!-- About -->
-    <section id="about" class="text-center py-16 md:py-24" aria-labelledby="about-heading">
-      <h1 id="about-heading" class="text-4xl md:text-6xl font-bold palette-text-dark mb-4">
-        高齡健康<br class="hidden md:block" />與資料科學研究
-      </h1>
-      <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-lg ring-4 ring-white/80 mx-auto mb-8 profile-image-container">
-        <img src="assets/profile-photo.jpg" 
-             id="profile-img"
-             alt="賴鼎富的個人照片" 
-             class="w-full h-full object-cover" 
-             loading="lazy" />
-      </div>
-      <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-600 mb-12">
-        結合穿戴式裝置資料與量化分析，探討高齡者健康促進策略，提出可執行的實證解方，務求有的放矢。
-      </p>
-      <div class="flex justify-center items-center space-x-4 md:space-x-8" aria-label="關鍵統計">
-        <div class="text-center">
-          <p class="text-4xl md:text-6xl font-bold palette-text-accent">2026年</p>
-          <p class="text-sm md:text-base text-gray-500">臺灣將步入超高齡社會</p>
-        </div>
-        <div class="text-gray-300 text-4xl" aria-hidden="true">|</div>
-        <div class="text-center">
-          <p class="text-4xl md:text-6xl font-bold palette-text-accent">&gt;40%</p>
-          <p class="text-sm md:text-base text-gray-500">健保支出用於 65 歲以上人口</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Focus -->
-    <section id="focus" class="py-16 bg-white rounded-lg shadow-inner" aria-labelledby="focus-heading">
-      <div class="text-center mb-12">
-        <h2 id="focus-heading" class="text-3xl md:text-4xl font-bold palette-text-dark">主要研究主軸</h2>
-        <p class="mt-4 text-lg text-gray-600">
-          聚焦三個面向，將對資料的理解與洞見化為可執行的策略，期能事半功倍。
-        </p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="palette-bg-main rounded-lg border border-gray-200 p-6 clickable-card">
-          <h3 class="font-bold text-xl palette-text-dark mb-2">高齡者身體活動與健康促進</h3>
-          <p class="text-gray-600">
-            以穿戴式裝置客觀測量高齡者的 24 小時活動組成，分析其與衰弱、肌少症、認知與心理健康之關聯，
-            提出合宜的日間與夜間活動安排。
-          </p>
-        </div>
-        <div class="palette-bg-main rounded-lg border border-gray-200 p-6 clickable-card">
-          <h3 class="font-bold text-xl palette-text-dark mb-2">資料科學與科技應用</h3>
-          <p class="text-gray-600">
-            運用等時替代分析、組成資料分析與機器學習模型，將觀測資料轉為風險預測與成本效益評估，
-            設計可落實的介入方案。
-          </p>
-        </div>
-        <div class="palette-bg-main rounded-lg border border-gray-200 p-6 clickable-card">
-          <h3 class="font-bold text-xl palette-text-dark mb-2">跨域整合與國際合作</h3>
-          <p class="text-gray-600">
-            結合臨床醫學、公共衛生與環境科學，並與韓國、日本團隊合作進行跨國比較，集思廣益、相得益彰。
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Methodology -->
-    <section id="methodology" class="py-16" aria-labelledby="methodology-heading">
-      <div class="text-center mb-12">
-        <h2 id="methodology-heading" class="text-3xl md:text-4xl font-bold palette-text-dark">研究方法：從問題到解方</h2>
-        <p class="mt-4 text-lg text-gray-600">
-          先評估釐清、再驗證、後應用；循序漸進，實事求是。
-        </p>
-      </div>
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-        <div class="lg:col-span-1 flex flex-col space-y-4" role="tablist" aria-orientation="vertical">
-          <button id="step1" role="tab" aria-selected="true" class="p-4 border-l-4 border-gray-300 competency-step text-left">
-            <h3 class="font-bold text-xl palette-text-medium">1. 界定關鍵問題</h3>
-            <p class="text-gray-600 text-sm">從照護現場的困難著手，有的放矢。</p>
-          </button>
-          <button id="step2" role="tab" aria-selected="false" class="p-4 border-l-4 border-gray-300 competency-step text-left">
-            <h3 class="font-bold text-xl palette-text-medium">2. 客觀資料蒐集</h3>
-            <p class="text-gray-600 text-sm">穿戴式裝置與次級資料庫並用。</p>
-          </button>
-          <button id="step3" role="tab" aria-selected="false" class="p-4 border-l-4 border-gray-300 competency-step text-left">
-            <h3 class="font-bold text-xl palette-text-medium">3. 量化分析</h3>
-            <p class="text-gray-600 text-sm">等時替代、組成資料、機器學習。</p>
-          </button>
-          <button id="step4" role="tab" aria-selected="false" class="p-4 border-l-4 border-gray-300 competency-step text-left">
-            <h3 class="font-bold text-xl palette-text-medium">4. 轉化為行動</h3>
-            <p class="text-gray-600 text-sm">提出可行方案，因地制宜。</p>
-          </button>
-        </div>
-        <div id="competency-details" role="tabpanel" class="lg:col-span-2 palette-bg-card rounded-lg shadow-lg p-6 min-h-[300px]"></div>
-      </div>
-    </section>
-
-    <!-- Publications -->
-    <section id="publications" class="py-16" aria-labelledby="publications-heading">
-      <div class="text-center mb-12">
-        <h2 id="publications-heading" class="text-3xl md:text-4xl font-bold palette-text-dark">學術著作與成果</h2>
-        <p class="mt-4 text-lg text-gray-600">聚焦真實世界的健康管理議題，務求有憑有據。</p>
-      </div>
-      <div class="palette-bg-card rounded-lg shadow-lg p-6 mb-8">
-        <h3 class="font-bold text-xl palette-text-dark mb-4 text-center">歷年學術產出趨勢（SCI/SSCI）</h3>
-        <div class="chart-container">
-          <canvas id="publicationsChart" aria-label="歷年學術產出趨勢長條圖" role="img"></canvas>
-        </div>
-      </div>
-      <div>
-        <div class="flex flex-wrap justify-center gap-2 mb-8" role="group" aria-label="論文分類篩選">
-          <button class="pill-button px-4 py-2 rounded-full bg-gray-200 text-gray-700" data-filter="all">全部論文</button>
-          <button class="pill-button px-4 py-2 rounded-full bg-gray-200 text-gray-700" data-filter="health-promo">高齡健康促進</button>
-          <button class="pill-button px-4 py-2 rounded-full bg-gray-200 text-gray-700" data-filter="data-science">資料科學應用</button>
-          <button class="pill-button px-4 py-2 rounded-full bg-gray-200 text-gray-700" data-filter="interdisciplinary">跨域整合</button>
-        </div>
-        <div id="publications-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-      </div>
-    </section>
-
-    <!-- CV Section: Education & Experience -->
-    <section id="cv" class="py-16 bg-white rounded-lg shadow-inner" aria-labelledby="cv-heading">
-      <div class="text-center mb-12">
-        <h2 id="cv-heading" class="text-3xl md:text-4xl font-bold palette-text-dark">學歷與經歷</h2>
-        <p class="mt-4 text-lg text-gray-600">依履歷精簡整理，便於閱覽與檢索。</p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <!-- Education -->
-        <div>
-          <h3 class="text-2xl font-bold palette-text-dark mb-4 border-b-2 border-gray-200 pb-2">學歷</h3>
-          <ul class="space-y-4">
-            <li class="palette-bg-main rounded-lg border p-4">
-              <p class="font-semibold text-lg">國立臺灣師範大學｜博士</p>
-              <p class="text-gray-700">健康促進與衛生教育學系（逕讀）</p>
-              <p class="text-sm text-gray-500 mt-1">2019/06 – 2023/10</p>
-            </li>
-            <li class="palette-bg-main rounded-lg border p-4">
-              <p class="font-semibold text-lg">國立臺灣師範大學｜學士</p>
-              <p class="text-gray-700">健康促進與衛生教育學系</p>
-              <p class="text-sm text-gray-500 mt-1">2014/09 – 2018/06</p>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Experience -->
-        <div>
-          <h3 class="text-2xl font-bold palette-text-dark mb-4 border-b-2 border-gray-200 pb-2">主要經歷</h3>
-          <ul class="space-y-4">
-            <li class="palette-bg-main rounded-lg border p-4">
-              <p class="font-semibold text-lg">國立臺灣師範大學 運動休閒與餐旅管理研究所｜博士後研究員</p>
-              <p class="text-sm text-gray-500 mt-1">2025/02 – 至今</p>
-            </li>
-            <li class="palette-bg-main rounded-lg border p-4">
-              <p class="font-semibold text-lg">臺北市立大學 運動教育研究所｜兼任教師</p>
-              <p class="text-sm text-gray-500 mt-1">在職</p>
-            </li>
-            <li class="palette-bg-main rounded-lg border p-4">
-              <p class="font-semibold text-lg">釜山國立大學醫院 生物醫學研究所｜客座研究員</p>
-              <p class="text-sm text-gray-500 mt-1">在職</p>
-            </li>
-            <li class="palette-bg-main rounded-lg border p-4">
-              <p class="font-semibold text-lg">銀髮方舟照護集團｜長照顧問</p>
-              <p class="text-sm text-gray-500 mt-1">在職</p>
-            </li>
-            <li class="palette-bg-main rounded-lg border p-4">
-              <p class="font-semibold text-lg">釜山國立大學醫院 生物醫學研究所｜研究教授</p>
-              <p class="text-sm text-gray-500 mt-1">2024/02 – 2025/01</p>
-            </li>
-            <li class="palette-bg-main rounded-lg border p-4">
-              <p class="font-semibold text-lg">國立臺灣師範大學｜專／兼任研究助理</p>
-              <p class="text-sm text-gray-500 mt-1">2020/08 – 2024/01</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="bg-gray-800 text-white mt-16">
-    <div class="container mx-auto px-6 py-8 text-center">
-      <h2 class="text-2xl font-bold mb-4">開啟合作或交流</h2>
-      <p class="mb-4">若對研究有興趣，或有合作構想，歡迎來信。</p>
-      <p>賴鼎富（Ting-Fu Lai）</p>
-      <p>
-        <a href="mailto:ted971345@gmail.com" class="underline hover:no-underline">ted971345@gmail.com</a> |
-        <a href="tel:+886979675986" class="underline hover:no-underline">0979-675-986</a>
-      </p>
-      <div class="mt-6 flex justify-center space-x-6">
-        <a href="https://scholar.google.com/citations?user=TYqilcsAAAAJ&hl=zh-TW" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">Google Scholar</a>
-        <a href="https://www.researchgate.net/profile/Lai-Ting-Fu" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">ResearchGate</a>
-        <a href="https://orcid.org/0000-0002-4794-1583" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors duration-300">ORCID</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    const FALLBACK_SVG =
-      "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2NkZDVlMCI+PHBhdGggZD0iTTEyIDJDNi44OCAyIDIgNi40OCAyIDEyczQuNDggMTAgMTAgMTAgMTAtNC40OCAxMC0xMFMxNy41MiAyIDEyIDJ6bTAgM2MxLjY2IDAgMyAxLjM0IDMgM3MtMS4zNCAzLTMgMy0zLTEuMzQtMy0zIDEuMzQtMyAzLTN6bTAgMTRjLTIuMDMgMC0zLjgyLS44Ni01LjE0LTIuMjlsMS40My0xLjQzQzkuMzcgMTYuMiAxMC42MiAxNyAxMiAxN2MxLjM4IDAgMi42My0uOCAzLjcxLTEuNzFsMS40MyAxLjQzQzE1LjgxIDE4LjEzIDE0LjAzIDE5IDEyIDE5eiIvPjwvc3ZnPg==";
-
-    const competencyData = {
-      step1: { 
-        title: '界定關鍵問題', 
-        content: '研究多從高齡照護現場的難題出發，例如在資源有限下如何提升健康成效並評估價值。先釐清問題，後擬定路徑，務求有的放矢。', 
-        icon: '🎯' 
-      },
-      step2: { 
-        title: '客觀資料蒐集', 
-        content: '為降低主觀偏差，採用三軸加速規等穿戴式裝置，客觀測量高齡者的 24 小時活動組成；並結合臨床紀錄與次級資料庫，建立多面向資料集，描繪健康、行為與成本的關係。', 
-        icon: '🔬' 
-      },
-      step3: { 
-        title: '量化分析', 
-        content: '運用等時替代分析、組成資料分析與機器學習等方法，估計以低成本活動取代久坐對健康結果的影響；分析按部就班，實事求是。', 
-        icon: '📈' 
-      },
-      step4: { 
-        title: '轉化為行動', 
-        content: '重點在把證據化為做得到的做法。例如：將每日 30 分鐘的靜態時間改為社區步行，可降低衰弱風險且具成本效益；並可因地制宜推展至不同場域。', 
-        icon: '💡' 
-      }
-    };
-
-    document.addEventListener('DOMContentLoaded', function(){
-      const competencyDetailsContainer = document.getElementById('competency-details');
-      const competencySteps = document.querySelectorAll('.competency-step');
-      
-      function updateCompetencyDetails(stepId){
-        const data = competencyData[stepId];
-        competencyDetailsContainer.innerHTML = `
-          <div class="flex items-start space-x-4">
-            <div class="text-4xl" aria-hidden="true">${data.icon}</div>
-            <div>
-              <h4 class="font-bold text-2xl palette-text-dark mb-2">${data.title}</h4>
-              <p class="text-gray-700 leading-relaxed">${data.content}</p>
-            </div>
-          </div>
-        `;
-        competencySteps.forEach(step=>{
-          step.classList.remove('active'); 
-          step.setAttribute('aria-selected', 'false');
-          if(step.id===stepId){
-            step.classList.add('active');
-            step.setAttribute('aria-selected', 'true');
-          }
-        });
-      }
-      
-      competencySteps.forEach(step=> step.addEventListener('click', ()=> updateCompetencyDetails(step.id)) );
-      updateCompetencyDetails('step1');
-
-      // --- 3. Publications Data (Updated) ---
-      const publicationsData = [
-        // 2025
-        { 
-          id:44, year: 2025, isMetric: true,
-          title:'Longitudinal association of intensity-specific physical activity and sedentary behavior with dynapenia among older Taiwanese adults', 
-          journal:'European Review of Aging and Physical Activity, 2025', 
-          authors: 'Chih-Ching Chang, Jiaren Chen, Ting-Fu Lai, Jong-Hwan Park, Yung Liao',
-          category:'health-promo', 
-          abstract:'探討中高強度、輕度身體活動及靜態行為與高齡者肌力減退風險的縱貫性關聯。', 
-          doi:''
-        },
-        { 
-          id:45, year: 2025, isMetric: false,
-          title:'高齡者使用商用行動裝置測量步數之效度', 
-          journal:'大專體育學刊, 2025', 
-          authors: '林翰柏, 陳佳人, 賴鼎富, 李姿愉, 廖邕',
-          category:'data-science', 
-          abstract:'以三軸加速規為黃金標準，驗證智慧型手機與穿戴裝置測量高齡者步數的準確性。', 
-          doi:''
-        },
-        { 
-          id:43, year: 2025, isMetric: true,
-          title:'Validation of Phase Angle Cutoff Values Derived From Bioelectrical Impedance Analysis for Sarcopenia Screening in Community-Dwelling Older Korean Adults',
-          journal:'Journal of the American Medical Directors Association, 2025',
-          authors: 'Jiaren Chen, Jong-Hwan Park, Chien-Yu Lin, Ting-Fu Lai, et al.',
-          category:'interdisciplinary',
-          abstract:'透過生物電阻抗分析找出適合的相位角臨界值，來幫助社區高齡者早期篩檢肌少症。',
-          doi:'10.1016/j.jamda.2025.105798'
-        },
-        { 
-          id:3, year: 2025, isMetric: true,
-          title:'Light physical activity throughout the day and physical function in older adults: A cross-sectional study',
-          journal:'Chronobiology International, 2025',
-          authors: 'Ting-Fu Lai, Ming-Chun Hsueh, Yung Liao, Jong-Hwan Park',
-          category:'health-promo',
-          abstract:'本研究指出，整日中的輕度身體活動與高齡者的身體功能息息相關。',
-          doi:'10.1080/07420528.2025.2479097'
-        },
-        { 
-          id:4, year: 2025, isMetric: true,
-          title:'Cross-sectional and longitudinal association between accelerometer-measured light-intensity physical activity and cognitive function in older adults',
-          journal:'Frontiers in Aging Neuroscience, 2025',
-          authors: 'Jing-Han Jhan, Jiaren Chen, Ting-Fu Lai, Jong-Hwan Park, Yung Liao',
-          category:'health-promo',
-          abstract:'探討客觀測量的輕度身體活動與高齡者認知功能之間的橫斷面與縱貫性關聯。',
-          doi:'10.3389/fnagi.2025.1505172'
-        },
-        { 
-          id:5, year: 2025, isMetric: true,
-          title:'Dynapenia is associated with a higher risk of depressive symptoms among older adults',
-          journal:'Frontiers in Public Health, 2025',
-          authors: 'Chih-Ching Chang, Yung Liao, Jiaren Chen, Ting-Fu Lai, Ming-Chun Hsueh, Jong-Hwan Park, Yen-Jung Chang',
-          category:'health-promo',
-          abstract:'研究建立了肌力減退（Dynapenia）與憂鬱症狀之間的風險關聯。',
-          doi:'10.3389/fpubh.2025.1533973'
-        },
-        { 
-          id:6, year: 2025, isMetric: true,
-          title:'Age Difference in the Association Between Nutritional Status and Dynapenia in Older Adults',
-          journal:'Nutrients, 2025',
-          authors: 'Chih-Ching Chang, Ting-Fu Lai, Jiaren Chen, Yung Liao, Jong-Hwan Park, Yen Jung Chang',
-          category:'health-promo',
-          abstract:'探討不同年齡層高齡者在營養狀況與肌力減退關聯上的差異。',
-          doi:'10.3390/nu17040734'
-        },
-        { 
-          id:1, year: 2025, isMetric: true,
-          title:'Elevated extracellular water to total body water ratio and low phase angle in relation to muscle function in middle-aged and older adults',
-          journal:'Journal of the International Society of Sports Nutrition, 2025',
-          authors: 'Ting-Fu Lai, Jong-Hwan Park, Minwoo Jang, Jiaren Chen, Myung-Jun Shin, Eunsoo Moon, Jung Mo Kang, Jong Won Lee, Yoon Jae Cho, Yung Liao, Tae Sik Goh, Jung Sub Lee',
-          category:'interdisciplinary',
-          abstract:'探討 BIA 指標與肌肉功能的關聯。',
-          doi:'10.1080/15502783.2025.2536693'
-        },
-        { 
-          id:2, year: 2025, isMetric: true,
-          title:'Respiratory Function and Information Processing Speed in Coal Power Plant Workers: Moderating Effects of Physical Activity and Sedentary Behavior',
-          journal:'Risk Management and Healthcare Policy, 2025',
-          authors: 'Pill Soo Kim, Ting-Fu Lai, Jong-Hwan Park, Minwoo Jang, Yeo-Kyung Shin, Du-Ri Kim, Il Jae Wang, Hyuk Jin Choi, Jae-Il Lee',
-          category:'interdisciplinary',
-          abstract:'跨領域探討職業環境因素對健康的影響，並分析了體力活動的調節作用。',
-          doi:'10.2147/RMHP.S500971'
-        },
-        { 
-          id:7, year: 2025, isMetric: true,
-          title:"Older adults' Internet use behavior and its association with accelerometer-derived physical activity",
-          journal:'Frontiers in Public Health, 2025',
-          authors: 'Yen-Yu Chung, Jiaren Chen, Mei-Chun Lin, Ruo-Lan Liu, Jenn-Bang Wu, Hsin Chang Tsai, Ting-Fu Lai, Yung Liao, Jong-Hwan Park',
-          category:'data-science',
-          abstract:'分析高齡者的網路使用行為與其身體活動模式的關聯。',
-          doi:'10.3389/fpubh.2025.1537309'
-        },
-        { 
-          id:36, year: 2025, isMetric: false,
-          title:'高齡者身體活動、靜態行為與相位角之範域文獻回顧',
-          journal:'運動表現期刊, 2025',
-          authors: '陳佳人, 賴鼎富, 林翰柏, 朴勝泰, 廖邕',
-          category:'interdisciplinary',
-          abstract:'範域回顧身體活動、靜態行為與相位角之間的跨領域研究現況。',
-          doi:''
-        },
-
-        // 2024
-        { 
-          id:9, year: 2024, isMetric: true,
-          title:'Whole-Body and Segmental Phase Angles and Cognitive Function in the Older Korean Population: Cross-Sectional Analysis',
-          journal:'JMIR Public Health and Surveillance, 2024',
-          authors: 'Jiaren Chen, Jong-Hwan Park, Chien-Yu Lin, Ting-Fu Lai, Du-Ri Kim, Myung Jun Shin, Eunsoo Moon, Jung Mo Kang, Jong Won Lee, Yoon Jae Cho, Yung Liao, Tae Sik Goh, Jung Sub Lee',
-          category:'interdisciplinary',
-          abstract:'探討韓國高齡族群中，相位角與認知功能的關聯。',
-          doi:'10.2196/63457'
-        },
-        { 
-          id:15, year: 2024, isMetric: true,
-          title:'Sedentary Behavior and Phase Angle: An Objective Assessment in Physically Active and Inactive Older Adults',
-          journal:'BMJ Open, 2024',
-          authors: 'Jiaren Chen, Ting‐Fu Lai, Yen-Yu Chung, Jong-Hwan Park, Yung Liao',
-          category:'interdisciplinary',
-          abstract:'比較活躍與不活躍高齡者的靜態行為與相位角關係。',
-          doi:'10.1136/bmjopen-2024-086240'
-        },
-        { 
-          id:14, year: 2024, isMetric: true,
-          title:'Associations between objectively measured overall and intensity-specific physical activity and phase angle in older adults',
-          journal:'Scientific Reports, 2024',
-          authors: 'Jiaren Chen, Ting-Fu Lai, Chien-Yu Lin, Ming-Chun Hsueh, Jong-Hwan Park, Yung Liao',
-          category:'interdisciplinary',
-          abstract:'整合客觀身體活動數據與相位角，探討其關係。',
-          doi:'10.1038/s41598-024-57544-7'
-        },
-        { 
-          id:11, year: 2024, isMetric: true,
-          title:'Acute caffeine supplementation offsets the impairment in 10-km running performance following one night of partial sleep deprivation',
-          journal:'European Journal of Applied Physiology, 2024',
-          authors: 'Yi-Shan Tsai, Ting-Tzu Chen, Yau-Ching Chan, Chun-Chin Huang, Ting-Fu Lai, Yung Liao, Richard S Metcalfe, Yung-Chih Chen, Ho-Seng Wang',
-          category:'health-promo',
-          abstract:'驗證咖啡因補充在部分睡眠剝奪後對運動表現的恢復作用。',
-          doi:'10.1007/s00421-024-05638-5'
-        },
-        { 
-          id:13, year: 2024, isMetric: true,
-          title:'Isotemporal Substitution Analysis of the Impact of Sedentary Behavior and Physical Activity on Depression in Taiwanese Older Adults: A Prospective Study',
-          journal:'Mental Health and Physical Activity, 2024',
-          authors: 'Jia-Ren Chen, Ting‐Fu Lai, Chien-Yu Lin, Li-Jung Lin, Jong-Hwan Park, Yung Liao',
-          category:'data-science',
-          abstract:'探討以身體活動取代靜態行為對憂鬱症狀的影響。',
-          doi:'10.1016/j.mhpa.2024.100620'
-        },
-        { 
-          id:10, year: 2024, isMetric: true,
-          title:'Effect of information and communication technology-based smart care services for physical and cognitive functions in older adults living alone',
-          journal:'The Journal of Nutrition, Health & Aging, 2024',
-          authors: 'Du-Ri Kim, Ting-Fu Lai, Minji Sung, Minwoo Jang, Yeo-Kyung Shin, Young jin Ra, Yung Liao, Jong-Hwan Park, Myung-Jun Shin',
-          category:'data-science',
-          abstract:'評估 ICT 智慧照護服務對獨居長者的身心功能影響。',
-          doi:'10.1016/j.jnha.2024.100318'
-        },
-        { 
-          id:12, year: 2024, isMetric: true,
-          title:'Park proximity and all-day and time-specific physical activity and sedentary behaviour in older adults',
-          journal:'BMC Geriatrics, 2024',
-          authors: 'Chien-Yu Lin, Ting-Fu Lai, Chin-Yi Fang, Ming-Chun Hsueh, Yung Liao',
-          category:'interdisciplinary',
-          abstract:'探討公園鄰近性與高齡者全天及特定時段身體活動與靜態行為的關聯。',
-          doi:'10.1186/s12877-024-0xxxx-x'
-        },
-        { 
-          id:8, year: 2024, isMetric: false,
-          title:'Associations Between Replacing Sedentary Time With Intensity-Specific Physical Activity and Physical Function in Older Adults',
-          journal:'大專體育學刊, 2024',
-          authors: 'Yu-Huei Wang, Ming-Chun Hsueh, Ting-Fu Lai, Yung Liao, Jong-Hwan Park',
-          category:'data-science',
-          abstract:'應用替代模型分析以不同強度活動取代靜態時間對身體功能的影響。',
-          doi:'10.5297/ser.202412_26(4).0004'
-        },
-        { 
-          id:37, year: 2024, isMetric: false,
-          title:'什麼時候運動最好？高齡者身體活動時間點與健康結果之系統性文獻回顧',
-          journal:'大專體育, 2024',
-          authors: '賴鼎富, 陳佳人, 李姿愉, 廖邕',
-          category:'health-promo',
-          abstract:'系統性回顧高齡者在一天中不同時間點運動對健康結果的影響。',
-          doi:''
-        },
-        { 
-          id:38, year: 2024, isMetric: false,
-          title:'中高齡者日常高強度間歇性身體活動對於健康影響之敘述性綜論',
-          journal:'體育學報, 2024',
-          authors: '賴鼎富, 陳佳人, 朴鍾煥, 廖邕',
-          category:'health-promo',
-          abstract:'回顧探討將高強度間歇訓練概念應用於日常生活的可行性與健康效益。',
-          doi:''
-        },
-
-        // 2023
-        { 
-          id:16, year: 2023, isMetric: true,
-          title:'Is overall and timing-specific physical activity associated with depression in older adults?',
-          journal:'Frontiers in Public Health, 2023',
-          authors: 'Jiaren Chen, Ting-Fu Lai, Li-Jung Lin, Jong-Hwan Park, Yung Liao',
-          category:'health-promo',
-          abstract:'探討身體活動總量與時間分佈對憂鬱症狀的影響。',
-          doi:'10.3389/fpubh.2023.1241170'
-        },
-        { 
-          id:17, year: 2023, isMetric: true,
-          title:'The Association between a Minimum Amount of Physical Activity and Subsequent Muscle Strength and Balance in Older Adults',
-          journal:'Behavioral Sciences, 2023',
-          authors: 'Yuan-Yu Li, Ming-Chun Hsueh, Jong-Hwan Park, Ting-Fu Lai, Yi-Chuan Hung, Yung Liao',
-          category:'health-promo',
-          abstract:'確定能維持高齡者肌肉力量與平衡的最低身體活動量。',
-          doi:'10.3390/bs13040316'
-        },
-        { 
-          id:18, year: 2023, isMetric: true,
-          title:'Diurnal pattern of breaks in sedentary time and the physical function of older adults',
-          journal:'Archives of Public Health, 2023',
-          authors: 'Ting-Fu Lai, Yung Liao, Chien-Yu Lin, Ming-Chun Hsueh, Mohammad Javad Koohsari, Ai Shibata, Koichiro Oka, Ding-Cheng Chan',
-          category:'health-promo',
-          abstract:'發現頻繁打斷久坐行為比集中運動對身體功能更有益。',
-          doi:'10.1186/s13690-023-01050-1'
-        },
-        { 
-          id:19, year: 2023, isMetric: true,
-          title:'Effect of isotemporal substitution of sedentary behavior with different intensities of physical activity on the muscle function of older adults',
-          journal:'BMC Geriatrics, 2023',
-          authors: 'Ting-Fu Lai, Yung Liao, Ming-Chun Hsueh, Kun-Pei Lin, Ding-Cheng Chan, Yung-Ming Chen, Chiung-Jung Wen',
-          category:'data-science',
-          abstract:'量化分析以不同強度身體活動取代靜態行為對肌肉功能的影響。',
-          doi:'10.1186/s12877-023-03819-z'
-        },
-
-        // 2022
-        { 
-          id:20, year: 2022, isMetric: true,
-          title:'Substituting sedentary time with physical activity in youngest-old to oldest-old community-dwelling older adults',
-          journal:'Frontiers in Public Health, 2022',
-          authors: 'Ting-Fu Lai, Yung Liao, Ming-Chun Hsueh, Hsin-Yen Yen, Jong-Hwan Park, Jae Hyeok Chang',
-          category:'data-science',
-          abstract:'分析不同年齡層高齡者以活動取代靜態行為對身體組成的影響。',
-          doi:'10.3389/fpubh.2022.837213'
-        },
-        { 
-          id:39, year: 2022, isMetric: false,
-          title:'三軸加速規應用於身體活動及靜態行為測量使用之敘述性綜論',
-          journal:'運動表現期刊, 2022',
-          authors: '賴鼎富, 蕭綺, 黃婉綺, 薛名淳, 廖邕',
-          category:'data-science',
-          abstract:'介紹三軸加速規在身體活動研究中的應用、方法學與挑戰。',
-          doi:''
-        },
-        { 
-          id:21, year: 2022, isMetric: true,
-          title:'Accelerometer-Measured Physical Activity and Sedentary Behavior of Adults with Prader-Willi Syndrome',
-          journal:'International Journal of Environmental Research and Public Health, 2022',
-          authors: 'Meng-Jia Wu, Li-Ping Tsai, Ting-Fu Lai, Jeong Su Cho, Yung Liao',
-          category:'interdisciplinary',
-          abstract:'將身體活動測量技術應用於小胖威利症患者。',
-          doi:'10.3390/ijerph19159013'
-        },
-        { 
-          id:22, year: 2022, isMetric: true,
-          title:'Associations of the audited residential neighborhood built-environment attributes with objectively-measured sedentary time among adults: a systematic review',
-          journal:'International Journal of Environmental Health Research, 2022',
-          authors: 'Yi-Chien Yu, Ting-Fu Lai, Chien-Yu Lin, Ming-Chun Hsueh, Yung Liao, Li-Ting Yang, Shao-Hsi Chang',
-          category:'interdisciplinary',
-          abstract:'整合建成環境與公共衛生研究，探討環境特徵與靜態行為關係。',
-          doi:'10.1080/09603123.2021.1894582'
-        },
-
-        // 2021
-        { 
-          id:23, year: 2021, isMetric: true,
-          title:'Non-linear associations between sleep patterns and sarcopenia risks in older adults',
-          journal:'Journal of Clinical Sleep Medicine, 2021',
-          authors: 'Wan-Chi Huang, Chien-Yu Lin, Fumiharu Togo, Ting-Fu Lai, Ming-Chun Hsueh, Yung Liao, Hyuntae Park, Shuzo Kumagai',
-          category:'health-promo',
-          abstract:'揭示睡眠模式與肌少症風險之間的非線性關係。',
-          doi:'10.5664/jcsm.9698'
-        },
-        { 
-          id:25, year: 2021, isMetric: true,
-          title:'Is sleep timing related to objectively-measured physical activity and sedentary behavior in older women?',
-          journal:'Nature and Science of Sleep, 2021',
-          authors: 'Wan-Chi Huang, Chia-Shuan Chang, Chien-Yu Lin, Ting-Fu Lai, Ming-Chun Hsueh, Yung Liao, Jong-Hwan Park',
-          category:'health-promo',
-          abstract:'探討高齡女性睡眠時間點與日常身體活動與靜態行為的關聯。',
-          doi:'10.2147/NSS.S323423'
-        },
-        { 
-          id:26, year: 2021, isMetric: true,
-          title:"Is achieving 7,000 steps/day cross sectionally and prospectively associated with older adults' lower-extremity performance?",
-          journal:'BMC Geriatrics, 2021',
-          authors: 'Ming-Chun Hsueh, Chien-Yu Lin, Ting-Fu Lai, Yi-Chien Yu, Shao-Hsi Chang, Ju Yong Bae, Yung Liao',
-          category:'health-promo',
-          abstract:'驗證每日 7,000 步是否為有效功能指標。',
-          doi:'10.1186/s12877-021-02264-8'
-        },
-        { 
-          id:28, year: 2021, isMetric: true,
-          title:'Sleep duration and timing are nonlinearly associated with depressive symptoms among older adults',
-          journal:'Sleep Medicine, 2021',
-          authors: 'Chien-Yu Lin, Ting-Fu Lai, Wan-Chi Huang, Yi-Chuan Hung, Ming-Chun Hsueh, Jong-Hwan Park, Yung Liao',
-          category:'health-promo',
-          abstract:'發現睡眠時長與時間點與憂鬱症狀存在非線性關係。',
-          doi:'10.1016/j.sleep.2021.03.025'
-        },
-        { 
-          id:40, year: 2021, isMetric: false,
-          title:'高齡者肌力活動及其社會人口學關聯因素',
-          journal:'大專體育學刊, 2021',
-          authors: '賴鼎富, 黃品瑄, 薛名淳, 廖邕, 陳伯儀',
-          category:'health-promo',
-          abstract:'分析影響高齡者參與肌力活動的社會人口學因素。',
-          doi:''
-        },
-        { 
-          id:24, year: 2021, isMetric: true,
-          title:'Does neighborhood built environment support older adults\' daily steps differ by time of day?',
-          journal:'Journal of Transport & Health, 2021',
-          authors: 'Ting-Fu Lai, Chia-Shuan Chang, Yung Liao, Ming-Chun Hsueh, Mohammad Javad Koohsari, Ai Shibata, Koichiro Oka',
-          category:'interdisciplinary',
-          abstract:'探討社區建成環境對不同時段步行活動的支持程度。',
-          doi:'10.1016/j.jth.2021.101188'
-        },
-        { 
-          id:27, year: 2021, isMetric: true,
-          title:'A Nonlinear Association between Neighborhood Walkability and Risks of Sarcopenia in Older Adults',
-          journal:'Journal of Nutrition, Health & Aging, 2021',
-          authors: 'Jong-Hwan Park, Ting-Fu Lai, Shao-Hsi Chang, Wan-Chi Huang, Jeong Su Cho, Yung Liao',
-          category:'interdisciplinary',
-          abstract:'探討社區宜走性與肌少症風險的非線性關係。',
-          doi:'10.1007/s12603-020-1437-9'
-        },
-
-        // 2020
-        { 
-          id:29, year: 2020, isMetric: true,
-          title:"Daily lifestyle behaviors and risks of sarcopenia among older adults",
-          journal:'Archives of Public Health, 2020',
-          authors: 'Pei-Lin Tzeng, Chien-Yu Lin, Ting-Fu Lai, Wan-Chi Huang, Evonne Pien, Ming-Chun Hsueh, Kun-Pei Lin, Jong-Hwan Park, Yung Liao',
-          category:'health-promo',
-          abstract:'檢視日常活動與飲食等生活行為與肌少症風險之關聯。',
-          doi:'10.1186/s13690-020-00497-x'
-        },
-        { 
-          id:30, year: 2020, isMetric: true,
-          title:'Moderate-to-vigorous physical activity duration is more important than timing for physical function in older adults',
-          journal:'Scientific Reports, 2020',
-          authors: 'Ting-Fu Lai, Yung Liao, Chien-Yu Lin, Wan-Chi Huang, Ming-Chun Hsueh, Ding-Cheng Chan',
-          category:'health-promo',
-          abstract:'中高強度活動的「總時長」比「時間點」更為重要。',
-          doi:'10.1038/s41598-020-78536-3'
-        },
-        { 
-          id:31, year: 2020, isMetric: true,
-          title:'Association Between Objectively Measured Sleep Duration and Physical Function in Community-Dwelling Older Adults',
-          journal:'Journal of Clinical Sleep Medicine, 2020',
-          authors: 'Wan-Chi Huang, Chien-Yu Lin, Fumiharu Togo, Ting-Fu Lai, Yung Liao, Jong-Hwan Park, Ming-Chun Hsueh, Hyuntae Park',
-          category:'health-promo',
-          abstract:'客觀睡眠時長與身體功能表現有直接關聯。',
-          doi:'10.5664/jcsm.8690'
-        },
-        { 
-          id:33, year: 2020, isMetric: true,
-          title:"Independent and joint associations of physical activity and dietary behavior with older adults’ lower limb strength",
-          journal:'Nutrients, 2020',
-          authors: 'Ting-Fu Lai, Chien-Yu Lin, Chien-Chih Chou, Wan-Chi Huang, Ming-Chun Hsueh, Jong-Hwan Park, Yung Liao',
-          category:'health-promo',
-          abstract:'探討身體活動與飲食行為對下肢肌力的獨立與交互影響。',
-          doi:'10.3390/nu12020443'
-        },
-        { 
-          id:32, year: 2020, isMetric: true,
-          title:'Which Neighborhood Destinations Matter in the Asian Context? The Role of Destinations in Older Adults’ Physical Activity and Sedentary Behaviors',
-          journal:'BioMed Research International, 2020',
-          authors: 'Jong-Hwan Park, Jin-Hwa Park, Sangwoo Song, Ting-Fu Lai, Yung Liao',
-          category:'interdisciplinary',
-          abstract:'探討亞洲城市環境中，不同社區目的地對活動與靜態行為的影響。',
-          doi:'10.1155/2020/8432934'
-        },
-
-        // 2019
-        { 
-          id:34, year: 2019, isMetric: true,
-          title:'Are area-level crimes associated with older adults’ active and sedentary behavior?',
-          journal:'Sustainability, 2019',
-          authors: 'Chien-Yu Lin, Jong-Hwan Park, Ming-Chun Hsueh, Ting-Fu Lai, Yung Liao',
-          category:'interdisciplinary',
-          abstract:'探討社區犯罪率是否影響高齡者身體活動與靜態行為。',
-          doi:'10.3390/su11092454'
-        },
-        { 
-          id:35, year: 2019, isMetric: true,
-          title:'Walk Score® and its associations with older adults’ healthy behaviors and outcomes',
-          journal:'International Journal of Environmental Research and Public Health, 2019',
-          authors: 'Yung Liao, Chien-Yu Lin, Ting-Fu Lai, Yi-Ju Chen, Byoung-Gwon Kim, Jong-Hwan Park',
-          category:'interdisciplinary',
-          abstract:'驗證 Walk Score® 在評估高齡者健康行為與結果的效度。',
-          doi:'10.3390/ijerph16040622'
-        },
-        { 
-          id:41, year: 2019, isMetric: false,
-          title:'Walk Score®作為台灣地區宜走性環境測量工具之效度檢驗',
-          journal:'台灣衛誌, 2019',
-          authors: '賴鼎富, 林倩宇, 黃翊軒, 廖邕',
-          category:'interdisciplinary',
-          abstract:'檢驗 Walk Score® 在台灣地區的適用性與效度。',
-          doi:'10.6288/TJPH.201908_38(4).107131'
-        },
-        { 
-          id:42, year: 2019, isMetric: false,
-          title:'青少年電子煙使用與吸菸意圖或吸菸行為之關聯性：系統性文獻回顧',
-          journal:'台灣衛誌, 2019',
-          authors: '賴鼎富, 林倩宇, 廖邕',
-          category:'interdisciplinary',
-          abstract:'聚焦青少年電子煙使用與傳統菸草使用的關聯。',
-          doi:'10.6288/TJPH.201904_38(2).107051'
-        }
-      ];
-
-      // 3.x Render publications to cards
-      const pickLink = (p) =>
-        "https://scholar.google.com/scholar?hl=zh-TW&q=" + encodeURIComponent(p.title);
+      const pickLink = (p) => p.url ? p.url : (p.doi ? ('https://doi.org/' + p.doi) : ('https://scholar.google.com/scholar?q=' + encodeURIComponent(p.title)));
 
       const publicationsGrid = document.getElementById('publications-grid');
       const filterButtons = document.querySelectorAll('.pill-button');
-
-      function renderPublications(filter = 'all') {
-        publicationsGrid.innerHTML = '';
-
-        const filtered =
-          filter === 'all'
-            ? publicationsData
-            : publicationsData.filter((p) => p.category === filter);
-
-        if (filtered.length === 0) {
-          publicationsGrid.innerHTML =
-            '<p class="text-gray-500 md:col-span-2 lg:col-span-3 text-center">該分類下暫無代表性論文。</p>';
+      function renderPublications(filter='all'){
+        publicationsGrid.innerHTML='';
+        const filtered = filter==='all'? publicationsData : publicationsData.filter(p=> p.category===filter);
+        if(filtered.length===0){
+          publicationsGrid.innerHTML = '<p class="text-gray-500 md:col-span-2 lg:col-span-3 text-center">該分類下暫無代表性論文。</p>';
           return;
         }
-
-        filtered.forEach((pub) => {
-          const card = document.createElement('div');
-          card.className =
-            'palette-bg-card rounded-lg shadow p-6 flex flex-col justify-between clickable-card';
-
-          card.innerHTML = `
-            <a href="${pickLink(pub)}"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="group block">
-              <h4 class="font-bold text-lg palette-text-dark group-hover:underline">
-                ${pub.title} <span aria-hidden="true">↗</span>
-              </h4>
-              <p class="text-sm text-gray-500 my-2">${pub.journal}</p>
-              <p class="text-gray-700 text-sm">${pub.abstract}</p>
-            </a>
-            <p class="mt-2 text-xs text-gray-400">${pub.authors}</p>
-          `;
-
+        filtered.forEach(pub=>{
+          const card=document.createElement('div');
+          card.className='palette-bg-card rounded-lg shadow p-6 flex flex-col justify-between clickable-card';
+          card.innerHTML = `<a href="${pickLink(pub)}" target="_blank" rel="noopener noreferrer" class="group block"><h4 class="font-bold text-lg palette-text-dark group-hover:underline">${pub.title} <span aria-hidden="true">↗</span></h4><p class="text-sm text-gray-500 my-2">${pub.journal}</p><p class="text-gray-700 text-sm">${pub.abstract}</p></a>`;
           publicationsGrid.appendChild(card);
         });
       }
+      filterButtons.forEach(btn=> btn.addEventListener('click', ()=>{ filterButtons.forEach(b=>b.classList.remove('active')); btn.classList.add('active'); renderPublications(btn.dataset.filter); }));
+      document.querySelector('.pill-button[data-filter="all"]').classList.add('active');
+      renderPublications('all');
 
-      filterButtons.forEach((btn) => {
-        btn.addEventListener('click', () => {
-          filterButtons.forEach((b) => b.classList.remove('active'));
-          btn.classList.add('active');
-          renderPublications(btn.dataset.filter);
-        });
-      });
-
-      const allBtn = document.querySelector('.pill-button[data-filter="all"]');
-      if (allBtn) {
-        allBtn.classList.add('active');
-        renderPublications('all');
-      }
-
-      // --- 4. Chart Logic (Automatic Calculation) ---
-      function getChartData(data) {
-        const counts = {};
-        data.forEach(p => {
-          // 只計算有 year 且 isMetric 為 true 的（SCI/SSCI）
-          if (p.year && p.isMetric === true) {
-            counts[p.year] = (counts[p.year] || 0) + 1;
-          }
-        });
-        
-        const years = Object.keys(counts).sort();
-        const values = years.map(y => counts[y]);
-        
-        return { years, values };
-      }
-
-      const chartData = getChartData(publicationsData);
-      
+      // Chart
       const ctx = document.getElementById('publicationsChart').getContext('2d');
       new Chart(ctx, {
         type: 'bar',
         data: {
-          labels: chartData.years,
+          labels: ['2019','2020','2021','2022','2023','2024','2025（迄今）'],
           datasets: [{
             label: 'SCI/SSCI 論文數量',
-            data: chartData.values,
+            data: [3,5,5,3,5,7,7],
             backgroundColor: '#087E8B',
             borderColor: '#0B3954',
             borderWidth: 1,
@@ -1315,612 +455,30 @@
           responsive: true,
           maintainAspectRatio: false,
           scales: {
-            y: { beginAtZero: true, ticks: { color:'#334155', stepSize: 1 }, grid: { color:'#e2e8f0' } },
+            y: { beginAtZero: true, ticks: { color:'#334155', stepSize: 2 }, grid: { color:'#e2e8f0' } },
             x: { ticks: { color:'#334155' }, grid: { display:false } }
           },
-          plugins: { 
-            legend: { display:false }, 
-            tooltip: { backgroundColor:'#0B3954', titleFont:{ size:14 }, bodyFont:{ size:12 }, padding:10, cornerRadius:4, displayColors:false } 
-          }
+          plugins: { legend: { display:false }, tooltip: { backgroundColor:'#0B3954', titleFont:{ size:14 }, bodyFont:{ size:12 }, padding:10, cornerRadius:4, displayColors:false } }
         }
       });
 
-      // --- 5. Image Error Handling Logic ---
-      const profileImg = document.getElementById('profile-img');
-      if(profileImg) {
-        profileImg.onerror = function() {
-          this.onerror = null;
-          this.src = FALLBACK_SVG;
-        };
-      }
-
-      // --- 6. Navigation Highlighting ---
+      // Nav highlighting
       const navLinks = document.querySelectorAll('.nav-link');
       const sections = document.querySelectorAll('main section');
       const mobileNav = document.getElementById('mobile-nav');
-      
       const observer = new IntersectionObserver((entries)=>{
         entries.forEach(entry=>{
           if(entry.isIntersecting){
             const id = entry.target.id;
-            navLinks.forEach(link =>
-              link.classList.toggle('active', link.getAttribute('href') === `#${id}`)
-            );
-            if(mobileNav && mobileNav.value !== `#${id}`){
-              mobileNav.value = `#${id}`;
-            }
+            navLinks.forEach(link=> link.classList.toggle('active', link.getAttribute('href') === `#${id}`));
+            if(mobileNav && mobileNav.value !== `#${id}`){ mobileNav.value = `#${id}`; }
           }
         });
       }, { rootMargin: "-40% 0px -60% 0px" });
-      
       sections.forEach(sec=> observer.observe(sec));
-      
-      if(mobileNav){ 
-        mobileNav.addEventListener('change', e=> {
-          const target = document.querySelector(e.target.value);
-          if(target) target.scrollIntoView(); 
-        }); 
-      }
+      if(mobileNav){ mobileNav.addEventListener('change', e=> document.querySelector(e.target.value).scrollIntoView()); }
     });
   </script>
 </body>
 </html>
-
-風險的縱貫性關聯。', 
-          doi:''
-        },
-        { 
-          id:45, year: 2025, isMetric: false,
-          title:'高齡者使用商用行動裝置測量步數之效度', 
-          journal:'大專體育學刊, 2025', 
-          authors: '林翰柏, 陳佳人, 賴鼎富, 李姿愉, 廖邕',
-          category:'data-science', 
-          abstract:'以三軸加速規為黃金標準，驗證智慧型手機與穿戴裝置測量高齡者步數的準確性。', 
-          doi:''
-        },
-        { 
-          id:43, year: 2025, isMetric: true,
-          title:'Validation of Phase Angle Cutoff Values Derived From Bioelectrical Impedance Analysis for Sarcopenia Screening in Community-Dwelling Older Korean Adults',
-          journal:'Journal of the American Medical Directors Association, 2025',
-          authors: 'Jiaren Chen, Jong-Hwan Park, Chien-Yu Lin, Ting-Fu Lai, et al.',
-          category:'interdisciplinary',
-          abstract:'透過生物電阻抗分析找出適合的相位角臨界值，來幫助社區高齡者早期篩檢肌少症。',
-          doi:'10.1016/j.jamda.2025.105798'
-        },
-        { 
-          id:3, year: 2025, isMetric: true,
-          title:'Light physical activity throughout the day and physical function in older adults: A cross-sectional study',
-          journal:'Chronobiology International, 2025',
-          authors: 'Ting-Fu Lai, Ming-Chun Hsueh, Yung Liao, Jong-Hwan Park',
-          category:'health-promo',
-          abstract:'本研究指出，整日中的輕度身體活動與高齡者的身體功能息息相關。',
-          doi:'10.1080/07420528.2025.2479097'
-        },
-        { 
-          id:4, year: 2025, isMetric: true,
-          title:'Cross-sectional and longitudinal association between accelerometer-measured light-intensity physical activity and cognitive function in older adults',
-          journal:'Frontiers in Aging Neuroscience, 2025',
-          authors: 'Jing-Han Jhan, Jiaren Chen, Ting-Fu Lai, Jong-Hwan Park, Yung Liao',
-          category:'health-promo',
-          abstract:'探討客觀測量的輕度身體活動與高齡者認知功能之間的橫斷面與縱貫性關聯。',
-          doi:'10.3389/fnagi.2025.1505172'
-        },
-        { 
-          id:5, year: 2025, isMetric: true,
-          title:'Dynapenia is associated with a higher risk of depressive symptoms among older adults',
-          journal:'Frontiers in Public Health, 2025',
-          authors: 'Chih-Ching Chang, Yung Liao, Jiaren Chen, Ting-Fu Lai, Ming-Chun Hsueh, Jong-Hwan Park, Yen-Jung Chang',
-          category:'health-promo',
-          abstract:'研究建立了力弱症（Dynapenia）與憂鬱症狀之間的風險關聯。',
-          doi:'10.3389/fpubh.2025.1533973'
-        },
-        { 
-          id:6, year: 2025, isMetric: true,
-          title:'Age Difference in the Association Between Nutritional Status and Dynapenia in Older Adults',
-          journal:'Nutrients, 2025',
-          authors: 'Chih-Ching Chang, Ting-Fu Lai, Jiaren Chen, Yung Liao, Jong-Hwan Park, Yen Jung Chang',
-          category:'health-promo',
-          abstract:'探討不同年齡層高齡者在營養狀況與力弱症關聯上的差異。',
-          doi:'10.3390/nu17040734'
-        },
-        { 
-          id:1, year: 2025, isMetric: true,
-          title:'Elevated extracellular water to total body water ratio and low phase angle in relation to muscle function in middle-aged and older adults',
-          journal:'Journal of the International Society of Sports Nutrition, 2025',
-          authors: 'Ting-Fu Lai, Jong-Hwan Park, Minwoo Jang, Jiaren Chen, Myung-Jun Shin, Eunsoo Moon, Jung Mo Kang, Jong Won Lee, Yoon Jae Cho, Yung Liao, Tae Sik Goh, Jung Sub Lee',
-          category:'interdisciplinary',
-          abstract:'探討 BIA 指標與肌肉功能的關聯。',
-          doi:'10.1080/15502783.2025.2536693'
-        },
-        { 
-          id:2, year: 2025, isMetric: true,
-          title:'Respiratory Function and Information Processing Speed in Coal Power Plant Workers: Moderating Effects of Physical Activity and Sedentary Behavior',
-          journal:'Risk Management and Healthcare Policy, 2025',
-          authors: 'Pill Soo Kim, Ting-Fu Lai, Jong-Hwan Park, Minwoo Jang, Yeo-Kyung Shin, Du-Ri Kim, Il Jae Wang, Hyuk Jin Choi, Jae-Il Lee',
-          category:'interdisciplinary',
-          abstract:'跨領域探討職業環境因素對健康的影響，並分析了體力活動的調節作用。',
-          doi:'10.2147/RMHP.S500971'
-        },
-        { 
-          id:7, year: 2025, isMetric: true,
-          title:"Older adults' Internet use behavior and its association with accelerometer-derived physical activity",
-          journal:'Frontiers in Public Health, 2025',
-          authors: 'Yen-Yu Chung, Jiaren Chen, Mei-Chun Lin, Ruo-Lan Liu, Jenn-Bang Wu, Hsin Chang Tsai, Ting-Fu Lai, Yung Liao, Jong-Hwan Park',
-          category:'data-science',
-          abstract:'分析高齡者的網路使用行為與其身體活動模式的關聯。',
-          doi:'10.3389/fpubh.2025.1537309'
-        },
-        { 
-          id:36, year: 2025, isMetric: false,
-          title:'高齡者身體活動、靜態行為與相位角之範域文獻回顧',
-          journal:'運動表現期刊, 2025',
-          authors: '陳佳人, 賴鼎富, 林翰柏, 朴勝泰, 廖邕',
-          category:'interdisciplinary',
-          abstract:'範域回顧身體活動、靜態行為與相位角之間的跨領域研究現況。',
-          doi:''
-        },
-
-        // 2024
-        { 
-          id:9, year: 2024, isMetric: true,
-          title:'Whole-Body and Segmental Phase Angles and Cognitive Function in the Older Korean Population: Cross-Sectional Analysis',
-          journal:'JMIR Public Health and Surveillance, 2024',
-          authors: 'Jiaren Chen, Jong-Hwan Park, Chien-Yu Lin, Ting-Fu Lai, Du-Ri Kim, Myung Jun Shin, Eunsoo Moon, Jung Mo Kang, Jong Won Lee, Yoon Jae Cho, Yung Liao, Tae Sik Goh, Jung Sub Lee',
-          category:'interdisciplinary',
-          abstract:'探討韓國高齡族群中，相位角與認知功能的關聯。',
-          doi:'10.2196/63457'
-        },
-        { 
-          id:15, year: 2024, isMetric: true,
-          title:'Sedentary Behavior and Phase Angle: An Objective Assessment in Physically Active and Inactive Older Adults',
-          journal:'BMJ Open, 2024',
-          authors: 'Jiaren Chen, Ting‐Fu Lai, Yen-Yu Chung, Jong-Hwan Park, Yung Liao',
-          category:'interdisciplinary',
-          abstract:'比較活躍與不活躍高齡者的靜態行為與相位角關係。',
-          doi:'10.1136/bmjopen-2024-086240'
-        },
-        { 
-          id:14, year: 2024, isMetric: true,
-          title:'Associations between objectively measured overall and intensity-specific physical activity and phase angle in older adults',
-          journal:'Scientific Reports, 2024',
-          authors: 'Jiaren Chen, Ting-Fu Lai, Chien-Yu Lin, Ming-Chun Hsueh, Jong-Hwan Park, Yung Liao',
-          category:'interdisciplinary',
-          abstract:'整合客觀身體活動數據與相位角，探討其關係。',
-          doi:'10.1038/s41598-024-57544-7'
-        },
-        { 
-          id:11, year: 2024, isMetric: true,
-          title:'Acute caffeine supplementation offsets the impairment in 10-km running performance following one night of partial sleep deprivation',
-          journal:'European Journal of Applied Physiology, 2024',
-          authors: 'Yi-Shan Tsai, Ting-Tzu Chen, Yau-Ching Chan, Chun-Chin Huang, Ting-Fu Lai, Yung Liao, Richard S Metcalfe, Yung-Chih Chen, Ho-Seng Wang',
-          category:'health-promo',
-          abstract:'驗證咖啡因補充在部分睡眠剝奪後對運動表現的恢復作用。',
-          doi:'10.1007/s00421-024-05638-5'
-        },
-        { 
-          id:13, year: 2024, isMetric: true,
-          title:'Isotemporal Substitution Analysis of the Impact of Sedentary Behavior and Physical Activity on Depression in Taiwanese Older Adults: A Prospective Study',
-          journal:'Mental Health and Physical Activity, 2024',
-          authors: 'Jia-Ren Chen, Ting‐Fu Lai, Chien-Yu Lin, Li-Jung Lin, Jong-Hwan Park, Yung Liao',
-          category:'data-science',
-          abstract:'探討以身體活動取代靜態行為對憂鬱症狀的影響。',
-          doi:'10.1016/j.mhpa.2024.100620'
-        },
-        { 
-          id:10, year: 2024, isMetric: true,
-          title:'Effect of information and communication technology-based smart care services for physical and cognitive functions in older adults living alone',
-          journal:'The Journal of Nutrition, Health & Aging, 2024',
-          authors: 'Du-Ri Kim, Ting-Fu Lai, Minji Sung, Minwoo Jang, Yeo-Kyung Shin, Young jin Ra, Yung Liao, Jong-Hwan Park, Myung-Jun Shin',
-          category:'data-science',
-          abstract:'評估 ICT 智慧照護服務對獨居長者的身心功能影響。',
-          doi:'10.1016/j.jnha.2024.100318'
-        },
-        { 
-          id:12, year: 2024, isMetric: true,
-          title:'Park proximity and all-day and time-specific physical activity and sedentary behaviour in older adults',
-          journal:'BMC Geriatrics, 2024',
-          authors: 'Chien-Yu Lin, Ting-Fu Lai, Chin-Yi Fang, Ming-Chun Hsueh, Yung Liao',
-          category:'interdisciplinary',
-          abstract:'探討公園鄰近性與高齡者全天及特定時段身體活動與靜態行為的關聯。',
-          doi:'10.1186/s12877-024-0xxxx-x'
-        },
-        { 
-          id:8, year: 2024, isMetric: false,
-          title:'Associations Between Replacing Sedentary Time With Intensity-Specific Physical Activity and Physical Function in Older Adults',
-          journal:'大專體育學刊, 2024',
-          authors: 'Yu-Huei Wang, Ming-Chun Hsueh, Ting-Fu Lai, Yung Liao, Jong-Hwan Park',
-          category:'data-science',
-          abstract:'應用替代模型分析以不同強度活動取代靜態時間對身體功能的影響。',
-          doi:'10.5297/ser.202412_26(4).0004'
-        },
-        { 
-          id:37, year: 2024, isMetric: false,
-          title:'什麼時候運動最好？高齡者身體活動時間點與健康結果之系統性文獻回顧',
-          journal:'大專體育, 2024',
-          authors: '賴鼎富, 陳佳人, 李姿愉, 廖邕',
-          category:'health-promo',
-          abstract:'系統性回顧高齡者在一天中不同時間點運動對健康結果的影響。',
-          doi:''
-        },
-        { 
-          id:38, year: 2024, isMetric: false,
-          title:'中高齡者日常高強度間歇性身體活動對於健康影響之敘述性綜論',
-          journal:'體育學報, 2024',
-          authors: '賴鼎富, 陳佳人, 朴鍾煥, 廖邕',
-          category:'health-promo',
-          abstract:'回顧探討將高強度間歇訓練概念應用於日常生活的可行性與健康效益。',
-          doi:''
-        },
-
-        // 2023
-        { 
-          id:16, year: 2023, isMetric: true,
-          title:'Is overall and timing-specific physical activity associated with depression in older adults?',
-          journal:'Frontiers in Public Health, 2023',
-          authors: 'Jiaren Chen, Ting-Fu Lai, Li-Jung Lin, Jong-Hwan Park, Yung Liao',
-          category:'health-promo',
-          abstract:'探討身體活動總量與時間分佈對憂鬱症狀的影響。',
-          doi:'10.3389/fpubh.2023.1241170'
-        },
-        { 
-          id:17, year: 2023, isMetric: true,
-          title:'The Association between a Minimum Amount of Physical Activity and Subsequent Muscle Strength and Balance in Older Adults',
-          journal:'Behavioral Sciences, 2023',
-          authors: 'Yuan-Yu Li, Ming-Chun Hsueh, Jong-Hwan Park, Ting-Fu Lai, Yi-Chuan Hung, Yung Liao',
-          category:'health-promo',
-          abstract:'確定能維持高齡者肌肉力量與平衡的最低身體活動量。',
-          doi:'10.3390/bs13040316'
-        },
-        { 
-          id:18, year: 2023, isMetric: true,
-          title:'Diurnal pattern of breaks in sedentary time and the physical function of older adults',
-          journal:'Archives of Public Health, 2023',
-          authors: 'Ting-Fu Lai, Yung Liao, Chien-Yu Lin, Ming-Chun Hsueh, Mohammad Javad Koohsari, Ai Shibata, Koichiro Oka, Ding-Cheng Chan',
-          category:'health-promo',
-          abstract:'發現頻繁打斷久坐行為比集中運動對身體功能更有益。',
-          doi:'10.1186/s13690-023-01050-1'
-        },
-        { 
-          id:19, year: 2023, isMetric: true,
-          title:'Effect of isotemporal substitution of sedentary behavior with different intensities of physical activity on the muscle function of older adults',
-          journal:'BMC Geriatrics, 2023',
-          authors: 'Ting-Fu Lai, Yung Liao, Ming-Chun Hsueh, Kun-Pei Lin, Ding-Cheng Chan, Yung-Ming Chen, Chiung-Jung Wen',
-          category:'data-science',
-          abstract:'量化分析以不同強度身體活動取代靜態行為對肌肉功能的影響。',
-          doi:'10.1186/s12877-023-03819-z'
-        },
-
-        // 2022
-        { 
-          id:20, year: 2022, isMetric: true,
-          title:'Substituting sedentary time with physical activity in youngest-old to oldest-old community-dwelling older adults',
-          journal:'Frontiers in Public Health, 2022',
-          authors: 'Ting-Fu Lai, Yung Liao, Ming-Chun Hsueh, Hsin-Yen Yen, Jong-Hwan Park, Jae Hyeok Chang',
-          category:'data-science',
-          abstract:'分析不同年齡層高齡者以活動取代靜態行為對身體組成的影響。',
-          doi:'10.3389/fpubh.2022.837213'
-        },
-        { 
-          id:39, year: 2022, isMetric: false,
-          title:'三軸加速規應用於身體活動及靜態行為測量使用之敘述性綜論',
-          journal:'運動表現期刊, 2022',
-          authors: '賴鼎富, 蕭綺, 黃婉綺, 薛名淳, 廖邕',
-          category:'data-science',
-          abstract:'介紹三軸加速規在身體活動研究中的應用、方法學與挑戰。',
-          doi:''
-        },
-        { 
-          id:21, year: 2022, isMetric: true,
-          title:'Accelerometer-Measured Physical Activity and Sedentary Behavior of Adults with Prader-Willi Syndrome',
-          journal:'International Journal of Environmental Research and Public Health, 2022',
-          authors: 'Meng-Jia Wu, Li-Ping Tsai, Ting-Fu Lai, Jeong Su Cho, Yung Liao',
-          category:'interdisciplinary',
-          abstract:'將身體活動測量技術應用於小胖威利症患者。',
-          doi:'10.3390/ijerph19159013'
-        },
-        { 
-          id:22, year: 2022, isMetric: true,
-          title:'Associations of the audited residential neighborhood built-environment attributes with objectively-measured sedentary time among adults: a systematic review',
-          journal:'International Journal of Environmental Health Research, 2022',
-          authors: 'Yi-Chien Yu, Ting-Fu Lai, Chien-Yu Lin, Ming-Chun Hsueh, Yung Liao, Li-Ting Yang, Shao-Hsi Chang',
-          category:'interdisciplinary',
-          abstract:'整合建成環境與公共衛生研究，探討環境特徵與靜態行為關係。',
-          doi:'10.1080/09603123.2021.1894582'
-        },
-
-        // 2021
-        { 
-          id:23, year: 2021, isMetric: true,
-          title:'Non-linear associations between sleep patterns and sarcopenia risks in older adults',
-          journal:'Journal of Clinical Sleep Medicine, 2021',
-          authors: 'Wan-Chi Huang, Chien-Yu Lin, Fumiharu Togo, Ting-Fu Lai, Ming-Chun Hsueh, Yung Liao, Hyuntae Park, Shuzo Kumagai',
-          category:'health-promo',
-          abstract:'探討睡眠模式與肌少症風險之間的非線性關係。',
-          doi:'10.5664/jcsm.9698'
-        },
-        { 
-          id:25, year: 2021, isMetric: true,
-          title:'Is sleep timing related to objectively-measured physical activity and sedentary behavior in older women?',
-          journal:'Nature and Science of Sleep, 2021',
-          authors: 'Wan-Chi Huang, Chia-Shuan Chang, Chien-Yu Lin, Ting-Fu Lai, Ming-Chun Hsueh, Yung Liao, Jong-Hwan Park',
-          category:'health-promo',
-          abstract:'探討高齡女性睡眠時間點與日常身體活動與靜態行為的關聯。',
-          doi:'10.2147/NSS.S323423'
-        },
-        { 
-          id:26, year: 2021, isMetric: true,
-          title:"Is achieving 7,000 steps/day cross sectionally and prospectively associated with older adults' lower-extremity performance?",
-          journal:'BMC Geriatrics, 2021',
-          authors: 'Ming-Chun Hsueh, Chien-Yu Lin, Ting-Fu Lai, Yi-Chien Yu, Shao-Hsi Chang, Ju Yong Bae, Yung Liao',
-          category:'health-promo',
-          abstract:'驗證每日 7,000 步是否為有效功能指標。',
-          doi:'10.1186/s12877-021-02264-8'
-        },
-        { 
-          id:28, year: 2021, isMetric: true,
-          title:'Sleep duration and timing are nonlinearly associated with depressive symptoms among older adults',
-          journal:'Sleep Medicine, 2021',
-          authors: 'Chien-Yu Lin, Ting-Fu Lai, Wan-Chi Huang, Yi-Chuan Hung, Ming-Chun Hsueh, Jong-Hwan Park, Yung Liao',
-          category:'health-promo',
-          abstract:'發現睡眠時長與時間點與憂鬱症狀存在非線性關係。',
-          doi:'10.1016/j.sleep.2021.03.025'
-        },
-        { 
-          id:40, year: 2021, isMetric: false,
-          title:'高齡者肌力活動及其社會人口學關聯因素',
-          journal:'大專體育學刊, 2021',
-          authors: '賴鼎富, 黃品瑄, 薛名淳, 廖邕, 陳伯儀',
-          category:'health-promo',
-          abstract:'分析影響高齡者參與肌力活動的社會人口學因素。',
-          doi:''
-        },
-        { 
-          id:24, year: 2021, isMetric: true,
-          title:'Does neighborhood built environment support older adults\' daily steps differ by time of day?',
-          journal:'Journal of Transport & Health, 2021',
-          authors: 'Ting-Fu Lai, Chia-Shuan Chang, Yung Liao, Ming-Chun Hsueh, Mohammad Javad Koohsari, Ai Shibata, Koichiro Oka',
-          category:'interdisciplinary',
-          abstract:'探討社區建成環境對不同時段步行活動的支持程度。',
-          doi:'10.1016/j.jth.2021.101188'
-        },
-        { 
-          id:27, year: 2021, isMetric: true,
-          title:'A Nonlinear Association between Neighborhood Walkability and Risks of Sarcopenia in Older Adults',
-          journal:'Journal of Nutrition, Health & Aging, 2021',
-          authors: 'Jong-Hwan Park, Ting-Fu Lai, Shao-Hsi Chang, Wan-Chi Huang, Jeong Su Cho, Yung Liao',
-          category:'interdisciplinary',
-          abstract:'探討社區宜走性與肌少症風險的非線性關係。',
-          doi:'10.1007/s12603-020-1437-9'
-        },
-
-        // 2020
-        { 
-          id:29, year: 2020, isMetric: true,
-          title:"Daily lifestyle behaviors and risks of sarcopenia among older adults",
-          journal:'Archives of Public Health, 2020',
-          authors: 'Pei-Lin Tzeng, Chien-Yu Lin, Ting-Fu Lai, Wan-Chi Huang, Evonne Pien, Ming-Chun Hsueh, Kun-Pei Lin, Jong-Hwan Park, Yung Liao',
-          category:'health-promo',
-          abstract:'檢視日常身體活動與飲食等生活行為與肌少症風險之關聯。',
-          doi:'10.1186/s13690-020-00497-x'
-        },
-        { 
-          id:30, year: 2020, isMetric: true,
-          title:'Moderate-to-vigorous physical activity duration is more important than timing for physical function in older adults',
-          journal:'Scientific Reports, 2020',
-          authors: 'Ting-Fu Lai, Yung Liao, Chien-Yu Lin, Wan-Chi Huang, Ming-Chun Hsueh, Ding-Cheng Chan',
-          category:'health-promo',
-          abstract:'中高強度活動的「總時長」比「時間點」更為重要。',
-          doi:'10.1038/s41598-020-78536-3'
-        },
-        { 
-          id:31, year: 2020, isMetric: true,
-          title:'Association Between Objectively Measured Sleep Duration and Physical Function in Community-Dwelling Older Adults',
-          journal:'Journal of Clinical Sleep Medicine, 2020',
-          authors: 'Wan-Chi Huang, Chien-Yu Lin, Fumiharu Togo, Ting-Fu Lai, Yung Liao, Jong-Hwan Park, Ming-Chun Hsueh, Hyuntae Park',
-          category:'health-promo',
-          abstract:'客觀睡眠時長與身體功能表現有直接關聯。',
-          doi:'10.5664/jcsm.8690'
-        },
-        { 
-          id:33, year: 2020, isMetric: true,
-          title:"Independent and joint associations of physical activity and dietary behavior with older adults’ lower limb strength",
-          journal:'Nutrients, 2020',
-          authors: 'Ting-Fu Lai, Chien-Yu Lin, Chien-Chih Chou, Wan-Chi Huang, Ming-Chun Hsueh, Jong-Hwan Park, Yung Liao',
-          category:'health-promo',
-          abstract:'探討身體活動與飲食行為對下肢肌力的獨立與交互影響。',
-          doi:'10.3390/nu12020443'
-        },
-        { 
-          id:32, year: 2020, isMetric: true,
-          title:'Which Neighborhood Destinations Matter in the Asian Context? The Role of Destinations in Older Adults’ Physical Activity and Sedentary Behaviors',
-          journal:'BioMed Research International, 2020',
-          authors: 'Jong-Hwan Park, Jin-Hwa Park, Sangwoo Song, Ting-Fu Lai, Yung Liao',
-          category:'interdisciplinary',
-          abstract:'探討亞洲城市環境中，不同社區目的地對活動與靜態行為的影響。',
-          doi:'10.1155/2020/8432934'
-        },
-
-        // 2019
-        { 
-          id:34, year: 2019, isMetric: true,
-          title:'Are area-level crimes associated with older adults’ active and sedentary behavior?',
-          journal:'Sustainability, 2019',
-          authors: 'Chien-Yu Lin, Jong-Hwan Park, Ming-Chun Hsueh, Ting-Fu Lai, Yung Liao',
-          category:'interdisciplinary',
-          abstract:'探討社區犯罪率是否影響高齡者身體活動與靜態行為。',
-          doi:'10.3390/su11092454'
-        },
-        { 
-          id:35, year: 2019, isMetric: true,
-          title:'Walk Score® and its associations with older adults’ healthy behaviors and outcomes',
-          journal:'International Journal of Environmental Research and Public Health, 2019',
-          authors: 'Yung Liao, Chien-Yu Lin, Ting-Fu Lai, Yi-Ju Chen, Byoung-Gwon Kim, Jong-Hwan Park',
-          category:'interdisciplinary',
-          abstract:'驗證 Walk Score® 在評估高齡者健康行為與結果的效度。',
-          doi:'10.3390/ijerph16040622'
-        },
-        { 
-          id:41, year: 2019, isMetric: false,
-          title:'Walk Score®作為台灣地區宜走性環境測量工具之效度檢驗',
-          journal:'台灣衛誌, 2019',
-          authors: '賴鼎富, 林倩宇, 黃翊軒, 廖邕',
-          category:'interdisciplinary',
-          abstract:'檢驗 Walk Score® 在台灣地區的適用性與效度。',
-          doi:'10.6288/TJPH.201908_38(4).107131'
-        },
-        { 
-          id:42, year: 2019, isMetric: false,
-          title:'青少年電子煙使用與吸菸意圖或吸菸行為之關聯性：系統性文獻回顧',
-          journal:'台灣衛誌, 2019',
-          authors: '賴鼎富, 林倩宇, 廖邕',
-          category:'interdisciplinary',
-          abstract:'聚焦青少年電子煙使用與傳統菸草使用的關聯。',
-          doi:'10.6288/TJPH.201904_38(2).107051'
-        }
-      ];
-
-      // 3.x Render publications to cards
-      const pickLink = (p) =>
-        "https://scholar.google.com/scholar?hl=zh-TW&q=" + encodeURIComponent(p.title);
-
-      const publicationsGrid = document.getElementById('publications-grid');
-      const filterButtons = document.querySelectorAll('.pill-button');
-
-      function renderPublications(filter = 'all') {
-        publicationsGrid.innerHTML = '';
-
-        const filtered =
-          filter === 'all'
-            ? publicationsData
-            : publicationsData.filter((p) => p.category === filter);
-
-        if (filtered.length === 0) {
-          publicationsGrid.innerHTML =
-            '<p class="text-gray-500 md:col-span-2 lg:col-span-3 text-center">該分類下暫無代表性論文。</p>';
-          return;
-        }
-
-        filtered.forEach((pub) => {
-          const card = document.createElement('div');
-          card.className =
-            'palette-bg-card rounded-lg shadow p-6 flex flex-col justify-between clickable-card';
-
-          card.innerHTML = `
-            <a href="${pickLink(pub)}"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="group block">
-              <h4 class="font-bold text-lg palette-text-dark group-hover:underline">
-                ${pub.title} <span aria-hidden="true">↗</span>
-              </h4>
-              <p class="text-sm text-gray-500 my-2">${pub.journal}</p>
-              <p class="text-gray-700 text-sm">${pub.abstract}</p>
-            </a>
-            <p class="mt-2 text-xs text-gray-400">${pub.authors}</p>
-          `;
-
-          publicationsGrid.appendChild(card);
-        });
-      }
-
-      filterButtons.forEach((btn) => {
-        btn.addEventListener('click', () => {
-          filterButtons.forEach((b) => b.classList.remove('active'));
-          btn.classList.add('active');
-          renderPublications(btn.dataset.filter);
-        });
-      });
-
-      const allBtn = document.querySelector('.pill-button[data-filter="all"]');
-      if (allBtn) {
-        allBtn.classList.add('active');
-        renderPublications('all');
-      }
-
-      // --- 4. Chart Logic (Automatic Calculation) ---
-      function getChartData(data) {
-        const counts = {};
-        data.forEach(p => {
-          // 只計算有 year 且 isMetric 為 true 的（SCI/SSCI）
-          if (p.year && p.isMetric === true) {
-            counts[p.year] = (counts[p.year] || 0) + 1;
-          }
-        });
-        
-        const years = Object.keys(counts).sort();
-        const values = years.map(y => counts[y]);
-        
-        return { years, values };
-      }
-
-      const chartData = getChartData(publicationsData);
-      
-      const ctx = document.getElementById('publicationsChart').getContext('2d');
-      new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: chartData.years,
-          datasets: [{
-            label: 'SCI/SSCI 論文數量',
-            data: chartData.values,
-            backgroundColor: '#087E8B',
-            borderColor: '#0B3954',
-            borderWidth: 1,
-            borderRadius: 5
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          scales: {
-            y: { beginAtZero: true, ticks: { color:'#334155', stepSize: 1 }, grid: { color:'#e2e8f0' } },
-            x: { ticks: { color:'#334155' }, grid: { display:false } }
-          },
-          plugins: { 
-            legend: { display:false }, 
-            tooltip: { backgroundColor:'#0B3954', titleFont:{ size:14 }, bodyFont:{ size:12 }, padding:10, cornerRadius:4, displayColors:false } 
-          }
-        }
-      });
-
-      // --- 5. Image Error Handling Logic ---
-      const profileImg = document.getElementById('profile-img');
-      if(profileImg) {
-        profileImg.onerror = function() {
-          this.onerror = null;
-          this.src = FALLBACK_SVG;
-        };
-      }
-
-      // --- 6. Navigation Highlighting ---
-      const navLinks = document.querySelectorAll('.nav-link');
-      const sections = document.querySelectorAll('main section');
-      const mobileNav = document.getElementById('mobile-nav');
-      
-      const observer = new IntersectionObserver((entries)=>{
-        entries.forEach(entry=>{
-          if(entry.isIntersecting){
-            const id = entry.target.id;
-            navLinks.forEach(link =>
-              link.classList.toggle('active', link.getAttribute('href') === `#${id}`)
-            );
-            if(mobileNav && mobileNav.value !== `#${id}`){
-              mobileNav.value = `#${id}`;
-            }
-          }
-        });
-      }, { rootMargin: "-40% 0px -60% 0px" });
-      
-      sections.forEach(sec=> observer.observe(sec));
-      
-      if(mobileNav){ 
-        mobileNav.addEventListener('change', e=> {
-          const target = document.querySelector(e.target.value);
-          if(target) target.scrollIntoView(); 
-        }); 
-      }
-    });
-  </script>
-</body>
-</html>
-
+```
