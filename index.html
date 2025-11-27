@@ -100,6 +100,11 @@
     .pill-button.active{background-color:#0B3954;color:#fff}
     .competency-step.active{border-color:#087E8B!important;background-color:#eaf6f6}
     .competency-step.active h3{color:#0B3954}
+      /* 與英文版相同的個人照片容器樣式 */
+    .profile-image-container {
+      position: relative;
+      background-color: #e2e8f0; /* 圖片載入前有一個淡灰底 */
+    }
   </style>
 </head>
 <body class="palette-bg-main">
@@ -138,10 +143,27 @@
   </header>
 
   <main class="container mx-auto p-4 md:p-8">
-    <!-- About -->
+   <!-- About -->
     <section id="about" class="text-center py-16 md:py-24" aria-labelledby="about-heading">
-      <h1 id="about-heading" class="text-4xl md:text-6xl font-bold palette-text-dark mb-4">高齡健康<br class="hidden md:block" />與資料科學研究</h1>
-      <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-600 mb-12">結合穿戴式裝置資料與量化分析，探討高齡者健康促進策略，提出可執行的實證解方，務求有的放矢。</p>
+      <h1 id="about-heading" class="text-4xl md:text-6xl font-bold palette-text-dark mb-4">
+        高齡健康<br class="hidden md:block" />與資料科學研究
+      </h1>
+
+      <!-- 個人照片：沿用英文版邏輯 -->
+      <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-lg ring-4 ring-white/80 mx-auto mb-8 profile-image-container">
+        <img
+          src="assets/profile-photo.jpg"
+          id="profile-img"
+          alt="賴鼎富博士個人照片"
+          class="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </div>
+
+      <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-600 mb-12">
+        結合穿戴式裝置資料與量化分析，探討高齡者健康促進策略，提出可執行的實證解方，務求有的放矢。
+      </p>
+
       <div class="flex justify-center items-center space-x-4 md:space-x-8" aria-label="關鍵統計">
         <div class="text-center">
           <p class="text-4xl md:text-6xl font-bold palette-text-accent">2026年</p>
@@ -871,3 +893,4 @@
   </script>
 </body>
 </html>
+
