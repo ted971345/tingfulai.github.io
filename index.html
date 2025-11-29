@@ -122,13 +122,19 @@
   <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-md" role="banner">
     <nav class="container mx-auto px-6 py-3 flex justify-between items-center" aria-label="主導覽">
       <div class="text-2xl font-bold palette-text-dark">賴鼎富 <span class="text-lg font-normal text-gray-500">博士</span></div>
-      <div class="hidden md:flex space-x-2">
-        <a href="#about" class="nav-link active">關於我</a>
-        <a href="#focus" class="nav-link">研究主軸</a>
-        <a href="#methodology" class="nav-link">研究方法</a>
-        <a href="#publications" class="nav-link">學術發表</a>
-        <a href="#cv" class="nav-link">學歷與經歷</a>
-      </div>
+      <div class="hidden md:flex items-center space-x-2">
+  <a href="#about" class="nav-link active">關於我</a>
+  <a href="#focus" class="nav-link">研究主軸</a>
+  <a href="#methodology" class="nav-link">研究方法</a>
+  <a href="#publications" class="nav-link">學術發表</a>
+  <a href="#cv" class="nav-link">學歷與經歷</a>
+
+  <!-- 分隔線（可選） -->
+  <span class="w-px h-6 bg-gray-300 mx-1"></span>
+
+  <!-- 英文版連結：路徑請換成你實際的英文頁面 -->
+  <a href="index-en.html" class="nav-link">English</a>
+</div>
       <div class="md:hidden">
         <label for="mobile-nav" class="sr-only">行動導覽</label>
         <select id="mobile-nav" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
@@ -893,5 +899,6 @@
   </script>
 </body>
 </html>
+
 
 
