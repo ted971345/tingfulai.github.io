@@ -368,11 +368,29 @@
       competencySteps.forEach(step=> step.addEventListener('click', ()=> updateCompetencyDetails(step.id)) );
       updateCompetencyDetails('step1');
 
-      // --- 3. Publications Data (Updated 2025-03-20) ---
+      // --- 3. Publications Data (Updated 2025-12-31) ---
       // isMetric: true  -> SCI/SSCI（會被算入圖表）
       // isMetric: false -> TSSCI/其他（只顯示在列表，不算入圖表）
       const publicationsData = [
-        // --- 2025 (Total 9 SCI/SSCI) ---
+        // --- 2025 (Total 12 SCI/SSCI) ---
+        { 
+          id:47, year: 2025, isMetric: true, 
+          title:'Improving Worker Health with Wearable Technology in a Power Plant', 
+          journal:'Journal of Occupational and Environmental Medicine, 2025', 
+          authors: 'Jong-Hwan Park, Ting-Fu Lai, Jeong Su Cho, Hyuk Jin Choi, Jae-Il Lee',
+          category:'health-promo', 
+          abstract:'透過為期五個月的穿戴式裝置與ICT健康管理系統介入，燃煤電廠工人的認知處理速度、呼吸功能、身體組成與體能表現皆有顯著改善', 
+          doi:'10.1097/JOM.0000000000003620'
+        },
+        { 
+          id:46, year: 2025, isMetric: true, 
+          title:'A randomized controlled trial of wearable accelerometer-based feedback and behavior change techniques to increase physical activity and reduce sedentary behavior in older women', 
+          journal:'Experimental Gerontology, 2025', 
+          authors: 'Yu-Huei Wang, Ting-Fu Lai, Yung Liao, I-Lun Cheng, Ming-Chun Hsueh',
+          category:'health-promo', 
+          abstract:'透過 12 週穿戴式加速度規即時回饋結合行為改變技巧，可以有效幫助女性高齡者增加每日步數並減少長時間久坐。', 
+          doi:'10.1016/j.exger.2025.112979'
+        },
         { 
           id:44, year: 2025, isMetric: true, 
           title:'Longitudinal association of intensity-specific physical activity and sedentary behavior with dynapenia among older Taiwanese adults', 
@@ -380,7 +398,7 @@
           authors: 'Chih-Ching Chang, Jiaren Chen, Ting-Fu Lai, Jong-Hwan Park, Yung Liao',
           category:'health-promo', 
           abstract:'探討中高強度、輕度身體活動及靜態行為與高齡者肌力減退風險的縱貫性關聯。', 
-          doi:''
+          doi:'10.1186/s11556-025-00382-x'
         },
         { 
           id:45, year: 2025, isMetric: false,
@@ -847,7 +865,7 @@
           labels: ['2019','2020','2021','2022','2023','2024','2025（迄今）'],
           datasets: [{
             label: 'SCI/SSCI 論文數量',
-            data: [2,5,6,3,4,8,9],
+            data: [2,5,6,3,4,8,11],
             backgroundColor: '#087E8B',
             borderColor: '#0B3954',
             borderWidth: 1,
@@ -909,6 +927,7 @@
   </script>
 </body>
 </html>
+
 
 
 
