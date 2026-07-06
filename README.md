@@ -16,16 +16,40 @@ Tailwind CSS - 用於樣式設計
 Chart.js - 用於數據可視化圖表
 
 專案管理
-更新網頁內容
-本網站的所有文字內容、論文列表與 CV 均直接寫在 HTML 檔案中。若要更新，請遵循以下步驟：
 
-在本儲存庫中，根據要修改的語言版本，點擊 index.html (中文) 或 en/index.html (英文)。
+資料結構
+論文與媒體報導資料已從 HTML 中抽離，統一存放於 data/ 資料夾，中英文版網頁會在載入時各自從同一份檔案讀取資料並顯示對應語言欄位：
 
-點擊右上角的鉛筆圖示 ✏️ 進入編輯模式。
+data/publications.json - 學術著作列表
 
-完成修改後，捲動至頁面底部並點擊 Commit changes。
+data/news.json - 媒體報導 / 研究亮點列表（目前僅英文版網頁未顯示此區塊）
 
-變更將在幾分鐘內自動部署並更新至公開網站。
+CV、頁面文字與版面配置仍直接寫在 index.html (中文) 與 en/index.html (英文) 中，這類內容才需要個別修改兩個檔案。
+
+新增一筆論文
+編輯 data/publications.json，在陣列最前面（或任意位置）新增一個物件，欄位如下：
+
+id：唯一數字編號，建議遞增（可參考現有最大值 +1）
+
+year：發表年份（數字）
+
+isMetric：true 表示 SCI/SSCI（會計入頁面上的長條圖統計），false 表示 TSSCI 或其他期刊（只會顯示在列表中，不計入圖表）
+
+category：health-promo（高齡健康促進）、data-science（資料科學應用）或 interdisciplinary（跨域整合）三選一，對應頁面上的篩選按鈕
+
+doi、url：至少擇一填寫，頁面會優先使用 url，其次用 doi 組成連結，兩者皆空則 fallback 到 Google Scholar 搜尋
+
+title_zh / title_en、journal_zh / journal_en、authors_zh / authors_en：中英文標題、期刊名稱、作者。若論文本身以英文發表，中英文欄位可以填一樣的英文內容
+
+abstract_zh / abstract_en：中英文摘要（一兩句話即可）
+
+存檔後，中英文網頁會自動同步顯示這筆新論文，不需要再手動修改兩份 HTML。
+
+新增一筆媒體報導
+編輯 data/news.json，新增物件並填入 id、title（標題）、source（媒體來源）、date（年份）、tag（標籤，如「媒體專訪」）、url（報導連結）即可。
+
+送出更新
+編輯完 JSON 檔案後，用 Git 提交並推送到 GitHub（例如透過 GitHub 網頁的 Commit changes，或請 Claude 直接幫忙 commit + push）。網站會在幾分鐘內自動部署並更新。
 
 更新個人照片
 個人照片由兩個語言版本的網頁共用，統一存放於 assets/ 資料夾。
