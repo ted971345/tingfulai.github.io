@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 68 68" fill="none">
+  <title>Ting-Fu Lai — circadian research monogram</title>
+  <desc>A TL monogram within a daily cycle, with 24 hour marks and a terracotta timing accent.</desc>
+  <g stroke="#243f36" stroke-opacity=".38" stroke-width="1.15" stroke-linecap="round">
+    <path d="M32.00 3.00L32.00 0.00"/>
+    <path d="M39.89 2.54L40.28 1.09"/>
+    <path d="M47.25 5.59L48.00 4.29"/>
+    <path d="M53.57 10.43L54.63 9.37"/>
+    <path d="M58.41 16.75L59.71 16.00"/>
+    <path d="M61.46 24.11L62.91 23.72"/>
+    <path d="M61.00 32.00L64.00 32.00"/>
+    <path d="M61.46 39.89L62.91 40.28"/>
+    <path d="M58.41 47.25L59.71 48.00"/>
+    <path d="M53.57 53.57L54.63 54.63"/>
+    <path d="M47.25 58.41L48.00 59.71"/>
+    <path d="M39.89 61.46L40.28 62.91"/>
+    <path d="M32.00 61.00L32.00 64.00"/>
+    <path d="M24.11 61.46L23.72 62.91"/>
+    <path d="M16.75 58.41L16.00 59.71"/>
+    <path d="M10.43 53.57L9.37 54.63"/>
+    <path d="M5.59 47.25L4.29 48.00"/>
+    <path d="M2.54 39.89L1.09 40.28"/>
+    <path d="M3.00 32.00L0.00 32.00"/>
+    <path d="M2.54 24.11L1.09 23.72"/>
+    <path d="M5.59 16.75L4.29 16.00"/>
+    <path d="M10.43 10.43L9.37 9.37"/>
+    <path d="M16.75 5.59L16.00 4.29"/>
+    <path d="M24.11 2.54L23.72 1.09"/>
+  </g>
+  <path d="M49.68 49.68A25 25 0 1 1 49.68 14.32" stroke="#243f36" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M53.65 19.5A25 25 0 0 1 55.49 40.55" stroke="#a54e35" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M17 22H35V26H28V44H24V26H17Z" fill="#243f36"/>
+  <path d="M37 28H41V40H48V44H37Z" fill="#243f36"/>
+  <circle cx="39" cy="22" r="2.5" fill="#a54e35"/>
+</svg>

@@ -20,7 +20,7 @@ p{color:var(--muted)}
 .site-header{position:sticky;top:0;background:rgba(246,244,238,.96);backdrop-filter:blur(14px);z-index:20;border-bottom:1px solid var(--line)}
 .site-header nav{display:flex;align-items:center;gap:30px;height:90px}
 .brand{display:flex;align-items:center;gap:15px;font-size:18px;font-weight:600;line-height:1.4}
-.brand-mark{font-family:Georgia,serif;font-size:42px;letter-spacing:-5px;margin-right:8px}
+.brand-mark{width:48px;height:48px;flex-shrink:0}
 .brand small{display:block;font-size:9px;letter-spacing:1.9px;margin-top:5px;font-weight:500}
 .desktop-nav{display:flex;gap:28px;margin-left:auto;font-size:13px}
 .desktop-nav a{border-bottom:1px solid transparent;padding:8px 0}
@@ -138,7 +138,7 @@ footer h2{font-size:38px;margin:20px 0}
 .wrap{width:calc(100% - 40px)}
 .site-header nav{height:76px;gap:16px}
 .brand{font-size:15px;gap:8px}
-.brand-mark{font-size:34px}
+.brand-mark{width:40px;height:40px}
 .brand small{font-size:7px;letter-spacing:1px}
 .desktop-nav{display:none}
 .language{margin-left:auto;padding-left:12px}
