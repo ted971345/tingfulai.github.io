@@ -182,3 +182,18 @@ footer h2{font-size:29px}
 *{transition:none!important}
 }
 
+
+/* Funded research: a grant record with a compact funding sidebar. */
+.funded-project{display:grid;grid-template-columns:240px minmax(0,1fr);gap:42px;border-top:1px solid var(--ink);padding-top:30px}
+.project-aside{border-right:1px solid var(--line);padding-right:30px}
+.project-years{font:32px/1.5 Georgia,serif;color:var(--ink);margin:14px 0 8px}
+.project-aside>p:not(.eyebrow):not(.project-years){font-size:13px}
+.project-role{display:inline-block;margin-top:24px;padding:5px 12px;background:var(--soft);font-size:12px}
+.project-content h3{font-family:var(--serif);font-size:24px;font-weight:500;line-height:1.8}
+.project-original{font-size:13px;margin-top:20px;line-height:1.9}
+.project-original span{display:block;font-size:11px;color:var(--accent);margin-bottom:5px}
+.project-meta{display:grid;grid-template-columns:1fr 1fr;gap:20px 28px;margin:28px 0 0;padding-top:24px;border-top:1px solid var(--line)}
+.project-meta dt{color:var(--muted);font-size:11px;margin-bottom:5px}
+.project-meta dd{margin:0;font-size:14px;overflow-wrap:anywhere}
+@media(min-width:761px) and (max-width:1000px){.desktop-nav{gap:12px;font-size:12px}.site-header nav{gap:18px}}
+@media(max-width:760px){.funded-project{grid-template-columns:1fr;gap:24px}.project-aside{border-right:0;border-bottom:1px solid var(--line);padding:0 0 24px}.project-years{font-size:28px}.project-role{margin-top:14px}.project-content h3{font-size:21px}.project-meta{grid-template-columns:1fr;gap:18px}}
