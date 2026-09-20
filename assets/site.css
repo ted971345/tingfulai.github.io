@@ -197,3 +197,26 @@ footer h2{font-size:29px}
 .project-meta dd{margin:0;font-size:14px;overflow-wrap:anywhere}
 @media(min-width:761px) and (max-width:1000px){.desktop-nav{gap:12px;font-size:12px}.site-header nav{gap:18px}}
 @media(max-width:760px){.funded-project{grid-template-columns:1fr;gap:24px}.project-aside{border-right:0;border-bottom:1px solid var(--line);padding:0 0 24px}.project-years{font-size:28px}.project-role{margin-top:14px}.project-content h3{font-size:21px}.project-meta{grid-template-columns:1fr;gap:18px}}
+
+/* Readable defaults; optional larger text is shared across both languages. */
+:root{--reading-text:1.125rem;--reading-small:.875rem;--reading-title:1.25rem}
+:root[data-reading-size="large"]{--reading-text:1.25rem;--reading-small:1rem;--reading-title:1.375rem}
+:root[data-reading-size="extra-large"]{--reading-text:1.375rem;--reading-small:1.125rem;--reading-title:1.5rem}
+body{font-size:var(--reading-text)}
+.hero-description,.section-heading>p:last-child,.focus-item p,#competency-details p,.resume li p,.resume li p:first-child,.project-meta dd,.project-original{font-size:var(--reading-text);line-height:1.9}
+.publication h3,.focus-item h3,.news-card h3,.resume h3{font-size:var(--reading-title)}
+.publication .journal,.publication .authors,.publication details,.news-card p,.resume li p:last-child,.project-meta dt,.project-role,.project-original span,.project-aside>p:not(.eyebrow):not(.project-years),.publication-tools label,.result-count,.news-meta,.portrait figcaption,.research-strip>p,.research-strip small,.footer-bottom{font-size:var(--reading-small)}
+.methods [role=tab],.publication-tools input,.filters button,.button,.text-link,.output-chart summary{font-size:var(--reading-text)}
+.desktop-nav,.language,.menu-toggle{font-size:14px}
+.eyebrow{font-size:12px}
+.hero-topics,.portrait-index{font-size:11px}
+.chart-bar{font-size:var(--reading-small);min-width:48px}
+.hero-actions,.portrait figcaption{flex-wrap:wrap}
+.publication-tools,.project-content,.publication>div{min-width:0}
+.hero-topics,.publication h3,.project-original{overflow-wrap:anywhere}
+.footer-bottom{padding-bottom:65px}
+.reading-controls{position:fixed;right:20px;bottom:max(16px,env(safe-area-inset-bottom));z-index:30;display:flex;align-items:center;gap:12px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--paper);box-shadow:0 3px 16px #243f3614;color:var(--ink)}
+.reading-controls label{font-size:14px;font-weight:500}
+.reading-controls select{font-size:16px;color:var(--ink);background:var(--paper);border:1px solid #869287;border-radius:4px;min-height:44px;padding:6px 28px 6px 10px;max-width:150px;cursor:pointer}
+@media(max-width:1050px){.desktop-nav{display:none}.menu-toggle{display:block;background:none;border:0}.language{margin-left:auto}}
+@media(max-width:760px){.hero-actions{gap:16px}.reading-controls{right:12px;padding:4px 10px}.hero-topics{font-size:10px}.project-meta dd{overflow-wrap:anywhere}.portrait figcaption{gap:4px 12px}}

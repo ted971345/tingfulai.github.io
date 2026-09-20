@@ -1,6 +1,26 @@
 'use strict';
 const english = document.documentElement.lang === 'en';
 const text = (zh, en) => english ? en : zh;
+// One reading preference is shared by the Chinese and English pages.
+const readingSize = document.querySelector('#reading-size');
+const readingSizes = ['standard', 'large', 'extra-large'];
+const readingStorageKey = 'tingfulai-reading-size';
+function applyReadingSize(value) {
+ const size = readingSizes.includes(value) ? value : 'standard';
+ document.documentElement.dataset.readingSize = size;
+ readingSize.value = size;
+}
+try { applyReadingSize(localStorage.getItem(readingStorageKey)); }
+catch { applyReadingSize('standard'); }
+readingSize.closest('.reading-controls').hidden = false;
+readingSize.addEventListener('change', () => {
+ applyReadingSize(readingSize.value);
+ try { localStorage.setItem(readingStorageKey, readingSize.value); }
+ catch { /* Reading controls still work when browser storage is unavailable. */ }
+});
+window.addEventListener('storage', event => {
+ if (event.key === readingStorageKey || event.key === null) applyReadingSize(event.newValue);
+});
 const assetRoot = new URL('.', document.currentScript.src);
 const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const safeLink = value => { try { const url = new URL(value); return ['https:', 'http:'].includes(url.protocol) ? url.href : '#'; } catch { return '#'; } };
