@@ -29,7 +29,42 @@ const menuButton = document.querySelector('.menu-toggle');
 const mobileMenu = document.querySelector('#mobile-menu');
 function closeMenu() { mobileMenu.hidden = true; menuButton.setAttribute('aria-expanded', 'false'); }
 menuButton.addEventListener('click', () => { const open = menuButton.getAttribute('aria-expanded') !== 'true'; mobileMenu.hidden = !open; menuButton.setAttribute('aria-expanded', String(open)); });
-mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+
+// Stay in this document when navigating sections, including on mobile Safari.
+// Keep real fragment links as the fallback when JavaScript is unavailable.
+function fragmentTarget(hash) {
+ try { return hash.length > 1 ? document.getElementById(decodeURIComponent(hash.slice(1))) : null; }
+ catch { return null; }
+}
+function scrollToSection(target, focus = false) {
+ closeMenu();
+ target.scrollIntoView({behavior: 'instant', block: 'start'});
+ if (focus) {
+  if (!target.hasAttribute('tabindex')) {
+   target.setAttribute('tabindex', '-1');
+   target.addEventListener('blur', () => target.removeAttribute('tabindex'), {once: true});
+  }
+  target.focus({preventScroll: true});
+ }
+}
+document.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener('click', event => {
+ if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+ const target = fragmentTarget(link.hash);
+ if (!target) return;
+ event.preventDefault();
+ // Updating history does not navigate or reload the document.
+ if (location.hash !== link.hash) history.pushState(null, '', link.hash);
+ scrollToSection(target, true);
+}));
+
+// A shared section link must settle after publications, images, and fonts load.
+// Never move the reader back if they have already interacted with the page.
+const initialHash = location.hash;
+let initialNavigationCancelled = false;
+['pointerdown', 'touchstart', 'wheel', 'keydown'].forEach(type =>
+ window.addEventListener(type, () => { initialNavigationCancelled = true; }, {once: true, passive: true})
+);
+const pageLoaded = document.readyState === 'complete' ? Promise.resolve() : new Promise(resolve => window.addEventListener('load', resolve, {once: true}));
 document.addEventListener('keydown', event => { if (event.key === 'Escape' && !mobileMenu.hidden) { closeMenu(); menuButton.focus(); } });
 const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
 function selectMethod(index, focus = false) {
@@ -79,4 +114,8 @@ async function loadNews() {
  try { const news = (await readData('news')).sort((a, b) => Number(b.date) - Number(a.date) || b.id - a.id); grid.innerHTML = news.map(item => `<article class="news-card"><div class="news-meta"><span>${escapeHTML(item.tag)}</span><span>${escapeHTML(item.date)}</span></div><h3><a href="${escapeHTML(safeLink(item.url))}" target="_blank" rel="noopener noreferrer">${escapeHTML(item.title)} ↗</a></h3><p>${escapeHTML(item.source)}</p></article>`).join(''); }
  catch (error) { grid.textContent = '暫時無法載入媒體報導，請稍後重新整理。'; console.error(error); }
 }
-loadPublications(); loadNews();
+Promise.all([loadPublications(), loadNews(), pageLoaded, document.fonts.ready]).then(() => {
+ if (!initialHash || initialNavigationCancelled || location.hash !== initialHash) return;
+ const target = fragmentTarget(initialHash);
+ if (target) scrollToSection(target);
+});
