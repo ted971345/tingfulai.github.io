@@ -37,6 +37,9 @@ p{color:var(--muted)}
 .prose p{font-size:var(--reading-text);line-height:1.9;margin-bottom:22px}
 .prose .text-link{display:inline-block}
 .bio-details{padding-bottom:48px}
+.academic-meme{width:min(100%,600px);margin:0 0 32px}
+.academic-meme img{width:100%;height:auto;border-radius:4px}
+.academic-meme figcaption{font-size:var(--reading-small);color:var(--muted);line-height:1.7;margin-top:10px}
 .hero-actions{display:flex;align-items:center;gap:28px;margin-top:32px}
 .button{display:inline-flex;align-items:center;justify-content:center;gap:32px;background:var(--ink);color:#fff;padding:12px 24px;border:1px solid var(--ink);font-size:13px;transition:background .2s}
 .button:hover{background:#3e594b}
