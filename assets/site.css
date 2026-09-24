@@ -97,6 +97,8 @@ p{color:var(--muted)}
 .publication h3 a:hover{color:var(--accent);text-decoration:underline}
 .publication .journal{font-size:12px;margin-top:9px;color:var(--accent)}
 .publication .authors{font-size:12px;margin-top:5px}
+.publication .authors strong{color:var(--ink);font-weight:700}
+.publication .authorship{display:inline-block;margin-top:10px;padding:5px 10px;background:var(--soft);color:var(--ink);border-left:3px solid var(--accent);font-size:var(--reading-small);line-height:1.7}
 .publication details{margin-top:10px;font-size:12px;color:var(--muted)}
 .publication details p{margin-top:10px;max-width:850px}
 .publication-arrow{font-size:22px;align-self:start}

@@ -122,10 +122,12 @@
     "title_en": "Validation of Phase Angle Cutoff Values Derived From Bioelectrical Impedance Analysis for Sarcopenia Screening in Community-Dwelling Older Korean Adults",
     "journal_zh": "JAMDA, 2025",
     "journal_en": "JAMDA, 2025",
-    "authors_zh": "Jiaren Chen, Jong-Hwan Park, Chien-Yu Lin, Ting-Fu Lai, et al.",
-    "authors_en": "Jiaren Chen, Jong-Hwan Park, Chien-Yu Lin, Ting-Fu Lai, et al.",
+    "authors_zh": "Ting-Fu Lai, Jong-Hwan Park, Du-Ri Kim, Jiaren Chen, Myung-Jun Shin, Eunsoo Moon, Jung Mo Kang, Jong Won Lee, Yoon Jae Cho, Yung Liao, Tae Sik Goh, Jung Sub Lee",
+    "authors_en": "Ting-Fu Lai, Jong-Hwan Park, Du-Ri Kim, Jiaren Chen, Myung-Jun Shin, Eunsoo Moon, Jung Mo Kang, Jong Won Lee, Yoon Jae Cho, Yung Liao, Tae Sik Goh, Jung Sub Lee",
     "abstract_zh": "這是在釜山做的研究，身體組成檢測裡的相位角，能不能成為篩檢肌少症的線索？這篇研究以韓國社區高齡者為對象，檢驗生物電阻抗分析所得的相位角切點，評估它辨識肌少症的能力。（測量的成績單多一個數字很容易，要知道這個數字能做什麼，就得另外做研究。）",
-    "abstract_en": "This study was conducted in Busan. Could phase angle, a measure from body composition testing, offer a clue for sarcopenia screening? We evaluated phase-angle cutoffs derived from bioelectrical impedance analysis in community-dwelling older Korean adults. (Adding a number to a results sheet is easy. Figuring out what it can do takes another study.)"
+    "abstract_en": "This study was conducted in Busan. Could phase angle, a measure from body composition testing, offer a clue for sarcopenia screening? We evaluated phase-angle cutoffs derived from bioelectrical impedance analysis in community-dwelling older Korean adults. (Adding a number to a results sheet is easy. Figuring out what it can do takes another study.)",
+    "authorship_zh": "賴鼎富：第一作者（列名第一，與 Jong-Hwan Park 共同第一作者）",
+    "authorship_en": "Ting-Fu Lai: First-listed author; co-first author with Jong-Hwan Park"
   },
   {
     "id": 3,
@@ -365,7 +367,9 @@
     "authors_zh": "Du-Ri Kim, Ting-Fu Lai, Minji Sung, Minwoo Jang, Yeo-Kyung Shin, Young Jin Ra, Yung Liao, Jong-Hwan Park, Myung-Jun Shin",
     "authors_en": "Du-Ri Kim, Ting-Fu Lai, Minji Sung, Minwoo Jang, Yeo-Kyung Shin, Young Jin Ra, Yung Liao, Jong-Hwan Park, Myung-Jun Shin",
     "abstract_zh": "評估 ICT 智慧照護服務對獨居高齡者的身心功能影響。",
-    "abstract_en": "Evaluates ICT-based smart-care services for physical and cognitive function among older adults living alone."
+    "abstract_en": "Evaluates ICT-based smart-care services for physical and cognitive function among older adults living alone.",
+    "authorship_zh": "賴鼎富：共同第一作者（與 Du-Ri Kim 同等貢獻）",
+    "authorship_en": "Ting-Fu Lai: Co-first author with Du-Ri Kim (equal contribution)"
   },
   {
     "id": 48,

@@ -95,8 +95,11 @@ async function loadPublications() {
   count.textContent = text(`共 ${filtered.length} 篇 · 顯示 ${Math.min(limit, filtered.length)} 篇`, `${filtered.length} publications · Showing ${Math.min(limit, filtered.length)}`);
   grid.innerHTML = filtered.slice(0,limit).map(p => {
    const title = p['title_' + language];
+   const authorship = p['authorship_' + language];
+   const authors = escapeHTML(p['authors_' + language]);
+   const displayedAuthors = authorship ? authors.replace('Ting-Fu Lai', '<strong>Ting-Fu Lai</strong>') : authors;
    const url = safeLink(p.url?.trim() || (p.doi?.trim() ? 'https://doi.org/' + p.doi.trim() : 'https://scholar.google.com/scholar?q=' + encodeURIComponent(title)));
-   return `<article class="publication"><span class="publication-year">${escapeHTML(p.year)}</span><div><h3><a href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(title)}</a></h3><p class="journal">${escapeHTML(p['journal_' + language])}</p><p class="authors">${escapeHTML(p['authors_' + language])}</p>${p['abstract_' + language] ? `<details><summary>${text('閱讀摘要','Read abstract')}</summary><p>${escapeHTML(p['abstract_' + language])}</p></details>` : ''}</div><a class="publication-arrow" href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHTML(text('開啟論文：','Open publication: ') + title)}">↗</a></article>`;
+   return `<article class="publication"><span class="publication-year">${escapeHTML(p.year)}</span><div><h3><a href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(title)}</a></h3><p class="journal">${escapeHTML(p['journal_' + language])}</p><p class="authors">${displayedAuthors}</p>${authorship ? `<p class="authorship">${escapeHTML(authorship)}</p>` : ''}${p['abstract_' + language] ? `<details><summary>${text('閱讀摘要','Read abstract')}</summary><p>${escapeHTML(p['abstract_' + language])}</p></details>` : ''}</div><a class="publication-arrow" href="${escapeHTML(url)}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHTML(text('開啟論文：','Open publication: ') + title)}">↗</a></article>`;
   }).join('') || `<p class="error-message">${text('找不到符合的論文，請調整關鍵字或分類。','No publications found. Try another keyword or research area.')}</p>`;
   more.hidden = filtered.length <= limit;
  }
