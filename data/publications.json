@@ -12,8 +12,8 @@
     "journal_en": "Journal of Aging and Physical Activity, 2026",
     "authors_zh": "Ting-Fu Lai, Yung Liao, Pei-Lin Tzeng, Chiung-Jung Wen, Ding-Cheng Chan",
     "authors_en": "Ting-Fu Lai, Yung Liao, Pei-Lin Tzeng, Chiung-Jung Wen, Ding-Cheng Chan",
-    "abstract_zh": "探討規律與不規律運動習慣高齡者中，短時間高強度身體活動與衰弱之關聯。",
-    "abstract_en": "Examines associations between brief bouts of vigorous physical activity and frailty among older adults with regular and irregular exercise habits."
+    "abstract_zh": "運動一定要排出一整段時間才算數嗎？這篇研究關心短時間的高強度身體活動與衰弱的關係，並比較有、沒有規律運動習慣的長輩。（先別急著把沒時間當藉口，我們還是得看資料。）",
+    "abstract_en": "Does physical activity have to come in one long session to count? This study looks at brief bouts of vigorous physical activity and frailty, comparing older adults with and without regular exercise habits. (Before reaching for the no-time excuse, let’s look at the data.)"
   },
   {
     "id": 50,
@@ -28,8 +28,8 @@
     "journal_en": "European Journal of Preventive Cardiology, 2026",
     "authors_zh": "Ting-Fu Lai, Jong-Hwan Park, Yi-Chuan Hung, Myung-Jun Shin, Seunghwan Song, Up Huh, Hyuk Jin Choi, Jae-Il Lee, Yung Liao",
     "authors_en": "Ting-Fu Lai, Jong-Hwan Park, Yi-Chuan Hung, Myung-Jun Shin, Seunghwan Song, Up Huh, Hyuk Jin Choi, Jae-Il Lee, Yung Liao",
-    "abstract_zh": "探討中高強度身體活動時間點與死亡風險的關聯，並進一步考量日夜型與睡眠型態的角色。",
-    "abstract_en": "Investigates how the timing of moderate-to-vigorous physical activity relates to mortality risk, with attention to chronotype and sleep patterns."
+    "abstract_zh": "這是花了不少錢買資料庫做的，同樣是運動，早上動、晚上動，和健康的關係會不會不一樣？我們也把日夜型與睡眠型態一起納入分析，看看活動時間點與死亡風險的關聯。（研究做到後來，連幾點出門都變成研究問題。）",
+    "abstract_en": "Access to the database for this one cost quite a bit. Does being active in the morning or evening have different associations with health? We considered chronotype and sleep patterns alongside the timing of moderate-to-vigorous physical activity and mortality risk. (Eventually, even the time you head out became a research question.)"
   },
   {
     "id": 49,
@@ -44,8 +44,8 @@
     "journal_en": "BMC Geriatrics, 2026",
     "authors_zh": "Du-Ri Kim, Myung-Jun Shin, Eun-Lee Lee, Ting-Fu Lai, Yeong-Ae Yang, Jong-Hwan Park",
     "authors_en": "Du-Ri Kim, Myung-Jun Shin, Eun-Lee Lee, Ting-Fu Lai, Yeong-Ae Yang, Jong-Hwan Park",
-    "abstract_zh": "評估虛擬實境多模式訓練對社區 60 歲以上成人認知與身體功能的影響。",
-    "abstract_en": "Evaluates the effects of a virtual reality-based multimodal training program on cognitive and physical functions in community-dwelling adults aged 60 years and older."
+    "abstract_zh": "這是在釜山做的研究，把虛擬實境放進訓練課程，除了看起來很有科技感，能不能對認知和身體功能有所幫助？這篇研究以社區 60 歲以上成人為對象，透過隨機分組與訓練前後測量，評估結合虛擬實境的多模式訓練效果。（設備很新是一回事，有沒有效還是得測量。）",
+    "abstract_en": "This study was conducted in Busan. Virtual reality certainly makes a training program look high-tech, but can it help cognition and physical function? We used random assignment and measurements before and after training to evaluate a VR-based multimodal program for community-dwelling adults aged 60 and older. (New equipment is one thing. Whether it works still needs measuring.)"
   },
   {
     "id": 47,
@@ -60,8 +60,8 @@
     "journal_en": "Experimental Gerontology, 2026",
     "authors_zh": "Yu-Huei Wang, Ting-Fu Lai, Yung Liao, I-Lun Cheng, Ming-Chun Hsueh",
     "authors_en": "Yu-Huei Wang, Ting-Fu Lai, Yung Liao, I-Lun Cheng, Ming-Chun Hsueh",
-    "abstract_zh": "透過 12 週穿戴式加速度規即時回饋結合行為改變技巧，可以有效幫助女性高齡者增加每日步數並減少長時間久坐。",
-    "abstract_en": "A 12-week intervention combining real-time feedback from wearable accelerometers with behavior-change techniques effectively helped older women increase daily steps and reduce prolonged sedentary behavior."
+    "abstract_zh": "知道自己今天走了幾步，會不會真的讓人多走一點、少坐一點？我們透過 12 週隨機對照試驗，評估穿戴式加速規回饋搭配行為改變技巧，對高齡女性身體活動與久坐的影響。（買了裝置之後，還有真的開始動這個步驟。）",
+    "abstract_en": "Does knowing today’s step count actually help someone move more and sit less? In a 12-week randomized controlled trial, we evaluated wearable accelerometer feedback combined with behavior change techniques among older women. (Buying the device still leaves the part where you actually start moving.)"
   },
   {
     "id": 46,
@@ -76,8 +76,8 @@
     "journal_en": "Journal of Occupational and Environmental Medicine, 2025",
     "authors_zh": "Jong-Hwan Park, Ting-Fu Lai, Jeong Su Cho, Hyuk Jin Choi, Jae-Il Lee",
     "authors_en": "Jong-Hwan Park, Ting-Fu Lai, Jeong Su Cho, Hyuk Jin Choi, Jae-Il Lee",
-    "abstract_zh": "透過為期五個月的穿戴式裝置與ICT健康管理系統介入，燃煤電廠工人的認知處理速度、呼吸功能、身體組成與體能表現皆有顯著改善",
-    "abstract_en": "Through a five-month intervention using wearable devices and an ICT-based health-management system, coal-fired power plant workers showed significant improvements in cognitive processing speed, respiratory function, body composition, and physical performance."
+    "abstract_zh": "這是在釜山做的研究，穿戴式裝置進到職場，能不能幫忙照顧工作者的健康？這篇研究追蹤燃煤電廠工作者參與五個月健康管理方案前後的變化，觀察認知處理速度、呼吸功能、身體組成與體能表現。（電廠有設備要保養，裡面工作的人也應該被關注。）",
+    "abstract_en": "This study was conducted in Busan. Can wearables help look after people’s health at work? We tracked changes in cognitive processing speed, respiratory function, body composition, and physical performance before and after a five-month health management program for coal-fired power plant workers. (The plant’s equipment gets maintenance. The people working there deserve attention too.)"
   },
   {
     "id": 44,
@@ -92,8 +92,8 @@
     "journal_en": "European Review of Aging and Physical Activity, 2025",
     "authors_zh": "Chih-Ching Chang, Jiaren Chen, Ting-Fu Lai, Jong-Hwan Park, Yung Liao",
     "authors_en": "Chih-Ching Chang, Jiaren Chen, Ting-Fu Lai, Jong-Hwan Park, Yung Liao",
-    "abstract_zh": "探討中高強度、輕度身體活動及靜態行為與高齡者肌力減退風險的縱貫性關聯。",
-    "abstract_en": "Investigates longitudinal associations of MVPA, light-intensity activity, and sedentary behavior with the risk of dynapenia in older adults."
+    "abstract_zh": "現在怎麼動、坐多久，和之後的肌力減退有什麼關係？我們追蹤臺灣高齡者，比較輕度、中高強度身體活動及靜態行為與後續力弱症的關聯。（以後再說在生活裡是很隨意的一句話，在研究裡就得真的追蹤到以後。）",
+    "abstract_en": "How do today’s activity and sitting time relate to muscle weakness later on? We followed older adults in Taiwan to examine light activity, moderate-to-vigorous activity, and sedentary behavior in relation to subsequent dynapenia. (In everyday life, later can be a casual promise. In research, you actually have to follow up.)"
   },
   {
     "id": 45,
@@ -108,8 +108,8 @@
     "journal_en": "Sports & Exercise Research, 2025",
     "authors_zh": "林翰柏, 陳佳人, 賴鼎富, 李姿愉, 廖邕",
     "authors_en": "Han-Bo Lin, Jiaren Chen, Ting-Fu Lai, Tzu-Yu Li, Yung Liao",
-    "abstract_zh": "以三軸加速規為黃金標準，驗證智慧型手機與穿戴裝置測量高齡者步數的準確性。",
-    "abstract_en": "Validates step counts from commercial mobile devices against accelerometer-derived measurements in older adults."
+    "abstract_zh": "手機說今天走了幾千步，這個數字到底準不準？我們以三軸加速規作為比較基準，檢驗商用行動裝置測量高齡者步數的準確性。（數字有顯示到個位數，看起來很精確；準不準是另一件事。）",
+    "abstract_en": "Your phone says you walked several thousand steps today. How accurate is that number? We used a triaxial accelerometer as a reference to assess how well commercial mobile devices measure older adults’ steps. (A number displayed down to the last step looks precise. Whether it is accurate is another question.)"
   },
   {
     "id": 43,
@@ -124,8 +124,8 @@
     "journal_en": "JAMDA, 2025",
     "authors_zh": "Jiaren Chen, Jong-Hwan Park, Chien-Yu Lin, Ting-Fu Lai, et al.",
     "authors_en": "Jiaren Chen, Jong-Hwan Park, Chien-Yu Lin, Ting-Fu Lai, et al.",
-    "abstract_zh": "透過生物電阻抗分析找出適合的相位角臨界值，來幫助社區高齡者早期篩檢肌少症。",
-    "abstract_en": "Identifies phase-angle cutoffs for sarcopenia screening in community-dwelling older adults."
+    "abstract_zh": "這是在釜山做的研究，身體組成檢測裡的相位角，能不能成為篩檢肌少症的線索？這篇研究以韓國社區高齡者為對象，檢驗生物電阻抗分析所得的相位角切點，評估它辨識肌少症的能力。（測量的成績單多一個數字很容易，要知道這個數字能做什麼，就得另外做研究。）",
+    "abstract_en": "This study was conducted in Busan. Could phase angle, a measure from body composition testing, offer a clue for sarcopenia screening? We evaluated phase-angle cutoffs derived from bioelectrical impedance analysis in community-dwelling older Korean adults. (Adding a number to a results sheet is easy. Figuring out what it can do takes another study.)"
   },
   {
     "id": 3,
@@ -140,8 +140,8 @@
     "journal_en": "Chronobiology International, 2025",
     "authors_zh": "Ting-Fu Lai, Ming-Chun Hsueh, Yung Liao, Jong-Hwan Park",
     "authors_en": "Ting-Fu Lai, Ming-Chun Hsueh, Yung Liao, Jong-Hwan Park",
-    "abstract_zh": "本研究指出，整日中的早上至中午輕度身體活動與高齡者的身體功能息息相關。",
-    "abstract_en": "Light activity accumulated across the day is associated with physical function in older adults."
+    "abstract_zh": "同樣是輕度活動，發生在一天的不同時段，和身體功能的關係會不會不同？這篇橫斷面研究把活動依時段拆開，分析高齡者的日常活動分布與身體功能之間的關聯。（一天明明只有 24 小時，拆開分析後，工作量倒是增加不少。）",
+    "abstract_en": "Does light activity at different times of day have different associations with physical function? This cross-sectional study examined the timing of older adults’ daily activity in relation to physical function. (A day still has only 24 hours. Splitting it up for analysis somehow creates more work.)"
   },
   {
     "id": 4,
@@ -156,8 +156,8 @@
     "journal_en": "Frontiers in Aging Neuroscience, 2025",
     "authors_zh": "Jing-Han Jhan, Jiaren Chen, Ting-Fu Lai, Jong-Hwan Park, Yung Liao",
     "authors_en": "Jing-Han Jhan, Jiaren Chen, Ting-Fu Lai, Jong-Hwan Park, Yung Liao",
-    "abstract_zh": "探討客觀測量的輕度身體活動與高齡者認知功能之間的橫斷面與縱貫性關聯。",
-    "abstract_en": "Examines cross-sectional and longitudinal links between light-intensity activity and cognitive function in older adults."
+    "abstract_zh": "發表在知名水刊（刊登費都很貴），除了比較費力的運動，日常輕度活動也值得仔細看。我們用加速規測量活動，分析它與認知功能在同一時間點及後續追蹤中的關聯。（身體活動可以不用很激烈，資料分析的工作量倒是沒有跟著變輕。）",
+    "abstract_en": "Published in what I jokingly call a soft-touch journal (with publication fees that are anything but soft). Everyday light activity deserves attention alongside more strenuous exercise. We used accelerometers to examine how light activity relates to cognitive function, both at the same time point and during follow-up. (The activity can be light. The analysis workload did not get the memo.)"
   },
   {
     "id": 5,
@@ -172,8 +172,8 @@
     "journal_en": "Frontiers in Public Health, 2025",
     "authors_zh": "Chih-Ching Chang, Yung Liao, Jiaren Chen, Ting-Fu Lai, Ming-Chun Hsueh, Jong-Hwan Park, Yen-Jung Chang",
     "authors_en": "Chih-Ching Chang, Yung Liao, Jiaren Chen, Ting-Fu Lai, Ming-Chun Hsueh, Jong-Hwan Park, Yen-Jung Chang",
-    "abstract_zh": "研究建立了力弱症（Dynapenia）與憂鬱症狀之間的風險關聯。",
-    "abstract_en": "Shows an association between dynapenia and higher risk of depressive symptoms among older adults."
+    "abstract_zh": "發表在知名水刊（刊登費都很貴），肌力和心理健康，值得放在一起看。這篇研究分析高齡者力弱症與憂鬱症狀的關聯，關心身體功能下降時，是否也伴隨心理健康上的困難。談高齡健康時，身體和心情都需要被看見。",
+    "abstract_en": "Published in what I jokingly call a soft-touch journal (with publication fees that are anything but soft). Muscle strength and mental health deserve to be considered together. This study examines the association between dynapenia and depressive symptoms in older adults, asking whether poorer physical function accompanies difficulties with mental health. Both physical and emotional well-being matter in healthy aging."
   },
   {
     "id": 6,
@@ -188,8 +188,8 @@
     "journal_en": "Nutrients, 2025",
     "authors_zh": "Chih-Ching Chang, Ting-Fu Lai, Jiaren Chen, Yung Liao, Jong-Hwan Park, Yen Jung Chang",
     "authors_en": "Chih-Ching Chang, Ting-Fu Lai, Jiaren Chen, Yung Liao, Jong-Hwan Park, Yen Jung Chang",
-    "abstract_zh": "探討不同年齡層高齡者在營養狀況與力弱症關聯上的差異。",
-    "abstract_en": "Examines whether associations between nutritional status and dynapenia vary across age groups in older adults."
+    "abstract_zh": "發表在知名水刊，營養狀況和肌力的關係，會不會隨年齡而不同？我們比較不同年齡層高齡者的營養狀況與力弱症關聯，看看把大家都歸在高齡者這一組時，可能漏掉哪些差異。（分組很方便，但人不會因為被分在同一組就變得一樣。）",
+    "abstract_en": "Published in what I jokingly call a soft-touch journal. Does the relationship between nutritional status and muscle strength vary with age? We compared the association between nutritional status and dynapenia across age groups to see what we might miss by treating older adults as a single group. (Grouping people is convenient. It does not make everyone in the group the same.)"
   },
   {
     "id": 1,
@@ -204,8 +204,8 @@
     "journal_en": "Journal of the International Society of Sports Nutrition, 2025",
     "authors_zh": "Ting-Fu Lai, Jong-Hwan Park, Minwoo Jang, Jiaren Chen, Myung-Jun Shin, Eunsoo Moon, Jung Mo Kang, Jong Won Lee, Yoon Jae Cho, Yung Liao, Tae Sik Goh, Jung Sub Lee",
     "authors_en": "Ting-Fu Lai, Jong-Hwan Park, Minwoo Jang, Jiaren Chen, Myung-Jun Shin, Eunsoo Moon, Jung Mo Kang, Jong Won Lee, Yoon Jae Cho, Yung Liao, Tae Sik Goh, Jung Sub Lee",
-    "abstract_zh": "探討 BIA 指標（ECW/TBW、相位角）與肌肉功能的關聯。",
-    "abstract_en": "Explores associations of BIA markers, including ECW/TBW ratio and phase angle, with muscle function."
+    "abstract_zh": "做身體組成檢測，除了體脂肪，還有其他值得看的數字。我們分析中高齡者的細胞外水分占總水分比例，以及相位角與肌肉功能的關聯。（身體組成成績單上的縮寫很多，這篇先把其中兩個酷東西理解一下。）",
+    "abstract_en": "There is more to a body composition test than body fat. We examined the extracellular-water-to-total-body-water ratio and phase angle in relation to muscle function in middle-aged and older adults. (Body composition reports have plenty of abbreviations. This paper gets to know two of the interesting ones.)"
   },
   {
     "id": 2,
@@ -220,8 +220,8 @@
     "journal_en": "Risk Management and Healthcare Policy, 2025",
     "authors_zh": "Pill Soo Kim, Ting-Fu Lai, Jong-Hwan Park, Minwoo Jang, Yeo-Kyung Shin, Du-Ri Kim, Il Jae Wang, Hyuk Jin Choi, Jae-Il Lee",
     "authors_en": "Pill Soo Kim, Ting-Fu Lai, Jong-Hwan Park, Minwoo Jang, Yeo-Kyung Shin, Du-Ri Kim, Il Jae Wang, Hyuk Jin Choi, Jae-Il Lee",
-    "abstract_zh": "跨領域探討職業環境因素對健康的影響，並分析了體力活動與久坐行為的調節作用。",
-    "abstract_en": "Examines occupational health factors and the moderating roles of physical activity and sedentary behavior."
+    "abstract_zh": "這是在釜山做的研究，呼吸功能與大腦處理資訊的速度有什麼關係？這篇以燃煤電廠工作者為對象，也把身體活動與久坐納入分析，看看兩者的關聯是否隨日常行為而不同。（研究問題只有一句，分析時還是得拆開慢慢看。）",
+    "abstract_en": "This study was conducted in Busan. How does respiratory function relate to the speed of processing information? We studied coal-fired power plant workers and considered physical activity and sedentary behavior to see whether that relationship differed with everyday behavior. (The question fits into one sentence. The analysis still needs taking apart, step by step.)"
   },
   {
     "id": 7,
@@ -236,8 +236,8 @@
     "journal_en": "Frontiers in Public Health, 2025",
     "authors_zh": "Yen-Yu Chung, Jiaren Chen, Mei-Chun Lin, Ruo-Lan Liu, Jenn-Bang Wu, Hsin Chang Tsai, Ting-Fu Lai, Yung Liao, Jong-Hwan Park",
     "authors_en": "Yen-Yu Chung, Jiaren Chen, Mei-Chun Lin, Ruo-Lan Liu, Jenn-Bang Wu, Hsin Chang Tsai, Ting-Fu Lai, Yung Liao, Jong-Hwan Park",
-    "abstract_zh": "分析高齡者的網路使用行為與其身體活動模式的關聯。",
-    "abstract_en": "Analyzes associations between internet-use behavior and accelerometer-derived physical-activity patterns in older adults."
+    "abstract_zh": "發表在知名水刊（刊登費都很貴），長輩怎麼使用網路，和日常身體活動有什麼關係？我們把網路使用行為與加速規測得的活動資料放在一起分析，看看不同使用行為對應哪些活動模式。（先把上網就是坐著不動這個直覺放旁邊，讓資料說說看。）",
+    "abstract_en": "Published in what I jokingly call a soft-touch journal (with publication fees that are anything but soft). How does older adults’ internet use relate to their daily physical activity? We combined internet-use behavior with accelerometer data to examine the activity patterns associated with different ways of using the internet. (Let’s set aside the assumption that going online means sitting still, and see what the data say.)"
   },
   {
     "id": 36,
@@ -252,8 +252,8 @@
     "journal_en": "Journal of Sports Performance, 2025",
     "authors_zh": "陳佳人, 賴鼎富, 林翰柏, 朴勝泰, 廖邕",
     "authors_en": "Jiaren Chen, Ting-Fu Lai, Han-Bo Lin, Seung-Tae Park, Yung Liao",
-    "abstract_zh": "此範域回顧旨在系統性地整理並呈現身體活動、靜態行為與相位角之間的跨領域研究現況。",
-    "abstract_en": "Summarizes cross-disciplinary evidence on physical activity, sedentary behavior, and phase angle in older adults."
+    "abstract_zh": "活動多一點、坐少一點，和身體組成檢測裡的相位角有什麼關係？這篇範域文獻回顧整理高齡者相關研究，盤點目前研究了什麼、知道多少，以及還有哪些地方不清楚。（研究做不完，至少先整理一下大家做到哪裡。）",
+    "abstract_en": "How do physical activity and sedentary behavior relate to phase angle, a measure from body composition testing? This scoping review maps research in older adults: what has been studied, what is known, and what remains unclear. (There is no end to research. We can at least take stock of where everyone has got to.)"
   },
   {
     "id": 9,
@@ -476,7 +476,7 @@
     "journal_en": "Archives of Public Health, 2023",
     "authors_zh": "Ting-Fu Lai, Yung Liao, Chien-Yu Lin, Ming-Chun Hsueh, Mohammad Javad Koohsari, Ai Shibata, Koichiro Oka, Ding-Cheng Chan",
     "authors_en": "Ting-Fu Lai, Yung Liao, Chien-Yu Lin, Ming-Chun Hsueh, Mohammad Javad Koohsari, Ai Shibata, Koichiro Oka, Ding-Cheng Chan",
-    "abstract_zh": "發現「頻繁打斷久坐」比「集中一段時間運動」與高齡者身體功能之關聯更強。",
+    "abstract_zh": "發現頻繁打斷久坐比集中一段時間運動與高齡者身體功能之關聯更強。",
     "abstract_en": "Shows that breaking up sedentary time more frequently is associated with better physical function in older adults."
   },
   {
@@ -668,7 +668,7 @@
     "journal_en": "Journal of Nutrition, Health & Aging, 2021",
     "authors_zh": "Jong-Hwan Park, Ting-Fu Lai, Shao-Hsi Chang, Wan-Chi Huang, Jeong Su Cho, Yung Liao",
     "authors_en": "Jong-Hwan Park, Ting-Fu Lai, Shao-Hsi Chang, Wan-Chi Huang, Jeong Su Cho, Yung Liao",
-    "abstract_zh": "探討社區「宜走性」與高齡者肌少症風險的非線性關係。",
+    "abstract_zh": "探討社區宜走性與高齡者肌少症風險的非線性關係。",
     "abstract_en": "Examines nonlinear associations between neighborhood walkability and sarcopenia risk in older adults."
   },
   {
@@ -700,7 +700,7 @@
     "journal_en": "Scientific Reports, 2020",
     "authors_zh": "Ting-Fu Lai, Yung Liao, Chien-Yu Lin, Wan-Chi Huang, Ming-Chun Hsueh, Ding-Cheng Chan",
     "authors_en": "Ting-Fu Lai, Yung Liao, Chien-Yu Lin, Wan-Chi Huang, Ming-Chun Hsueh, Ding-Cheng Chan",
-    "abstract_zh": "指出對高齡者身體功能而言，中高強度活動「總時長」比「時間點」更為重要。",
+    "abstract_zh": "指出對高齡者身體功能而言，中高強度活動總時長比時間點更為重要。",
     "abstract_en": "Shows that the total duration of MVPA matters more than its timing for physical function in older adults."
   },
   {
@@ -780,7 +780,7 @@
     "journal_en": "International Journal of Environmental Research and Public Health, 2019",
     "authors_zh": "Yung Liao, Chien-Yu Lin, Ting-Fu Lai, Yi-Ju Chen, Byoung-Gwon Kim, Jong-Hwan Park",
     "authors_en": "Yung Liao, Chien-Yu Lin, Ting-Fu Lai, Yi-Ju Chen, Byoung-Gwon Kim, Jong-Hwan Park",
-    "abstract_zh": "驗證國際通用「步行指數」(Walk Score®) 在評估高齡者健康行為及結果上的效度。",
+    "abstract_zh": "驗證國際通用步行指數(Walk Score®) 在評估高齡者健康行為及結果上的效度。",
     "abstract_en": "Evaluates Walk Score® as an indicator of healthy behaviors and outcomes in older adults."
   },
   {

@@ -22,6 +22,7 @@ window.addEventListener('storage', event => {
  if (event.key === readingStorageKey || event.key === null) applyReadingSize(event.newValue);
 });
 const assetRoot = new URL('.', document.currentScript.src);
+const assetVersion = new URL(document.currentScript.src).search;
 const escapeHTML = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const safeLink = value => { try { const url = new URL(value); return ['https:', 'http:'].includes(url.protocol) ? url.href : '#'; } catch { return '#'; } };
 const menuButton = document.querySelector('.menu-toggle');
@@ -47,7 +48,7 @@ const portrait = document.querySelector('.portrait img');
 portrait.addEventListener('error', () => { portrait.hidden = true; });
 const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) document.querySelectorAll('.desktop-nav a').forEach(link => { if (link.hash === '#' + entry.target.id) link.setAttribute('aria-current','location'); else link.removeAttribute('aria-current'); }); }), {rootMargin:'-15% 0px -65% 0px'});
 document.querySelectorAll('main section').forEach(section => observer.observe(section));
-async function readData(name) { const response = await fetch(new URL('../data/' + name + '.json', assetRoot)); if (!response.ok) throw new Error(`Unable to load ${name}: ${response.status}`); return response.json(); }
+async function readData(name) { const response = await fetch(new URL('../data/' + name + '.json' + assetVersion, assetRoot)); if (!response.ok) throw new Error(`Unable to load ${name}: ${response.status}`); return response.json(); }
 async function loadPublications() {
  const grid = document.querySelector('#publications-grid'), count = document.querySelector('#result-count');
  try {

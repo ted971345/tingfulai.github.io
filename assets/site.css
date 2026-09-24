@@ -33,6 +33,10 @@ p{color:var(--muted)}
 .hero h1{font-size:clamp(38px,4.4vw,62px);letter-spacing:-2px;margin:26px 0;line-height:1.45}
 .hero h1 span{color:var(--accent)}
 .hero-description{max-width:490px;font-size:15px;line-height:2.1}
+.prose{max-width:900px;overflow-wrap:anywhere}
+.prose p{font-size:var(--reading-text);line-height:1.9;margin-bottom:22px}
+.prose .text-link{display:inline-block}
+.bio-details{padding-bottom:48px}
 .hero-actions{display:flex;align-items:center;gap:28px;margin-top:32px}
 .button{display:inline-flex;align-items:center;justify-content:center;gap:32px;background:var(--ink);color:#fff;padding:12px 24px;border:1px solid var(--ink);font-size:13px;transition:background .2s}
 .button:hover{background:#3e594b}
