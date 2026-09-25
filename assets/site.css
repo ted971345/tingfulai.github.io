@@ -45,6 +45,9 @@ p{color:var(--muted)}
 .button:hover{background:#3e594b}
 .text-link{font-size:13px;border-bottom:1px solid var(--line);padding-block:8px}
 .text-link:hover{color:var(--accent)}
+.inline-link{color:var(--accent);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em}
+.inline-link:hover{text-decoration-thickness:2px}
+.inline-link:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 .hero-topics{font-size:8px;letter-spacing:1.15px;margin-top:48px}
 .hero-topics span{margin:0 9px;color:var(--accent)}
 .portrait{position:relative;padding:14px 14px 0 0}
