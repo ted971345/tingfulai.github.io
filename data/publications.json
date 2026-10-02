@@ -1,5 +1,23 @@
 [
   {
+    "id": 52,
+    "year": 2026,
+    "isMetric": true,
+    "category": "health-promo",
+    "doi": "10.1186/s12966-026-01979-w",
+    "url": "https://link.springer.com/article/10.1186/s12966-026-01979-w",
+    "title_zh": "A physical activity and sedentary time balance index and all-cause, cancer, and cardiovascular mortality risk: UK Biobank accelerometry findings",
+    "title_en": "A physical activity and sedentary time balance index and all-cause, cancer, and cardiovascular mortality risk: UK Biobank accelerometry findings",
+    "journal_zh": "International Journal of Behavioral Nutrition and Physical Activity, 2026（9 月 29 日線上出版）",
+    "journal_en": "International Journal of Behavioral Nutrition and Physical Activity, 2026 (published online 29 September)",
+    "authors_zh": "Ting-Fu Lai, Chien-Yu Lin, Yung Liao, Hsin-Yen Yen, Jong-Hwan Park, Myung-Jun Shin, Neville Owen, David W. Dunstan",
+    "authors_en": "Ting-Fu Lai, Chien-Yu Lin, Yung Liao, Hsin-Yen Yen, Jong-Hwan Park, Myung-Jun Shin, Neville Owen, David W. Dunstan",
+    "authorship_zh": "賴鼎富：第一作者（列名第一，與 Chien-Yu Lin 共同第一作者）",
+    "authorship_en": "Ting-Fu Lai: First-listed author; co-first author with Chien-Yu Lin",
+    "abstract_zh": "一天動多少、坐多久，能不能放在一起看？我們分析 UK Biobank 92,656 位參與者的加速規資料，把每天中高強度身體活動的分鐘數除以久坐的小時數，看看這個平衡指標與死亡風險的關係。平均追蹤 7.8 年，指標較高與較低的全死因、癌症及心血管疾病死亡風險有關。不過，這是觀察性研究，不能直接解讀成照著比例動就能降低死亡風險。（研究做到後來，連動跟坐都要算比例；但人生還沒有簡單到一個算式就能交代。）",
+    "abstract_en": "Can we look at how much we move and how long we sit together? Using accelerometer data from 92,656 UK Biobank participants, we divided daily minutes of moderate-to-vigorous physical activity by hours of sedentary time. Over an average 7.8 years of follow-up, a higher balance index was associated with lower all-cause, cancer, and cardiovascular mortality. This observational study does not show that changing the ratio reduces mortality. (Eventually, even moving and sitting became a ratio. Life still refuses to fit neatly into one equation.)"
+  },
+  {
     "id": 51,
     "year": 2026,
     "isMetric": true,
