@@ -22,7 +22,7 @@ assets/site.js - 共用搜尋、分類、分批載入、年度統計與導覽互
 
 data/publications.json - 學術著作列表
 
-data/news.json - 媒體報導 / 研究亮點列表（目前僅英文版網頁未顯示此區塊）
+data/news.json - 媒體報導 / 科普專文 / 研究亮點列表（目前僅英文版網頁未顯示此區塊）
 
 CV、頁面文字與版面配置仍直接寫在 index.html (中文) 與 en/index.html (英文) 中，這類內容才需要個別修改兩個檔案。
 
@@ -45,8 +45,8 @@ abstract_zh / abstract_en：中英文摘要（一兩句話即可）
 
 存檔後，中英文網頁會自動同步顯示這筆新論文，不需要再手動修改兩份 HTML。
 
-新增一筆媒體報導
-編輯 data/news.json，新增物件並填入 id、title（標題）、source（媒體來源）、date（年份）、tag（標籤，如「媒體專訪」）、url（報導連結）即可。
+新增一筆媒體報導或科普專文
+編輯 data/news.json，新增物件並填入 id、title（標題）、source（媒體或刊物來源）、date（年份）、tag（標籤，如「媒體專訪」、「科普專文」或「研究亮點」）、url（原文連結）即可。作者署名的協會會訊文章可標為「科普專文」，刊物卷期放在 source。
 
 送出更新
 編輯完 JSON 檔案後，用 Git 提交並推送到 GitHub（例如透過 GitHub 網頁的 Commit changes，或請 Claude 直接幫忙 commit + push）。GitHub Pages 會從 main 分支自動部署；請至儲存庫 Actions 確認部署成功。
