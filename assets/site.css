@@ -128,6 +128,8 @@ p{color:var(--muted)}
 .resume li p{font-size:13px}
 .resume li p:first-child{font-weight:500;color:var(--ink);font-size:15px}
 .resume li p:last-child{font-size:11px;margin-top:6px}
+/* Keep browser-generated links in resume dates looking and behaving like plain text. */
+.resume li p:last-child a,.resume li p:last-child a *{color:inherit!important;font:inherit!important;text-decoration:none!important;pointer-events:none;cursor:text}
 footer{background:var(--ink);color:var(--paper);margin-top:80px;padding:65px 0 28px}
 footer .eyebrow{color:#d9b49b}
 footer h2{font-size:38px;margin:20px 0}
